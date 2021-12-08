@@ -23,4 +23,4 @@ considered. The code by which this algorithm will be implemented will be R
 [2] LI, Lingbo, et al. Binary opinion dynamics on signed networks based on
 Ising model. Physica A: Statistical Mechanics and its Applications, 2019,
 525: 433-442.
-[3] http://phd.fisica.unimi.it/assets/Comp Phys-esercizio3-1.pdf
+[3] http://phd.fisica.unimi.it/assets/Comp_Phys-esercizio3-1.pdf
