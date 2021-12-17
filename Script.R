@@ -6,11 +6,11 @@ library(grid)
 
 energy <- as.double(0)
 energy_new <- as.double(0)
-dimension <-as.integer(10)
+dimension <-as.integer(20)
 dimension_2 <- dimension -1
 dimension_3 <- dimension_2 -1
-
-
+energy_history<-data.frame(matrix(0, ncol = 2, nrow = 601))
+colnames(energy_history)<-c("Step","Energy")
 
 
 lattice <- data.frame(replicate(dimension,replicate(dimension,0)))
@@ -22,7 +22,7 @@ plot(Ising_lattice,breaks=c(-1,1),xaxt = "n",ylab='',xlab='',tick = FALSE)
 #p<-as.grob( ~plot(Ising_lattice,breaks=c(-1,1),xaxt = "n",ylab='',xlab='',tick = FALSE))
 #grid.draw(p)
 
-for (iter in 1:100) {
+for (iter in 1:600) {
   
   energy <- 0
   energy_new <- 0
@@ -47,7 +47,7 @@ for (i in 2:dimension_2) {
   
 }
 
-  print(energy/(dimension_3*dimension_3))
+#  print(energy/(dimension_3*dimension_3))
 
   
   x <- sample(2:dimension_3 , 1)
@@ -62,8 +62,8 @@ for (i in 2:dimension_2) {
     lattice[x,y]=+1
   }
   
-  print(x)
-  print(y)
+#  print(x)
+#  print(y)
   
 
   
@@ -107,6 +107,9 @@ for (i in 2:dimension_2) {
   
   Ising_lattice_FINAL<-data.matrix(lattice)
   
+  energy_history[iter,"Energy"]=energy/(dimension_3*dimension_3)
+  energy_history[iter,"Step"]=iter
+  
 } 
 
 
@@ -114,6 +117,7 @@ Ising_lattice_FINAL<-data.matrix(lattice)
 
 plot(Ising_lattice_FINAL,breaks=c(-1,1),xaxt = "n",ylab='',xlab='',tick = FALSE)
 
+plot(energy_history)
 
 
 
