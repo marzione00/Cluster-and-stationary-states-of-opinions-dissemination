@@ -22,7 +22,7 @@ plot(Ising_lattice,breaks=c(-1,1),xaxt = "n",ylab='',xlab='',tick = FALSE)
 #p<-as.grob( ~plot(Ising_lattice,breaks=c(-1,1),xaxt = "n",ylab='',xlab='',tick = FALSE))
 #grid.draw(p)
 
-for (iter in 1:600) {
+for (iter in 1:200) {
   
   energy <- 0
   energy_new <- 0
@@ -46,8 +46,11 @@ for (i in 2:dimension_2) {
   }
   
 }
+  
+  energy_history[iter,"Energy"]=energy
+  energy_history[iter,"Step"]=iter
 
-#  print(energy/(dimension_3*dimension_3))
+print(energy)
 
   
   x <- sample(2:dimension_3 , 1)
@@ -88,27 +91,26 @@ for (i in 2:dimension_2) {
   
   #print(energy_new/(dimension_3*dimension_3))
   
-  if (energy_new > energy ){
+  if (energy_new >= energy ){
     print("Accepted")
   }
   
-  if (energy_new  <= energy ){
+  if (energy_new  < energy ){
     print("Rejected")
     
     if ( lattice[x,y]==1){
-      lattice[x,y]==-1
+      lattice[x,y]=-1
     }
     
     if ( lattice[x,y]==-1){
-      lattice[x,y]==+1
+      lattice[x,y]=+1
     }
     
   }
   
   Ising_lattice_FINAL<-data.matrix(lattice)
   
-  energy_history[iter,"Energy"]=energy/(dimension_3*dimension_3)
-  energy_history[iter,"Step"]=iter
+
   
 } 
 
@@ -119,7 +121,7 @@ plot(Ising_lattice_FINAL,breaks=c(-1,1),xaxt = "n",ylab='',xlab='',tick = FALSE)
 
 plot(energy_history)
 
-
+ggplot(data= energy_history,mapping = aes(x = Step, y = Energy))+geom_line()+theme_bw()
 
 
 
