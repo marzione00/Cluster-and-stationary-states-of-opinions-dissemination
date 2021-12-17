@@ -5,7 +5,8 @@ library(grid)
 
 
 energy <- as.double(0)
-dimension <-as.integer(100)
+energy_new <- as.double(0)
+dimension <-as.integer(10)
 dimension_2 <- dimension -1
 dimension_3 <- dimension_2 -1
 
@@ -18,11 +19,17 @@ Ising_lattice<-data.matrix(lattice)
 
 plot(Ising_lattice,breaks=c(-1,1),xaxt = "n",ylab='',xlab='',tick = FALSE)
 
-p<-as.grob( ~plot(Ising_lattice,breaks=c(-1,1),xaxt = "n",ylab='',xlab='',tick = FALSE))
-grid.draw(p)
+#p<-as.grob( ~plot(Ising_lattice,breaks=c(-1,1),xaxt = "n",ylab='',xlab='',tick = FALSE))
+#grid.draw(p)
 
-for (i in 2:3) {
-  for (j in 2:3) {
+for (iter in 1:100) {
+  
+  energy <- 0
+  energy_new <- 0
+
+
+for (i in 2:dimension_2) {
+  for (j in 2:dimension_2) {
     if ( lattice[i,j]==lattice[i+1,j]){
       energy = energy +1
     }
@@ -37,15 +44,79 @@ for (i in 2:3) {
     }
     
   }
+  
+}
 
-  }
   print(energy/(dimension_3*dimension_3))
 
   
+  x <- sample(2:dimension_3 , 1)
+  y <- sample(2:dimension_3 , 1)
   
   
+  if ( lattice[x,y]==1){
+    lattice[x,y]=-1
+  }
   
+  if ( lattice[x,y]==-1){
+    lattice[x,y]=+1
+  }
   
+  print(x)
+  print(y)
+  
+
+  
+  for (i in 2:dimension_2) {
+    for (j in 2:dimension_2) {
+      if ( lattice[i,j]==lattice[i+1,j]){
+        energy_new = energy_new +1
+      }
+      if ( lattice[i,j]==lattice[i-1,j]){
+        energy_new = energy_new +1
+      }
+      if ( lattice[i,j]==lattice[i,j+1]){
+        energy_new = energy_new +1
+      }
+      if ( lattice[i,j]==lattice[i,j-1]){
+        energy_new= energy_new +1
+      }
+      
+    }
+    
+  }
+  
+  #print(energy_new/(dimension_3*dimension_3))
+  
+  if (energy_new > energy ){
+    print("Accepted")
+  }
+  
+  if (energy_new  <= energy ){
+    print("Rejected")
+    
+    if ( lattice[x,y]==1){
+      lattice[x,y]==-1
+    }
+    
+    if ( lattice[x,y]==-1){
+      lattice[x,y]==+1
+    }
+    
+  }
+  
+  Ising_lattice_FINAL<-data.matrix(lattice)
+  
+} 
+
+
+Ising_lattice_FINAL<-data.matrix(lattice)
+
+plot(Ising_lattice_FINAL,breaks=c(-1,1),xaxt = "n",ylab='',xlab='',tick = FALSE)
+
+
+
+
 
 
   lattice <- data.frame(replicate(4,replicate(4,0)))
