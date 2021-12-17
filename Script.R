@@ -14,6 +14,7 @@ colnames(energy_history)<-c("Step","Energy")
 
 
 lattice <- data.frame(replicate(dimension,replicate(dimension,0)))
+lattice_save <- data.frame(replicate(dimension,replicate(dimension,0)))
 lattice[2:dimension_2 ,2:dimension_2] <- data.frame(replicate(dimension_3,sample(c(-1,1),dimension,rep=TRUE)))
 Ising_lattice<-data.matrix(lattice)
 
@@ -51,6 +52,8 @@ for (i in 2:dimension_2) {
   energy_history[iter,"Step"]=iter
 
 print(energy)
+
+lattice_save=lattice
 
   
   x <- sample(2:dimension_3 , 1)
@@ -98,13 +101,7 @@ print(energy)
   if (energy_new  < energy ){
     print("Rejected")
     
-    if ( lattice[x,y]==1){
-      lattice[x,y]=-1
-    }
-    
-    if ( lattice[x,y]==-1){
-      lattice[x,y]=+1
-    }
+    lattice=lattice_save
     
   }
   
