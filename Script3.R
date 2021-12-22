@@ -27,34 +27,34 @@ for (iter in 1:2000) {
   
   energy <- 0
   energy_new <- 0
-
-
-for (i in 2:dimension_2) {
-  for (j in 2:dimension_2) {
-    if ( lattice[i,j]==lattice[i+1,j]*J){
-      energy = energy -1
-    }
-    if ( lattice[i,j]==lattice[i-1,j]*J){
-      energy = energy -1
-    }
-    if ( lattice[i,j]==lattice[i,j+1]*J){
-      energy = energy -1
-    }
-    if ( lattice[i,j]==lattice[i,j-1]*J){
-      energy = energy -1
+  
+  
+  for (i in 2:dimension_2) {
+    for (j in 2:dimension_2) {
+      if ( lattice[i,j]==lattice[i+1,j]*J){
+        energy = energy -1
+      }
+      if ( lattice[i,j]==lattice[i-1,j]*J){
+        energy = energy -1
+      }
+      if ( lattice[i,j]==lattice[i,j+1]*J){
+        energy = energy -1
+      }
+      if ( lattice[i,j]==lattice[i,j-1]*J){
+        energy = energy -1
+      }
+      
     }
     
   }
   
-}
-  
   energy_history[iter,"Energy"]=energy
   energy_history[iter,"Step"]=iter
-
-print(c(iter,energy))
-
-lattice_save=lattice
-
+  
+  print(c(iter,energy))
+  
+  lattice_save=lattice
+  
   
   x <- sample(2:dimension_3 , 1)
   y <- sample(2:dimension_3 , 1)
@@ -68,10 +68,10 @@ lattice_save=lattice
     lattice[x,y]=+1
   }
   
-#  print(x)
-#  print(y)
+  #  print(x)
+  #  print(y)
   
-
+  
   
   for (i in 2:dimension_2) {
     for (j in 2:dimension_2) {
@@ -107,7 +107,7 @@ lattice_save=lattice
   
   Ising_lattice_FINAL<-data.matrix(lattice)
   
-
+  
   
 } 
 
@@ -120,9 +120,42 @@ plot(Ising_lattice_FINAL,breaks=c(-1,1),xaxt = "n",ylab='',xlab='',tick = FALSE)
 
 ggplot(data= energy_history,mapping = aes(x = Step, y = Energy))+geom_line()+theme_bw()
 
+ffn<-as.double(0)
+sfn<-as.double(0)
+
+for (i in 2:dimension_2) {
+  for (j in 2:dimension_2) {
+    
+    
+    
+    i_right= i+1
+    i_left= ((i-3)
+    j_down= ((j-3) 
+    j_up=(j+1) %% dimension_3+2
+    
+    
+    
+    i_rright=(i+2) %% dimension_3 +2
+    i_lleft= (i-5) %% dimension_3 +2
+    j_ddown= (j-5) %% dimension_3 +2
+    j_uup=(j+2) %% dimension_3 +2
+    
+    
+    
+    ffn<-ffn+(lattice[i,j]*lattice[i_right,j]+lattice[i,j]*lattice[i_left,j]+lattice[i,j]*lattice[i,j_up]+lattice[i,j]*lattice[i,j_down])/4
+    
+    #sfn<-sfn+(lattice[i,j]*lattice[i_rright,j]+lattice[i,j]*lattice[i_lleft,j]+lattice[i,j]*lattice[i,j_ddown]+lattice[i,j]*lattice[i,j_uup]+lattice[i,j]*lattice[i_right,j_down]+lattice[i,j]*lattice[i_right,j_up]+lattice[i,j]*lattice[i_left,j_down]+lattice[i,j]*lattice[i_left,j_up])/8
+    
+    sfn<-sfn+(lattice[i,j]*lattice[i_rright,j])/8
+    
+    
+    
+  }
+}
+ffn
+
+sfn
 
 
 
 
-
-  
