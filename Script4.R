@@ -10,10 +10,10 @@ tfn<-as.double(0)
 J <- as.double(-1)
 energy <- as.double(0)
 energy_new <- as.double(0)
-dimension <-as.integer(50)
+dimension <-as.integer(60)
 dimension_2 <- dimension -1
 dimension_3 <- dimension_2 -1
-energy_history<-data.frame(matrix(0, ncol = 2, nrow = 601))
+energy_history<-data.frame(matrix(0, ncol = 2, nrow = 10000))
 colnames(energy_history)<-c("Step","Energy")
 
 
@@ -29,7 +29,7 @@ plot(Ising_lattice,breaks=c(-1,1),xaxt = "n",ylab='',xlab='',tick = FALSE)
 
 
 
-for (iter in 1:2500) {
+for (iter in 1:2000) {
   
   energy <- 0
   energy_new <- 0
@@ -67,11 +67,13 @@ print(c(iter,energy))
 
 lattice_save<-lattice
 
-  
+for (h in 1:1)  {
+
   x <- sample(2:dimension_3 , 1)
   y <- sample(2:dimension_3 , 1)
   
-  
+
+
   if ( lattice[x,y]==1){
     lattice[x,y]=-1
   }
@@ -79,7 +81,8 @@ lattice_save<-lattice
   if ( lattice[x,y]==-1){
     lattice[x,y]=+1
   }
-  
+
+}
 #  print(x)
 #  print(y)
 
@@ -135,13 +138,14 @@ Ising_lattice_FINAL<-data.matrix(lattice)
 plot(Ising_lattice_FINAL,breaks=c(-1,1),xaxt = "n",ylab='',xlab='',tick = FALSE)
 
 #plot(energy_history)
-
+energy_history<-energy_history[-2,]
 ggplot(data= energy_history,mapping = aes(x = Step, y = Energy))+geom_line()+theme_bw()
 
 
 ffn<-as.double(0)
 sfn<-as.double(0)
 tfn<-as.double(0)
+fofn<-as.double(0)
 
 lattice_red<-data.frame(lattice[-c(1,15),-c(1,15)])
 dimension_4<-dimension_3-1
@@ -175,7 +179,10 @@ i_llleft= ((i-4) %% dimension_3)+1
 j_dddown= ((j-4) %% dimension_3)+1
 j_uuup= ((j+2) %% dimension_3)+1
 
-
+i_rrrright= ((i+3) %% dimension_3)+1
+i_lllleft= ((i-5) %% dimension_3)+1
+j_ddddown= ((j-5) %% dimension_3)+1
+j_uuuup= ((j+3) %% dimension_3)+1
 
   
 ffn<-ffn+(lattice_red[i,j]*lattice_red[i_right,j]+lattice_red[i,j]*lattice_red[i_left,j]+lattice_red[i,j]*lattice_red[i,j_up]+lattice_red[i,j]*lattice_red[i,j_down])/4
@@ -185,7 +192,12 @@ sfn<-sfn+(lattice_red[i,j]*lattice_red[i_rright,j]+lattice_red[i,j]*lattice_red[
 
 tfn<-tfn+(lattice_red[i,j]*lattice_red[i_rrright,j]+lattice_red[i,j]*lattice_red[i_llleft,j]+lattice_red[i,j]*lattice_red[i,j_dddown]+lattice_red[i,j]*lattice_red[i,j_uuup]+lattice_red[i,j]*lattice_red[i_rright,j_down]+lattice_red[i,j]*lattice_red[i_right,j_ddown]+lattice_red[i,j]*lattice_red[i_rright,j_up]+lattice_red[i,j]*lattice_red[i_right,j_uup]+lattice_red[i,j]*lattice_red[i_lleft,j_down]+lattice_red[i,j]*lattice_red[i_left,j_ddown]+lattice_red[i,j]*lattice_red[i_left,j_uup]+lattice_red[i,j]*lattice_red[i_lleft,j_up])/12
 
-
+fofn<-fofn+(lattice_red[i,j]*lattice_red[i_rrrright,j]+lattice_red[i,j]*lattice_red[i_lllleft,j]+lattice_red[i,j]*lattice_red[i,j_ddddown]+lattice_red[i,j]*lattice_red[i,j_uuuup]
+          +lattice_red[i,j]*lattice_red[i_right,j_uuup]+lattice_red[i,j]*lattice_red[i_rright,j_uup]+lattice_red[i,j]*lattice_red[i_rrright,j_up]
+          +lattice_red[i,j]*lattice_red[i_rrright,j_down]+lattice_red[i,j]*lattice_red[i_rright,j_ddown]+lattice_red[i,j]*lattice_red[i_right,j_dddown]
+          +lattice_red[i,j]*lattice_red[i_llleft,j_down]+lattice_red[i,j]*lattice_red[i_lleft,j_ddown]+lattice_red[i,j]*lattice_red[i_left,j_dddown]
+          +lattice_red[i,j]*lattice_red[i_llleft,j_up]+lattice_red[i,j]*lattice_red[i_lleft,j_uup]+lattice_red[i,j]*lattice_red[i_left,j_uuup]
+          )/16
 
 
 
@@ -196,5 +208,7 @@ ffn
 sfn
 
 tfn
+
+fofn
 
   
