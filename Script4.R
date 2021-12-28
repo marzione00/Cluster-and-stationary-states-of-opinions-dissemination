@@ -5,16 +5,19 @@ library(grid)
 
 
 ffn<-as.double(0)
+ffn<-as.double(0)
 sfn<-as.double(0)
 tfn<-as.double(0)
 J <- as.double(-1)
+m <- as.double(0)
+
 energy <- as.double(0)
 energy_new <- as.double(0)
-dimension <-as.integer(60)
+dimension <-as.integer(20)
 dimension_2 <- dimension -1
 dimension_3 <- dimension_2 -1
-energy_history<-data.frame(matrix(0, ncol = 2, nrow = 10000))
-colnames(energy_history)<-c("Step","Energy")
+energy_history<-data.frame(matrix(0, ncol = 5, nrow = 1000000))
+colnames(energy_history)<-c("Step","Energy","Magnetization","Mag_sd","T-val")
 
 
 lattice <- data.frame(replicate(dimension,replicate(dimension,0)))
@@ -27,10 +30,20 @@ Ising_lattice<-data.matrix(lattice)
 
 plot(Ising_lattice,breaks=c(-1,1),xaxt = "n",ylab='',xlab='',tick = FALSE)
 
+for (i in 2:dimension_3) {
+  for (j in 2:dimension_3) {
+
+m<-m+lattice[i,j]
+
+  }
+}
 
 
-for (iter in 1:2000) {
+
+print(m/(dimension_3*dimension_3))
   
+for (iter in 1:25000) {
+  m <- 0
   energy <- 0
   energy_new <- 0
   lattice_save <- data.frame(replicate(dimension,replicate(dimension,0)))
@@ -59,11 +72,23 @@ for (i in 2:dimension_3) {
   }
   
 }
+
+  for (i in 2:dimension_3) {
+    for (j in 2:dimension_3) {
+      
+      m<-m+lattice[i,j]
+      
+    }
+  }
   
   energy_history[iter,"Energy"]=energy
   energy_history[iter,"Step"]=iter
+  energy_history[iter,"Magnetization"]=mean(as.matrix(lattice[2:dimension_2,2:dimension_2]))
+  energy_history[iter,"Mag_sd"]=sd(as.matrix(lattice[2:dimension_2,2:dimension_2]))
+  energy_history[iter,"T-val"]=energy_history[iter,"Magnetization"]/energy_history[iter,"Mag_sd"]
 
-print(c(iter,energy))
+
+print(c(iter,energy,energy_history[iter,"Magnetization"],energy_history[iter,"Mag_sd"],energy_history[iter,"T-val"]))
 
 lattice_save<-lattice
 
@@ -81,10 +106,20 @@ for (h in 1:1)  {
   if ( lattice[x,y]==-1){
     lattice[x,y]=+1
   }
+  
+
 
 }
 #  print(x)
 #  print(y)
+
+#for (k in 0:3) {
+#  for (j in 0:3) {
+#    lattice[k+2+3,j+2+3]=+1
+#    lattice[dimension_2-k-3,dimension_2-j-3]=-1
+#  }
+#}
+
 
   for (i in 2:dimension_3) {
     for (j in 2:dimension_3) {
@@ -120,14 +155,24 @@ for (h in 1:1)  {
   }
   
   if (energy_new  >= energy ){
-   # print("Rejected")
+    delta<-as.double(0)
+    q<-as.double(0)
+    p<-sample(1:10,1)/10
+    delta<-abs(energy_new-energy)
+    #print(delta)
+    q<-exp(-delta/4)
+    #print(c(p,q))
+    if(p > q){
     
     lattice=lattice_save
-    
+   }
   }
   
   Ising_lattice_FINAL<-data.matrix(lattice)
+
   
+
+    
 
   
 } 
@@ -140,6 +185,8 @@ plot(Ising_lattice_FINAL,breaks=c(-1,1),xaxt = "n",ylab='',xlab='',tick = FALSE)
 #plot(energy_history)
 energy_history<-energy_history[-2,]
 ggplot(data= energy_history,mapping = aes(x = Step, y = Energy))+geom_line()+theme_bw()
+ggplot(data= energy_history,mapping = aes(x = Step, y = Magnetization))+geom_line()+theme_bw()
+
 
 
 ffn<-as.double(0)
@@ -162,12 +209,6 @@ for (i in 1:dimension_3) {
     j_down= ((j-2) %% dimension_3)+1
     j_up= ((j) %% dimension_3)+1
     
-#    i_right= (i+1) %% dimension_3+1
- #   i_left= (i-3) %% dimension_3+2
-#    j_down= (j-3) %% dimension_3+2
-#    j_up=(j+1) %% dimension_3+2
-
-
 
 i_rright= ((i+1) %% dimension_3)+1
 i_lleft= ((i-3) %% dimension_3)+1
@@ -210,5 +251,8 @@ sfn
 tfn
 
 fofn
+
+save(Ising_lattice_FINAL,file="J-1_60_2500_T=0.5_lattice.rda")
+save(energy_history,file="J-1_60_2500_T=0.5_energy.rda")
 
   
