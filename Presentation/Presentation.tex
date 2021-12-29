@@ -1,0 +1,190 @@
+\documentclass{beamer}
+%
+% Choose how your presentation looks.
+%
+% For more themes, color themes and font themes, see:
+% http://deic.uab.es/~iblanes/beamer_gallery/index_by_theme.html
+%
+
+\mode<presentation>
+{
+  \usetheme{Madrid}      % or try Darmstadt, Madrid, Warsaw, ...
+  \usecolortheme{beaver} % or try albatross, beaver, crane, ...
+  \usefonttheme{default}  % or try serif, structurebold, ...
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{caption}[numbered]
+} 
+\usepackage{pifont}
+\usepackage[bookmarks]{hyperref}
+\usepackage[backend=bibtex]{biblatex}
+\usepackage{braket}
+\addbibresource{bibliography.bib}
+\newtheorem*{remark}{Remark}
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{Pic/Intro.jpg}}
+\title[AMS project]{ Stationary states of opinion diffusion}
+\subtitle{Project for the exam: AMS (DSE)}
+\author{Paola Serra and Marzio De Corato }
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+\vspace{+4.2 cm}  \titlepage
+\end{frame}
+
+\usebackgroundtemplate{ } 
+
+% Uncomment these lines for an automatically generated outline.
+%\begin{frame}{Outline}
+%\setcounter{tocdepth}{1}
+%\begin{center}
+%  \tableofcontents
+%\end{center}
+%\end{frame}
+
+\section{Intro}
+
+
+\section{Theoretical framework}
+
+\begin{frame}{}
+\begin{center}
+{\Huge Theoretical Framework}
+\end{center}
+\end{frame}
+
+\begin{frame}{}
+\begin{center}
+\textit{“Ludwig Boltzmann, who spent much of his life studying statistical mechanics, died in 1906, by his own hand. Paul Ehrenfest, carrying on the work, died similarly in 1933. Now it is our turn to study statistical mechanics.” States of Matter (1975), by David L. Goodstein}
+\end{center}
+\end{frame}
+
+\begin{frame}{}
+\begin{center}
+{\Huge Ising model}
+\end{center}
+\end{frame}
+
+
+\begin{frame}{Concepts of statistical mechanics: entropy \cite{peliti2011statistical}}
+
+\begin{itemize}
+\item \textbf{Fundamental postulate of statistical mechanics} $S=k_{b}\ln|\Gamma|$
+\item Where S is the thermodynamic entropy,  $k_{b}$ is Boltzmann constant and $|\Gamma|$ the volume in the phase space
+\end{itemize}
+\begin{equation}
+\begin{split}
+S(X_{0},...,X_{r})&=k_{b}\ln \int_{\Gamma}dx= \\
+ & k_{b}\int dx\prod_{i=0}^{r}\left[\theta(X_{i}(x)-(X_{i}-\Delta X_{i}))\theta(X_{i}-X_{i}(x))\right]$
+\end{split}
+\end{equation}
+\begin{itemize}
+\item $(X_{0},...,X_{r})$ are the extensive variables
+\item The $\theta$ functions assures that the integrand is not null only in the interval $X_{i} - \Delta X_{i} \leq X_{i}(x) \leq X_{i} $
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Concepts of statistical mechanics: micro-canonical ensamble}
+\begin{itemize}
+\item Lets focus on a particular observable A (extensive)
+\end{itemize}
+\begin{equation}
+S(X;a)=k_{b}\ln\int_{\Gamma}dx\delta(A(x)-a)
+\end{equation}
+
+\begin{equation}
+S(X)=S(X;a*)\geq S(X;a)
+\end{equation}
+
+
+\begin{equation}
+\begin{split}
+\frac{|\Gamma (a)|}{|\Gamma |}&=\frac{1}{|\Gamma |}\int_{\Gamma}dx\delta(A(x)-a)) \\
+=& \exp\left\lbrace \frac{1}{k_{b}} \left[ S(X;a) - S(X;a^{*})\right] \right\rbrace \\
+\simeq& \exp\left\lbrace   \dfrac{1}{k_{b}} \left[ \dfrac{\partial^{2}S}{\partial A^{2}}|_{a^{*}} (a-a^{*})^{2} \right] \right\rbrace
+\end{split}
+\end{equation}
+
+\begin{equation}
+a^{*}=\left\langle A(x) \right\rangle =\frac{1}{|\Gamma|}\int_{\Gamma}dx A(x)
+\end{equation}
+
+\end{frame}
+
+\begin{frame}{Concepts of statistical mechanics: canonical ensemble}
+\begin{equation}
+a^{*}=\frac{1}{|\Gamma|}\int_{\Gamma}dx_{s}dx_{R} A(x_{s})
+\end{equation}
+\begin{equation}
+\left\langle A(x) \right\rangle=\int dx_{s}dx_{r}A(x_{S})\delta(H^{(s)}
+\end{equation}
+\begin{equation}
+\left\langle A(x) \right\rangle=\frac{1}{|\Gamma|}\int dx_{s}dx_{r}A(x_{s})\delta(H^{S}(x_{s})+H^{R}(x_{R})-H^{S}(x_{S}))
+\end{equation}
+\begin{equation}
+\left\langle A(x) \right\rangle=\frac{1}{|\Gamma|}\int  dx_{s}A(x_{s})\times\int dx_{r}\delta(H^{R}(x_{R})-(E-H^{(S)}(x_{s})))
+\end{equation}
+\begin{equation}
+\int dx_{r}\delta(H^{R}(x_{R})-(E-H^{(S)}(x_{s})))\simeq \exp\left\lbrace\frac{1}{k_{b}} S^{R}(E-H^{S})\right\rbrace
+\end{equation}
+
+
+\end{frame}
+
+
+\begin{frame}{Concepts of statistical mechanics: canonical ensemble}
+
+\begin{equation}
+\exp\left\lbrace\frac{1}{k_{b}} S^{R}(E-H^{S})\right\rbrace \simeq  \exp \left[ \frac{1}{k_{b}}S^{R}(E)      \right] \exp\left[  -\frac{1}{k_{b}}\frac{\partial S^{(R)}}{\partial E}|_{E}  H^{(S)}(x_{S})  \right]
+\end{equation}
+
+\begin{equation}
+\left\langle A(x) \right\rangle=\dfrac{1}{Z}\int dx_{s}A(x_{s})exp\left[ -\frac{H^{(S)}(x_{s})}{k_{b}T} \right]
+\end{equation}
+
+\begin{equation}
+Z=\int dx_{s}exp\left[  -\frac{H^{S}(x_{s})}{k_{b}T}  \right]
+\end{equation}
+
+
+\begin{equation}
+\left\langle A(x) \right\rangle=\dfrac{1}{Z}\int dE\int dx\delta(H(x)-E)A(x)exp(-\dfrac{E}{k_{b}T})
+\end{equation}
+
+\begin{equation}
+\left\langle A(x) \right\rangle=\dfrac{1}{Z}\int dE'a^{*}(E')exp\left[ - \dfrac{E'-TS(E')}{k_{b}T}\right]
+\end{equation}
+
+
+\end{frame}
+
+
+\begin{frame}{Concepts of statistical mechanics: canonical ensemble}
+
+
+
+\end{frame}
+
+\begin{frame}[t,allowframebreaks]
+\frametitle{Bibliography}
+\printbibliography
+\end{frame}
+
+
+\section{Supporting Info}
+
+\subsection{ROC and $\phi$ factor}
+\begin{frame}{}
+\begin{center}
+{\Huge ROC and $\phi$ factor}
+\end{center}
+\end{frame}
+
+
+
+
+
+
+\end{document}

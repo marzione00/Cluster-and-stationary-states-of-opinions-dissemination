@@ -1,0 +1,10 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {english}{}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {1}{Intro}{2}{0}{1}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {2}{Theoretical framework}{2}{0}{2}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {4}{Supporting Info}{11}{0}{3}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {4}{1}{ROC and $\phi $ factor}{11}{0}{3}

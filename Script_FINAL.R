@@ -3,6 +3,7 @@ library(plot.matrix)
 library(ggplotify)
 library(grid)
 library(dppmix)
+library(SpatEntropy)
 
 
 
@@ -10,14 +11,14 @@ ffn<-as.double(0)
 ffn<-as.double(0)
 sfn<-as.double(0)
 tfn<-as.double(0)
-J <- as.double(-1)
+J <- as.double(1)
 m <- as.double(0)
 
 energy <- as.double(0)
 energy_new <- as.double(0)
-dimension <-as.integer(10)
-energy_history<-data.frame(matrix(0, ncol = 5, nrow = 10000))
-colnames(energy_history)<-c("Step","Energy","Magnetization","Mag_sd","T-val")
+dimension <-as.integer(20)
+energy_history<-data.frame(matrix(0, ncol = 6, nrow = 20000))
+colnames(energy_history)<-c("Step","Energy","Magnetization","Mag_sd","T-val","S_Entropy")
 
 
 lattice <- data.frame(replicate(dimension,replicate(dimension,0)))
@@ -36,7 +37,7 @@ plot(Ising_lattice,breaks=c(-1,1),xaxt = "n",ylab='',xlab='',tick = FALSE)
 
 
   
-for (iter in 1:4000) {
+for (iter in 1:16500) {
   m <- 0
   energy <- 0
   energy_new <- 0
@@ -67,15 +68,15 @@ for (i in 1:dimension) {
   
 }
 
-  
-  energy_history[iter,"Energy"]=energy
+  p<-shannon(as.matrix(lattice))
+  energy_history[iter,"Energy"]=energy/(dimension*dimension)
   energy_history[iter,"Step"]=iter
   energy_history[iter,"Magnetization"]=mean(as.matrix(lattice[1:dimension,1:dimension]))
   energy_history[iter,"Mag_sd"]=sd(as.matrix(lattice[1:dimension,1:dimension]))
   energy_history[iter,"T-val"]=energy_history[iter,"Magnetization"]/energy_history[iter,"Mag_sd"]
+  energy_history[iter,"S_Entropy"]=p$rel.shann
 
-
-print(c(iter,energy,energy_history[iter,"Magnetization"],energy_history[iter,"T-val"]))
+print(c(iter,energy_history[iter,"Energy"],energy_history[iter,"Magnetization"],energy_history[iter,"T-val"],energy_history[iter,"S_Entropy"]))
 
 lattice_save<-lattice
 
@@ -98,12 +99,12 @@ lattice_save<-lattice
 #  print(x)
 #  print(y)
 
-#for (k in 0:3) {
-#  for (j in 0:3) {
-#    lattice[k+2+3,j+2+3]=+1
-#    lattice[dimension_2-k-3,dimension_2-j-3]=-1
-#  }
-#}
+for (k in 0:3) {
+  for (j in 0:3) {
+    lattice[k+2+3,j+2+3]=+1
+    lattice[dimension-k-3,dimension-j-3]=-1
+  }
+}
 
 
   for (i in 1:dimension) {
@@ -145,7 +146,7 @@ lattice_save<-lattice
     p<-sample(1:10,1)/10
     delta<-abs(energy_new-energy)
     #print(delta)
-    q<-exp(-delta/3.5)
+    q<-exp(-delta/2)
     #print(c(p,q))
     if(p > q){
     
@@ -169,8 +170,9 @@ plot(Ising_lattice_FINAL,breaks=c(-1,1),xaxt = "n",ylab='',xlab='',tick = FALSE)
 
 #plot(energy_history)
 energy_history<-energy_history[-2,]
-ggplot(data= energy_history,mapping = aes(x = Step, y = Energy))+geom_line()+theme_bw()
-ggplot(data= energy_history,mapping = aes(x = Step, y = Magnetization))+geom_line()+theme_bw()
+ggplot(data= energy_history,mapping = aes(x = Step, y = Energy))+geom_line(colour="red")+theme_bw(base_size = 20)
+ggplot(data= energy_history,mapping = aes(x = Step, y = Magnetization))+geom_line(colour="blue")+theme_bw(base_size = 20)
+ggplot(data= energy_history,mapping = aes(x = Step, y = S_Entropy))+geom_line(colour="green")+theme_bw(base_size = 20)
 
 
 
@@ -234,8 +236,12 @@ tfn
 
 fofn
 
-order_parameter<-data.frame("Site"=c(1,2,3,4),"Value"=c(abs(ffn),abs(sfn),abs(tfn),abs(fofn)))
-fit<-lm(log(Value) ~ Site, data= order_parameter)
+order_parameter<-data.frame("Distance"=c(1,2,3,4),"CF"=c(ffn,sfn,tfn,fofn))
+#fit<-lm(log(CF) ~ Distance, data= order_parameter)
+#summary(fit)
+ggplot(data= order_parameter,mapping = aes(x = Distance, y = CF))+geom_line(linetype="dotted",colour="red")+geom_point(colour="red",size=3)+theme_bw()
+
+
 
 
 save(Ising_lattice_FINAL,file="J-1_60_2500_T=0.5_lattice.rda")
