@@ -206,11 +206,32 @@ In this way a statistical quantity the variance has been connected to a thermody
 \end{frame}
 
 
-\begin{frame}{}
+\begin{frame}{Numerical simulation \cite{peliti2011statistical}}
+\begin{itemize}
+\item \textbf{Simulation} \textit{the evolution equations of a system are defined to such a detail that a computer can make its behaviour explicit, and one looks to see what takes place} 
+\item Numerical experiment 
+\item \textbf{Molecular dynamics:} the equation of motion are solved numerically PROS: information of both the dynamical and static properties of the system are explored 
+\item\textbf{Monte Carlo:} a fictitious evolution process of the system is solved in order to get the equilibrium distribution PROS  1) also the systems whose dynamics is not defined can be explored 2) a fictitious dynamics can be considered in order to reach the equilibrium faster 
+\item Molecular dynamics may provide a proof of statistical mechanics, Monte Carlo methods presuppose its validity
+\end{itemize}
+\end{frame}
 
 
+\begin{frame}{Monte Carlo method \cite{peliti2011statistical}}
+\begin{center}
+We would calculate an integral of type $\left\langle  A\right\rangle = \int dxA(x)\rho(x)$ where $\rho$ is the probability distribution.
+\end{center}
+\begin{center}
+Idea: evaluate the integrand in N point 
+\end{center}
+
+
+\begin{center}
+Idea: the true dynamics is replaced with a fictitious stochastic dynamics.  The state at $t+1$ depends only from the state at $t$.  \rightarrow Markov Chain 
+\end{center}
 
 \end{frame}
+
 
 \begin{frame}[t,allowframebreaks]
 \frametitle{Bibliography}
