@@ -8,7 +8,7 @@
 
 \mode<presentation>
 {
-  \usetheme{Madrid}      % or try Darmstadt, Madrid, Warsaw, ...
+  \usetheme{Darmstadt}      % or try Darmstadt, Madrid, Warsaw, ...
   \usecolortheme{beaver} % or try albatross, beaver, crane, ...
   \usefonttheme{default}  % or try serif, structurebold, ...
   \setbeamertemplate{navigation symbols}{}
@@ -44,10 +44,9 @@
 %\end{center}
 %\end{frame}
 
-\section{Intro}
 
 
-\section{Theoretical framework}
+
 
 \begin{frame}{}
 \begin{center}
@@ -55,16 +54,28 @@
 \end{center}
 \end{frame}
 
+
+\section{Statistical Mechanics}
+
 \begin{frame}{}
+\begin{center}
+{\Huge Statistical Mechanics}
+\end{center}
 \begin{center}
 \textit{“Ludwig Boltzmann, who spent much of his life studying statistical mechanics, died in 1906, by his own hand. Paul Ehrenfest, carrying on the work, died similarly in 1933. Now it is our turn to study statistical mechanics.” States of Matter (1975), by David L. Goodstein}
 \end{center}
 \end{frame}
 
-\begin{frame}{}
-\begin{center}
-{\Huge Ising model}
-\end{center}
+\begin{frame}{Concepts of statistical mechanics: entropy \cite{peliti2011statistical}}
+\textbf{Central problem of thermodynamics:} characterize the actual state of equilibrium among all virtual states  \\
+\textbf{Entropy postulate}: there exist a function S of the extensive variables $(X_{0},X_{1}...X_{r})$ called entropy,  that assumes the maximum value for a state of equilibrium among all vritual states and that possesses the following properties:
+\begin{itemize}
+\item Extensivity $S^{(1\cup2)}=S^{1}+S^{2}$
+\item Convexity $S((1-\alpha)X^{1}+\alpha X^{2}) \geq (1-\alpha)S(x^{1})+\alpha S(X^{2})$
+\item Monotonicity $\dfrac{\partial S}{\partial E}|_{X_{1}...X_{r}}=\frac{1}{T}>0$
+\end{itemize}
+\textbf The equilibrium state corresponds to the maximum entropy compatible with the constrains
+
 \end{frame}
 
 
@@ -161,7 +172,41 @@ Z=\int dx_{s}exp\left[  -\frac{H^{S}(x_{s})}{k_{b}T}  \right]
 \end{frame}
 
 
-\begin{frame}{Concepts of statistical mechanics: canonical ensemble}
+\begin{frame}{Concepts of statistical mechanics: canonical ensemble\cite{peliti2011statistical} }
+
+\begin{equation}
+Z\simeq \exp\left[-\dfrac{E*-TS(E*)}{k_{b}T} \right]=\exp\left( - \frac{F}{k_{b}T}  \right)     
+\end{equation}
+
+\begin{equation}
+\dfrac{\partial ln Z(\beta)}{\partial \beta}=-\dfrac{1}{Z}\int dx H(x)\exp\left[  -\dfrac{H}{k_{b}T}\right]=-\left\langle H(x) \right\rangle=-E
+\end{equation}
+
+\begin{equation}
+\dfrac{\partial^{2} ln Z(\beta)}{\partial \beta^{2}}=\left\langle H(x)^{2} \right\rangle-\left\langle H(x) \right\rangle^{2}
+\end{equation}
+
+\begin{equation}
+\left\langle H(x)^{2} \right\rangle-\left\langle H(x) \right\rangle^{2}=-\dfrac{\partial E}{\partial (1/k_{b}T)}=k_{b}T^{2}\dfrac{\partial E}{\partial T}=k_{b}T^{2}C
+\end{equation}
+
+In this way a statistical quantity the variance has been connected to a thermodynamic quantity: the temperature.
+
+\end{frame}
+
+\section{Numerical simulation}
+
+\begin{frame}{}
+\begin{center}
+{\Huge Numerical simulations}
+\end{center}
+\begin{center}
+\textit{“Never make a calculation until you know the answer. Make an estimate before every calculation, try a simple physical argument (symmetry! invariance! conservation!) before every derivation, guess the answer to every paradox and puzzle. Courage: No one else needs to know what the guess is. Therefore make it quickly, by instinct. A right guess reinforces this instinct. A wrong guess brings the refreshment of surprise. In either case life as a spacetime expert, however long, is more fun!” John Archibald Wheeler }
+\end{center}
+\end{frame}
+
+
+\begin{frame}{}
 
 
 
