@@ -218,19 +218,86 @@ In this way a statistical quantity the variance has been connected to a thermody
 
 
 \begin{frame}{Monte Carlo method \cite{peliti2011statistical}}
-\begin{center}
-We would calculate an integral of type $\left\langle  A\right\rangle = \int dxA(x)\rho(x)$ where $\rho$ is the probability distribution.
-\end{center}
-\begin{center}
-Idea: evaluate the integrand in N point 
-\end{center}
 
 
-\begin{center}
-Idea: the true dynamics is replaced with a fictitious stochastic dynamics.  The state at $t+1$ depends only from the state at $t$.  \rightarrow Markov Chain 
-\end{center}
+\begin{itemize}
+\item We would calculate an integral of type $\left\langle  A\right\rangle = \int dxA(x)\rho(x)$ where $\rho$ is the probability distribution.
+
+
+
+\item Evaluate the integrand in N+1 points uniformly arranged between 0 and 1  $\left\langle  A\right\rangle = \frac{1}{N}\sum_{i=0}^{N}A(x_{i})\rho(x_{i})$
+
+
+
+\item A better convergence is reached if the $x_{i}$ density is proportional to $\rho(x)$
+
+
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Monte Carlo method \cite{peliti2011statistical}}
+
+\begin{itemize}
+
+\item The quantity $\left\langle  A\right\rangle $ is evaluated over a distribution $\rho(x)$ where $x_{i}$ are random,  independent and distributed with a probability density $\rho(x)$
+
+
+
+\item The independence conditions can be relaxed with the condition that the correlations between $x_{i} and x_{i+l}$ go to zero fairly rapidly as l grows 
+
+
+\item The true dynamics is replaced with a fictitious stochastic dynamics.  The state at $t+1$ depends only from the state at $t$.  $\rightarrow$ Markov Chain 
+
+\end{itemize}
 
 \end{frame}
+
+\begin{frame}{Monte Carlo method \cite{peliti2011statistical}}
+
+\begin{itemize}
+
+\item The evolution of probability is described by the \textbf{master equation} $\Delta p_{a}(t)=\sum'_{b\neq a}[W_{ab}p_{b}(t)-W_{ba}p_{a}(t)]$
+
+
+\item stationary  \rightarrow $ \sum'_{b\neq a}[W_{ab}p_{b}(t)-W_{ba}p_{a}(t)=0\quad \forall a$
+
+
+\item Detailed balance property $W_{ab}W_{bc}W_{ca}=W_{ac}W_{cb}W_{ba}$
+
+
+\item $ W_{ab}p_{b}(t)-W_{ba}p_{a}(t)=0\quad \forall a,b$
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}{Monte Carlo method \cite{peliti2011statistical}}
+
+\begin{itemize}
+
+\item We would sample $p^{eq}_{a}$ 
+
+\item This can be performed as long as the $W_{ab}$ is ergodic and the detailed balance property holds 
+
+\item The transition between any two arbitrary states can take place as long as one waits for a sufficient amount of time
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Application \cite{peliti2011statistical}}
+
+\begin{itemize}
+\item $H(\sigma)=-\sum_{\left\langle ij \right\rangle}J\sigma_{i}\sigma_{j}-\sum_{i}h\sigma_{i}$
+\item $P_{\sigma}=\frac{e^{-H(\sigma)/k_{b}T}}{Z}$  $\quad Z=\sum_{\sigma}e^{-H(\sigma)/k_{b}T}$
+\item The observable are calculated as $E=\left\langle H \right\rangle=\sum_{sigma}H(\sigma)P_{\sigma'}^{B} \quad M=\sum_{\sigma}\left(\sigma_{i} \sigma\right)P_{\sigma}^{B}  $
+\item The markov chain states should be the microstates $\sigma$ and $P_{\sigma}$ the stationary distribution 
+\item $W_{\sigma\sigma '} = W_{\sigma ' \sigma}$ $\dfrac{P_{\sigma}}{P_{\sigma '}}=W_{\sigma ' \sigma} \exp - \dfrac{H(\sigma)-H(\sigma ')}{k_{b}T}$
+\item The Z term is no more present !!!
+\end{itemize}
+
+\end{frame}
+
 
 
 \begin{frame}[t,allowframebreaks]
