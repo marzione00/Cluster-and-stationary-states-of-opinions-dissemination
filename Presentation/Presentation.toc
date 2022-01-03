@@ -3,8 +3,12 @@
 \defcounter {refsection}{0}\relax 
 \beamer@sectionintoc {1}{Statistical Mechanics}{3}{0}{1}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {2}{Numerical simulation}{10}{0}{2}
+\beamer@sectionintoc {2}{Ising model}{10}{0}{2}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {4}{Supporting Info}{18}{0}{3}
+\beamer@sectionintoc {3}{Numerical simulation}{12}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {4}{1}{ROC and $\phi $ factor}{18}{0}{3}
+\beamer@sectionintoc {4}{Goals and methods}{20}{0}{4}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {6}{Supporting Info}{23}{0}{5}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {6}{1}{ROC and $\phi $ factor}{23}{0}{5}

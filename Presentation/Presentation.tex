@@ -8,7 +8,7 @@
 
 \mode<presentation>
 {
-  \usetheme{Darmstadt}      % or try Darmstadt, Madrid, Warsaw, ...
+  \usetheme{Madrid}      % or try Darmstadt, Madrid, Warsaw, ...
   \usecolortheme{beaver} % or try albatross, beaver, crane, ...
   \usefonttheme{default}  % or try serif, structurebold, ...
   \setbeamertemplate{navigation symbols}{}
@@ -22,7 +22,7 @@
 \newtheorem*{remark}{Remark}
 \usepackage[english]{babel}
 \usepackage[utf8x]{inputenc}
-\usebackgroundtemplate{\includegraphics[width=\paperwidth]{Pic/Intro.jpg}}
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{Pic/Intro_pict.png}}
 \title[AMS project]{ Stationary states of opinion diffusion}
 \subtitle{Project for the exam: AMS (DSE)}
 \author{Paola Serra and Marzio De Corato }
@@ -31,7 +31,7 @@
 \begin{document}
 
 \begin{frame}
-\vspace{+4.2 cm}  \titlepage
+\vspace{+4 cm}  \titlepage
 \end{frame}
 
 \usebackgroundtemplate{ } 
@@ -194,6 +194,25 @@ In this way a statistical quantity the variance has been connected to a thermody
 
 \end{frame}
 
+\section{Ising model}
+
+\begin{frame}{}
+\begin{center}
+{\Huge Ising Model}
+\end{center}
+\end{frame}
+
+
+\begin{frame}{Ising model \cite{mackay2003information,slides}}
+\begin{itemize}
+\item An array of atoms that can take states $\pm 1$
+\item $E(\textbf{x},J,H)= - \left[\dfrac{1}{2}\sum_{m,n}J_{mn}x_{m}x_{n}+\sum_{n}Hx_{n} \right]$
+\item $P(x|\beta,J,H)=\frac{1}{Z(\beta,J,H)}\exp[-\beta E(x,J,H)]$
+\item $\beta=1/k_{b}T\quad Z(\beta,J,H)=\sum_{x}exp\left[-\beta E(x,J,H)\right]$
+\item $g(m)=\frac{\left\langle \sigma_{i}\sigma_{i+m}  \right\rangle - \left\langle \sigma_{i} \right\rangle \left\langle \sigma_{i+m} \right\rangle  }{1- \left\langle \sigma_{i} \right\rangle \left\langle \sigma_{i+m} \right\rangle }=\left\langle \sigma_{i}\sigma_{i+m}  \right\rangle $ if $H=0$
+\end{itemize}
+\end{frame}
+
 \section{Numerical simulation}
 
 \begin{frame}{}
@@ -297,6 +316,44 @@ In this way a statistical quantity the variance has been connected to a thermody
 \end{itemize}
 
 \end{frame}
+
+\begin{frame}{Application \cite{peliti2011statistical}}
+
+\begin{itemize}
+\item $W_{\sigma' \sigma }= \begin{cases} 
+\kappa  H(\sigma ') <  H(\sigma )  \\ 
+\kappa\exp\left\lbrace -\left[ H(\sigma ')-H(\sigma) \right] / k_{b}T \right\rbrace$ \end{cases}
+\item $\left\lbrace A \right\rbrace \neq \left[  A \right]_{T}=\frac{1}{T}$
+\item $A(\sigma)=\left\langle  A \right\rangle \left[1+O(N^{-1/2})\right] \forall \sigma \in \Gamma $  
+\item $S=0.5Nk_{b}ln2 \quad \dfrac{|\Gamma|}{2^{N}}\approx 2^{-0.5N}\quad N=100 \quad 10^{-15}$
+\item $ \approx \left[ A \right]_{T}=\dfrac{1}{T}\sum^{T\left\langle A  \right\rangle_{0}+T}_{t=T_{0}}A_{\sigma(t)} $
+\item $\left\langle \Delta A_{T}^{2}  \right\rangle \approx \dfrac{1}{T}\left(A_{\sigma(t)}-\left[A\right]_{T} \right)^{2}$ 
+\item $\sigma_{t}$ and $\sigma_{t'}$ are indipendent if $|t-t'|$ is larger that a characteristic time $\tau_{0}$
+\item   $\left\langle \Delta A_{T}^{2}  \right\rangle \approx \dfrac{\tau_{0}}{T}\left(A_{\sigma(t)}-\left[A\right]_{T} \right)^{2}$
+
+
+\end{itemize}
+
+\end{frame}
+
+
+\section{Goals and methods}
+
+\begin{frame}
+\begin{center}
+{\Huge Goals and methods}
+\end{center}
+\end{frame}
+
+\begin{frame}{Goals and methods}
+\begin{itemize}
+\item Reproduce the main result for a 2D anti ferromagnetic lattice $(J=-1)$ with no external magnetic field $(H=0)$ with the montecarlo-metropolis
+\item  Once checked that the script provide the correct results apply it to a lattice $(J=+1)$.  In this case the spins represent an opinion and the sites people.  The goal is to find the stationary states (at $T=0$ and $T\neq0$)
+\item Introduce in the lattice some blocks that never change their status.  These islands represent groups that never change mind and only diffuse their ideas.  (at $T=0$ and $T\neq0$)
+\end{itemize}
+\end{frame}
+
+
 
 
 

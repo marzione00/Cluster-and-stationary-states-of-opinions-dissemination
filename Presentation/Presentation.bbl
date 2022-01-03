@@ -17,6 +17,43 @@
 \endgroup
 
 \datalist[entry]{nty/global//global/global}
+  \entry{slides}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \field{title}{{Jeffrey C. Grossman and Elif Ertekin, NSE C242 & Phys C203,
+  Spring 2008, U.C. Berkeley}, howpublished =
+  {\url{https://nanohub.org/resources/4579/download/05-01-08-forweb.pdf}},}
+  \endentry
+
+  \entry{mackay2003information}{book}{}
+    \name{author}{2}{}{%
+      {{hash=MDJ}{%
+         family={MacKay},
+         familyi={M\bibinitperiod},
+         given={David\bibnamedelima JC},
+         giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=MKDJ}{%
+         family={Mac\bibnamedelima Kay},
+         familyi={M\bibinitperiod\bibinitdelim K\bibinitperiod},
+         given={David\bibnamedelima JC},
+         giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Cambridge university press}%
+    }
+    \strng{namehash}{MDJMKDJ1}
+    \strng{fullhash}{MDJMKDJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{title}{Information theory, inference and learning algorithms}
+    \field{year}{2003}
+  \endentry
+
   \entry{peliti2011statistical}{book}{}
     \name{author}{1}{}{%
       {{hash=PL}{%
