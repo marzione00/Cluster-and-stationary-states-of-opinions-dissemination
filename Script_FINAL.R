@@ -146,7 +146,7 @@ lattice_save<-lattice
     p<-sample(1:10,1)/10
     delta<-abs(energy_new-energy)
     #print(delta)
-    q<-exp(-delta/1)
+    q<-exp(-delta/30)
     #print(c(p,q))
     if(p > q){
     
@@ -239,12 +239,12 @@ fofn
 order_parameter<-data.frame("Distance"=c(1,2,3,4),"CF"=c(ffn,sfn,tfn,fofn))
 #fit<-lm(log(CF) ~ Distance, data= order_parameter)
 #summary(fit)
-ggplot(data= order_parameter,mapping = aes(x = Distance, y = CF))+geom_line(linetype="dotted",colour="red")+geom_point(colour="red",size=3)+theme_bw()
+ggplot(data= order_parameter,mapping = aes(x = Distance, y = CF))+geom_line(linetype="dotted",colour="red")+geom_point(colour="red",size=3)+theme_bw(base_size = 20)
 
 
 
 
-save(Ising_lattice_FINAL,file="J-1_60_2500_T=0.5_lattice.rda")
-save(energy_history,file="J-1_60_2500_T=0.5_energy.rda")
+save(Ising_lattice_FINAL,file="J-1_60_2500_T=8_lattice.rda")
+save(energy_history,file="J-1_60_2500_T=8_energy.rda")
 
   

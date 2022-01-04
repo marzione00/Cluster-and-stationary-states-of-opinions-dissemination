@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.3.28)  4 JAN 2022 10:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.3.28)  4 JAN 2022 17:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1446,10 +1446,136 @@ e 420.
 
  <./Pic/J-1_10_6000_T=0_Magnetization.pdf> <./Pic/J-1_10_6000_T=0_CORRELATION.p
 df>]
+<Pic/J-1_60_2500_T=1.5_ENERGY.pdf, id=276, 326.21875pt x 358.33875pt>
+File: Pic/J-1_60_2500_T=1.5_ENERGY.pdf Graphic file (type pdf)
+<use Pic/J-1_60_2500_T=1.5_ENERGY.pdf>
+Package pdftex.def Info: Pic/J-1_60_2500_T=1.5_ENERGY.pdf  used on input line 4
+36.
+(pdftex.def)             Requested size: 171.14764pt x 188.0049pt.
+<Pic/J-1_60_2500_T=1.5_FINAL.pdf, id=277, 326.21875pt x 358.33875pt>
+File: Pic/J-1_60_2500_T=1.5_FINAL.pdf Graphic file (type pdf)
+<use Pic/J-1_60_2500_T=1.5_FINAL.pdf>
+Package pdftex.def Info: Pic/J-1_60_2500_T=1.5_FINAL.pdf  used on input line 43
+6.
+(pdftex.def)             Requested size: 171.14764pt x 188.0049pt.
+ [26
+
+ <./Pic/J-1_60_2500_T=1.5_ENERGY.pdf> <./Pic/J-1_60_2500_T=1.5_FINAL.pdf>]
+<Pic/J-1_60_2500_T=1.5_Magnetization.pdf, id=295, 326.21875pt x 358.33875pt>
+File: Pic/J-1_60_2500_T=1.5_Magnetization.pdf Graphic file (type pdf)
+<use Pic/J-1_60_2500_T=1.5_Magnetization.pdf>
+Package pdftex.def Info: Pic/J-1_60_2500_T=1.5_Magnetization.pdf  used on input
+ line 451.
+(pdftex.def)             Requested size: 171.14764pt x 188.0049pt.
+<Pic/J-1_60_2500_T=1.5_CORRELATION.pdf, id=296, 326.21875pt x 358.33875pt>
+File: Pic/J-1_60_2500_T=1.5_CORRELATION.pdf Graphic file (type pdf)
+<use Pic/J-1_60_2500_T=1.5_CORRELATION.pdf>
+Package pdftex.def Info: Pic/J-1_60_2500_T=1.5_CORRELATION.pdf  used on input l
+ine 451.
+(pdftex.def)             Requested size: 171.14764pt x 188.0049pt.
+ [27
+
+ <./Pic/J-1_60_2500_T=1.5_Magnetization.pdf> <./Pic/J-1_60_2500_T=1.5_CORRELATI
+ON.pdf>]
+<Pic/J-1_60_2500_T=4_ENERGY.pdf, id=314, 326.21875pt x 358.33875pt>
+File: Pic/J-1_60_2500_T=4_ENERGY.pdf Graphic file (type pdf)
+<use Pic/J-1_60_2500_T=4_ENERGY.pdf>
+Package pdftex.def Info: Pic/J-1_60_2500_T=4_ENERGY.pdf  used on input line 466
+.
+(pdftex.def)             Requested size: 171.14764pt x 188.0049pt.
+<Pic/J-1_60_2500_T=4_FINAL.pdf, id=315, 326.21875pt x 358.33875pt>
+File: Pic/J-1_60_2500_T=4_FINAL.pdf Graphic file (type pdf)
+<use Pic/J-1_60_2500_T=4_FINAL.pdf>
+Package pdftex.def Info: Pic/J-1_60_2500_T=4_FINAL.pdf  used on input line 466.
+
+(pdftex.def)             Requested size: 171.14764pt x 188.0049pt.
+
+[28
+
+ <./Pic/J-1_60_2500_T=4_ENERGY.pdf> <./Pic/J-1_60_2500_T=4_FINAL.pdf>]
+<Pic/J-1_60_2500_T=4_Magnetization.pdf, id=333, 326.21875pt x 358.33875pt>
+File: Pic/J-1_60_2500_T=4_Magnetization.pdf Graphic file (type pdf)
+<use Pic/J-1_60_2500_T=4_Magnetization.pdf>
+Package pdftex.def Info: Pic/J-1_60_2500_T=4_Magnetization.pdf  used on input l
+ine 481.
+(pdftex.def)             Requested size: 171.14764pt x 188.0049pt.
+<Pic/J-1_60_2500_T=4_CORRELATION.pdf, id=334, 326.21875pt x 358.33875pt>
+File: Pic/J-1_60_2500_T=4_CORRELATION.pdf Graphic file (type pdf)
+<use Pic/J-1_60_2500_T=4_CORRELATION.pdf>
+Package pdftex.def Info: Pic/J-1_60_2500_T=4_CORRELATION.pdf  used on input lin
+e 481.
+(pdftex.def)             Requested size: 171.14764pt x 188.0049pt.
+
+[29
+
+ <./Pic/J-1_60_2500_T=4_Magnetization.pdf> <./Pic/J-1_60_2500_T=4_CORRELATION.p
+df>]
+<Pic/J-1_60_2500_T=8_ENERGY.pdf, id=351, 326.21875pt x 358.33875pt>
+File: Pic/J-1_60_2500_T=8_ENERGY.pdf Graphic file (type pdf)
+<use Pic/J-1_60_2500_T=8_ENERGY.pdf>
+Package pdftex.def Info: Pic/J-1_60_2500_T=8_ENERGY.pdf  used on input line 497
+.
+(pdftex.def)             Requested size: 171.14764pt x 188.0049pt.
+<Pic/J-1_60_2500_T=8_FINAL.pdf, id=352, 326.21875pt x 358.33875pt>
+File: Pic/J-1_60_2500_T=8_FINAL.pdf Graphic file (type pdf)
+<use Pic/J-1_60_2500_T=8_FINAL.pdf>
+Package pdftex.def Info: Pic/J-1_60_2500_T=8_FINAL.pdf  used on input line 497.
+
+(pdftex.def)             Requested size: 171.14764pt x 188.0049pt.
+ [30
+
+ <./Pic/J-1_60_2500_T=8_ENERGY.pdf> <./Pic/J-1_60_2500_T=8_FINAL.pdf>]
+<Pic/J-1_60_2500_T=8_Magnetization.pdf, id=370, 326.21875pt x 358.33875pt>
+File: Pic/J-1_60_2500_T=8_Magnetization.pdf Graphic file (type pdf)
+<use Pic/J-1_60_2500_T=8_Magnetization.pdf>
+Package pdftex.def Info: Pic/J-1_60_2500_T=8_Magnetization.pdf  used on input l
+ine 512.
+(pdftex.def)             Requested size: 171.14764pt x 188.0049pt.
+<Pic/J-1_60_2500_T=8_CORRELATION.pdf, id=371, 326.21875pt x 358.33875pt>
+File: Pic/J-1_60_2500_T=8_CORRELATION.pdf Graphic file (type pdf)
+<use Pic/J-1_60_2500_T=8_CORRELATION.pdf>
+Package pdftex.def Info: Pic/J-1_60_2500_T=8_CORRELATION.pdf  used on input lin
+e 512.
+(pdftex.def)             Requested size: 171.14764pt x 188.0049pt.
+ [31
+
+ <./Pic/J-1_60_2500_T=8_Magnetization.pdf> <./Pic/J-1_60_2500_T=8_CORRELATION.p
+df>]
+<Pic/J-1_10_6000_T=30_ENERGY.pdf, id=389, 326.21875pt x 358.33875pt>
+File: Pic/J-1_10_6000_T=30_ENERGY.pdf Graphic file (type pdf)
+<use Pic/J-1_10_6000_T=30_ENERGY.pdf>
+Package pdftex.def Info: Pic/J-1_10_6000_T=30_ENERGY.pdf  used on input line 52
+7.
+(pdftex.def)             Requested size: 171.14764pt x 188.0049pt.
+<Pic/J-1_10_6000_T=30_FINAL.pdf, id=390, 326.21875pt x 358.33875pt>
+File: Pic/J-1_10_6000_T=30_FINAL.pdf Graphic file (type pdf)
+<use Pic/J-1_10_6000_T=30_FINAL.pdf>
+Package pdftex.def Info: Pic/J-1_10_6000_T=30_FINAL.pdf  used on input line 527
+.
+(pdftex.def)             Requested size: 171.14764pt x 188.0049pt.
+ [32
+
+ <./Pic/J-1_10_6000_T=30_ENERGY.pdf> <./Pic/J-1_10_6000_T=30_FINAL.pdf>]
+<Pic/J-1_10_6000_T=30_Magnetization.pdf, id=408, 326.21875pt x 358.33875pt>
+File: Pic/J-1_10_6000_T=30_Magnetization.pdf Graphic file (type pdf)
+<use Pic/J-1_10_6000_T=30_Magnetization.pdf>
+Package pdftex.def Info: Pic/J-1_10_6000_T=30_Magnetization.pdf  used on input 
+line 542.
+(pdftex.def)             Requested size: 171.14764pt x 188.0049pt.
+<Pic/J-1_10_6000_T=30_CORRELATION.pdf, id=409, 326.21875pt x 358.33875pt>
+File: Pic/J-1_10_6000_T=30_CORRELATION.pdf Graphic file (type pdf)
+<use Pic/J-1_10_6000_T=30_CORRELATION.pdf>
+Package pdftex.def Info: Pic/J-1_10_6000_T=30_CORRELATION.pdf  used on input li
+ne 542.
+(pdftex.def)             Requested size: 171.14764pt x 188.0049pt.
+ [33
+
+ <./Pic/J-1_10_6000_T=30_Magnetization.pdf> <./Pic/J-1_10_6000_T=30_CORRELATION
+.pdf>]
 ! Misplaced alignment tab character &.
 <argument> ...rossman and Elif Ertekin, NSE C242 &
                                                    Phys C203, Spring 2008, U...
-l.427 \end{frame}
+l.548 \end{frame}
                  
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1458,22 +1584,22 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[26
+[34
 
  </usr/local/texlive/2019/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 432.
+(hyperref)                removing `math shift' on input line 553.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\phi' on input line 432.
+(hyperref)                removing `\phi' on input line 553.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 432.
+(hyperref)                removing `math shift' on input line 553.
 
-[27
+[35
 
 ]
 \tf@nav=\write7
@@ -1485,56 +1611,46 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 \tf@snm=\write9
 \openout9 = `Presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 444.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 444.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 565.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 565.
  (./Presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 444.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 444.
-
-
-Package rerunfilecheck Warning: File `Presentation.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Presentation.out':
-(rerunfilecheck)             Before: 2D1C4038A0854D6142ECF7C98671C833;414
-(rerunfilecheck)             After:  C2406618D3A3A7E87F0D72CD1FF3C715;414.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 565.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 565.
+Package rerunfilecheck Info: File `Presentation.out' has not changed.
+(rerunfilecheck)             Checksum: D736A135EC93BD891353D378FF2ACF2A;414.
 Package logreq Info: Writing requests to 'Presentation.run.xml'.
 \openout1 = `Presentation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26017 strings out of 480994
- 500901 string characters out of 5912142
+ 26146 strings out of 480994
+ 505022 string characters out of 5912142
  959989 words of memory out of 5000000
- 40899 multiletter control sequences out of 15000+600000
+ 40997 multiletter control sequences out of 15000+600000
  547217 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  58i,20n,67p,817b,1618s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Outline0.7.1.26} has been referenced but does not
- exist, replaced by a fixed one
-
-</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
-/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb><
-/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
-sr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr
-/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/l
-ocal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/lo
-cal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/loc
-al/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/loca
-l/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/
-texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local
-/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local
-/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/
-texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
-exlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/tex
-live/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texli
-ve/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Presentation.pdf (27 pages, 1501670 bytes).
+</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
+></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb
+></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
+</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
+/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></u
+sr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr
+/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/
+local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/l
+ocal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/lo
+cal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/loca
+l/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/loc
+al/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/loc
+al/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/loca
+l/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local
+/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/t
+exlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/tex
+live/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on Presentation.pdf (35 pages, 1721163 bytes).
 PDF statistics:
- 374 PDF objects out of 1000 (max. 8388607)
- 297 compressed objects within 3 object streams
- 68 named destinations out of 1000 (max. 500000)
- 166 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 527 PDF objects out of 1000 (max. 8388607)
+ 408 compressed objects within 5 object streams
+ 83 named destinations out of 1000 (max. 500000)
+ 246 words of extra memory for PDF output out of 10000 (max. 10000000)
 
