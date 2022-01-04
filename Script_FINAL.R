@@ -11,12 +11,12 @@ ffn<-as.double(0)
 ffn<-as.double(0)
 sfn<-as.double(0)
 tfn<-as.double(0)
-J <- as.double(1)
+J <- as.double(-1)
 m <- as.double(0)
 
 energy <- as.double(0)
 energy_new <- as.double(0)
-dimension <-as.integer(20)
+dimension <-as.integer(10)
 energy_history<-data.frame(matrix(0, ncol = 6, nrow = 20000))
 colnames(energy_history)<-c("Step","Energy","Magnetization","Mag_sd","T-val","S_Entropy")
 
@@ -37,7 +37,7 @@ plot(Ising_lattice,breaks=c(-1,1),xaxt = "n",ylab='',xlab='',tick = FALSE)
 
 
   
-for (iter in 1:16500) {
+for (iter in 1:6000) {
   m <- 0
   energy <- 0
   energy_new <- 0
@@ -99,12 +99,12 @@ lattice_save<-lattice
 #  print(x)
 #  print(y)
 
-for (k in 0:3) {
-  for (j in 0:3) {
-    lattice[k+2+3,j+2+3]=+1
-    lattice[dimension-k-3,dimension-j-3]=-1
-  }
-}
+#for (k in 0:3) {
+#  for (j in 0:3) {
+#    lattice[k+2+3,j+2+3]=+1
+#    lattice[dimension-k-3,dimension-j-3]=-1
+#  }
+#}
 
 
   for (i in 1:dimension) {
@@ -146,7 +146,7 @@ for (k in 0:3) {
     p<-sample(1:10,1)/10
     delta<-abs(energy_new-energy)
     #print(delta)
-    q<-exp(-delta/2)
+    q<-exp(-delta/1)
     #print(c(p,q))
     if(p > q){
     

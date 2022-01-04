@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.3.28)  3 JAN 2022 10:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.3.28)  4 JAN 2022 10:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1202,7 +1202,7 @@ File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 Overfull \vbox (9.58597pt too high) detected at line 35
  []
 
-<Pic/Intro_pict.png, id=48, 685.56125pt x 272.01625pt>
+<Pic/Intro_pict.png, id=52, 685.56125pt x 272.01625pt>
 File: Pic/Intro_pict.png Graphic file (type png)
 <use Pic/Intro_pict.png>
 Package pdftex.def Info: Pic/Intro_pict.png  used on input line 35.
@@ -1399,11 +1399,57 @@ you left one out. Proceed, with fingers crossed.
 
 ] [21
 
+] [22
+
 ]
+<Pic/PBC.png, id=225, 315.579pt x 290.2845pt>
+File: Pic/PBC.png Graphic file (type png)
+<use Pic/PBC.png>
+Package pdftex.def Info: Pic/PBC.png  used on input line 390.
+(pdftex.def)             Requested size: 119.80283pt x 110.19852pt.
+<Pic/Torus.png, id=227, 936.49875pt x 697.60625pt>
+File: Pic/Torus.png Graphic file (type png)
+<use Pic/Torus.png>
+Package pdftex.def Info: Pic/Torus.png  used on input line 390.
+(pdftex.def)             Requested size: 119.80283pt x 89.23367pt.
+ [23
+
+ <./Pic/PBC.png> <./Pic/Torus.png>]
+<Pic/J-1_10_6000_T=0_ENERGY.pdf, id=238, 326.21875pt x 358.33875pt>
+File: Pic/J-1_10_6000_T=0_ENERGY.pdf Graphic file (type pdf)
+<use Pic/J-1_10_6000_T=0_ENERGY.pdf>
+Package pdftex.def Info: Pic/J-1_10_6000_T=0_ENERGY.pdf  used on input line 405
+.
+(pdftex.def)             Requested size: 171.14764pt x 188.0049pt.
+<Pic/J-1_10_6000_T=0_FINAL.pdf, id=239, 326.21875pt x 358.33875pt>
+File: Pic/J-1_10_6000_T=0_FINAL.pdf Graphic file (type pdf)
+<use Pic/J-1_10_6000_T=0_FINAL.pdf>
+Package pdftex.def Info: Pic/J-1_10_6000_T=0_FINAL.pdf  used on input line 405.
+
+(pdftex.def)             Requested size: 171.14764pt x 188.0049pt.
+ [24
+
+ <./Pic/J-1_10_6000_T=0_ENERGY.pdf> <./Pic/J-1_10_6000_T=0_FINAL.pdf>]
+<Pic/J-1_10_6000_T=0_Magnetization.pdf, id=257, 326.21875pt x 358.33875pt>
+File: Pic/J-1_10_6000_T=0_Magnetization.pdf Graphic file (type pdf)
+<use Pic/J-1_10_6000_T=0_Magnetization.pdf>
+Package pdftex.def Info: Pic/J-1_10_6000_T=0_Magnetization.pdf  used on input l
+ine 420.
+(pdftex.def)             Requested size: 171.14764pt x 188.0049pt.
+<Pic/J-1_10_6000_T=0_CORRELATION.pdf, id=258, 326.21875pt x 358.33875pt>
+File: Pic/J-1_10_6000_T=0_CORRELATION.pdf Graphic file (type pdf)
+<use Pic/J-1_10_6000_T=0_CORRELATION.pdf>
+Package pdftex.def Info: Pic/J-1_10_6000_T=0_CORRELATION.pdf  used on input lin
+e 420.
+(pdftex.def)             Requested size: 171.14764pt x 188.0049pt.
+ [25
+
+ <./Pic/J-1_10_6000_T=0_Magnetization.pdf> <./Pic/J-1_10_6000_T=0_CORRELATION.p
+df>]
 ! Misplaced alignment tab character &.
 <argument> ...rossman and Elif Ertekin, NSE C242 &
                                                    Phys C203, Spring 2008, U...
-l.363 \end{frame}
+l.427 \end{frame}
                  
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1412,22 +1458,22 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[22
+[26
 
  </usr/local/texlive/2019/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 368.
+(hyperref)                removing `math shift' on input line 432.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\phi' on input line 368.
+(hyperref)                removing `\phi' on input line 432.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 368.
+(hyperref)                removing `math shift' on input line 432.
 
-[23
+[27
 
 ]
 \tf@nav=\write7
@@ -1439,45 +1485,56 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 \tf@snm=\write9
 \openout9 = `Presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 380.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 380.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 444.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 444.
  (./Presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 380.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 380.
-Package rerunfilecheck Info: File `Presentation.out' has not changed.
-(rerunfilecheck)             Checksum: B25510547C8D5DA79B35430A6245335B;372.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 444.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 444.
+
+
+Package rerunfilecheck Warning: File `Presentation.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Presentation.out':
+(rerunfilecheck)             Before: 2D1C4038A0854D6142ECF7C98671C833;414
+(rerunfilecheck)             After:  C2406618D3A3A7E87F0D72CD1FF3C715;414.
 Package logreq Info: Writing requests to 'Presentation.run.xml'.
 \openout1 = `Presentation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 25955 strings out of 480994
- 499466 string characters out of 5912142
- 959952 words of memory out of 5000000
- 40855 multiletter control sequences out of 15000+600000
- 547049 words of font info for 76 fonts, out of 8000000 for 9000
+ 26017 strings out of 480994
+ 500901 string characters out of 5912142
+ 959989 words of memory out of 5000000
+ 40899 multiletter control sequences out of 15000+600000
+ 547217 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  58i,20n,67p,817b,1618s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
-></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb
-></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
-</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
-/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></u
-sr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr
-/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/
-local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/l
-ocal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/lo
-cal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/loca
-l/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/loc
-al/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/loc
-al/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/loca
-l/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local
-/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/t
-exlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on Presentation.pdf (23 pages, 213651 bytes).
+pdfTeX warning (dest): name{Outline0.7.1.26} has been referenced but does not
+ exist, replaced by a fixed one
+
+</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb><
+/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
+sr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr
+/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/l
+ocal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/lo
+cal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/loc
+al/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/loca
+l/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/
+texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local
+/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local
+/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/
+texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
+exlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/tex
+live/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texli
+ve/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on Presentation.pdf (27 pages, 1501670 bytes).
 PDF statistics:
- 305 PDF objects out of 1000 (max. 8388607)
- 245 compressed objects within 3 object streams
- 57 named destinations out of 1000 (max. 500000)
- 128 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 374 PDF objects out of 1000 (max. 8388607)
+ 297 compressed objects within 3 object streams
+ 68 named destinations out of 1000 (max. 500000)
+ 166 words of extra memory for PDF output out of 10000 (max. 10000000)
 

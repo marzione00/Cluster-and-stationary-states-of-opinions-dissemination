@@ -9,6 +9,8 @@
 \defcounter {refsection}{0}\relax 
 \beamer@sectionintoc {4}{Goals and methods}{20}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {6}{Supporting Info}{23}{0}{5}
+\beamer@sectionintoc {5}{Results}{22}{0}{5}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {6}{1}{ROC and $\phi $ factor}{23}{0}{5}
+\beamer@sectionintoc {7}{Supporting Info}{27}{0}{6}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {7}{1}{ROC and $\phi $ factor}{27}{0}{6}

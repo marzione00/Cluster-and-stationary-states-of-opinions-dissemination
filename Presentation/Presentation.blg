@@ -21,51 +21,51 @@ Database file #1: Presentation-blx.bib
 Database file #2: bibliography.bib
 I was expecting a `,' or a `}'---line 20 of file bibliography.bib
  : 
- : https://nanohub.org/resources/4579/download/05-01-08-forweb.pdf
+ : @misc{PBC,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Biblatex version: 3.13
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 4 entries,
+You've used 5 entries,
             6365 wiz_defined-function locations,
-            1205 strings with 9329 characters,
-and the built_in function-call counts, 15498 in all, are:
-= -- 1040
+            1208 strings with 9375 characters,
+and the built_in function-call counts, 16908 in all, are:
+= -- 1075
 > -- 311
-< -- 123
-+ -- 284
+< -- 138
++ -- 285
 - -- 95
-* -- 921
-:= -- 1494
+* -- 957
+:= -- 1519
 add.period$ -- 0
-call.type$ -- 4
-change.case$ -- 76
+call.type$ -- 5
+change.case$ -- 77
 chr.to.int$ -- 42
-cite$ -- 6
-duplicate$ -- 1383
-empty$ -- 1523
+cite$ -- 8
+duplicate$ -- 1583
+empty$ -- 1761
 format.name$ -- 116
-if$ -- 3451
+if$ -- 3798
 int.to.chr$ -- 0
-int.to.str$ -- 7
+int.to.str$ -- 8
 missing$ -- 0
-newline$ -- 77
+newline$ -- 81
 num.names$ -- 140
-pop$ -- 1052
+pop$ -- 1392
 preamble$ -- 1
 purify$ -- 82
 quote$ -- 0
-skip$ -- 635
+skip$ -- 697
 stack$ -- 0
-substring$ -- 1796
-swap$ -- 363
-text.length$ -- 90
-text.prefix$ -- 3
+substring$ -- 1797
+swap$ -- 410
+text.length$ -- 104
+text.prefix$ -- 4
 top$ -- 1
-type$ -- 124
+type$ -- 158
 warning$ -- 0
-while$ -- 184
+while$ -- 186
 width$ -- 0
-write$ -- 74
+write$ -- 77
 (There was 1 error message)
