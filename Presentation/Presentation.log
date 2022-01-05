@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.3.28)  5 JAN 2022 10:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.3.28)  5 JAN 2022 10:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1634,10 +1634,41 @@ Package pdftex.def Info: Pic/J+1_10_6000_T=8_Coherence.pdf  used on input line
 
  <./Pic/J+1_10_6000_T=8_Magnetization.pdf> <./Pic/J+1_10_6000_T=8_Coherence.pdf
 >]
+<Pic/J+1_10_2500_T=16_ENERGY.pdf, id=506, 326.21875pt x 358.33875pt>
+File: Pic/J+1_10_2500_T=16_ENERGY.pdf Graphic file (type pdf)
+<use Pic/J+1_10_2500_T=16_ENERGY.pdf>
+Package pdftex.def Info: Pic/J+1_10_2500_T=16_ENERGY.pdf  used on input line 62
+1.
+(pdftex.def)             Requested size: 171.14764pt x 188.0049pt.
+<Pic/J+1_10_2500_T=16_FINAL.pdf, id=507, 326.21875pt x 358.33875pt>
+File: Pic/J+1_10_2500_T=16_FINAL.pdf Graphic file (type pdf)
+<use Pic/J+1_10_2500_T=16_FINAL.pdf>
+Package pdftex.def Info: Pic/J+1_10_2500_T=16_FINAL.pdf  used on input line 621
+.
+(pdftex.def)             Requested size: 171.14764pt x 188.0049pt.
+ [38
+
+ <./Pic/J+1_10_2500_T=16_ENERGY.pdf> <./Pic/J+1_10_2500_T=16_FINAL.pdf>]
+<Pic/J+1_10_2500_T=16_Magnetization.pdf, id=525, 326.21875pt x 358.33875pt>
+File: Pic/J+1_10_2500_T=16_Magnetization.pdf Graphic file (type pdf)
+<use Pic/J+1_10_2500_T=16_Magnetization.pdf>
+Package pdftex.def Info: Pic/J+1_10_2500_T=16_Magnetization.pdf  used on input 
+line 636.
+(pdftex.def)             Requested size: 171.14764pt x 188.0049pt.
+<Pic/J+1_10_2500_T=16_Coherence.pdf, id=526, 326.21875pt x 358.33875pt>
+File: Pic/J+1_10_2500_T=16_Coherence.pdf Graphic file (type pdf)
+<use Pic/J+1_10_2500_T=16_Coherence.pdf>
+Package pdftex.def Info: Pic/J+1_10_2500_T=16_Coherence.pdf  used on input line
+ 636.
+(pdftex.def)             Requested size: 171.14764pt x 188.0049pt.
+ [39
+
+ <./Pic/J+1_10_2500_T=16_Magnetization.pdf> <./Pic/J+1_10_2500_T=16_Coherence.p
+df>]
 ! Misplaced alignment tab character &.
 <argument> ...rossman and Elif Ertekin, NSE C242 &
                                                    Phys C203, Spring 2008, U...
-l.612 \end{frame}
+l.644 \end{frame}
                  
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1646,22 +1677,22 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[38
+[40
 
  </usr/local/texlive/2019/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 617.
+(hyperref)                removing `math shift' on input line 649.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\phi' on input line 617.
+(hyperref)                removing `\phi' on input line 649.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 617.
+(hyperref)                removing `math shift' on input line 649.
 
-[39
+[41
 
 ]
 \tf@nav=\write7
@@ -1673,22 +1704,22 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 \tf@snm=\write9
 \openout9 = `Presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 629.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 629.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 661.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 661.
  (./Presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 629.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 629.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 661.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 661.
 Package rerunfilecheck Info: File `Presentation.out' has not changed.
-(rerunfilecheck)             Checksum: 39B9ED96F6EFF9965431BA61A805D6EE;481.
+(rerunfilecheck)             Checksum: D477604898058FFB8C228AF23D0A2EF0;481.
 Package logreq Info: Writing requests to 'Presentation.run.xml'.
 \openout1 = `Presentation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26214 strings out of 480994
- 507079 string characters out of 5912142
+ 26246 strings out of 480994
+ 508107 string characters out of 5912142
  959992 words of memory out of 5000000
- 41048 multiletter control sequences out of 15000+600000
+ 41072 multiletter control sequences out of 15000+600000
  547217 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  58i,20n,67p,817b,1618s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1709,10 +1740,10 @@ l/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local
 /texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/t
 exlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/tex
 live/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Presentation.pdf (39 pages, 1824174 bytes).
+Output written on Presentation.pdf (41 pages, 1881112 bytes).
 PDF statistics:
- 610 PDF objects out of 1000 (max. 8388607)
- 471 compressed objects within 5 object streams
- 92 named destinations out of 1000 (max. 500000)
- 294 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 647 PDF objects out of 1000 (max. 8388607)
+ 498 compressed objects within 5 object streams
+ 96 named destinations out of 1000 (max. 500000)
+ 314 words of extra memory for PDF output out of 10000 (max. 10000000)
 
