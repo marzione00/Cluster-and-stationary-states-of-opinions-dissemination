@@ -16,7 +16,7 @@ m <- as.double(0)
 
 energy <- as.double(0)
 energy_new <- as.double(0)
-dimension <-as.integer(10)
+dimension <-as.integer(20)
 energy_history<-data.frame(matrix(0, ncol = 6, nrow = 20000))
 colnames(energy_history)<-c("Step","Energy","Magnetization","Mag_sd","T-val","S_Entropy")
 
@@ -37,7 +37,7 @@ plot(Ising_lattice,breaks=c(-1,1),xaxt = "n",ylab='',xlab='',tick = FALSE)
 
 
   
-for (iter in 1:6000) {
+for (iter in 1:10000) {
   m <- 0
   energy <- 0
   energy_new <- 0
@@ -99,12 +99,20 @@ lattice_save<-lattice
 #  print(x)
 #  print(y)
 
-#for (k in 0:3) {
-#  for (j in 0:3) {
-#    lattice[k+2+3,j+2+3]=+1
-#    lattice[dimension-k-3,dimension-j-3]=-1
-#  }
-#}
+for (k in 1:3) {
+  for (j in 1:3) {
+    lattice[k+1,j+1]=+1
+  }
+}
+  
+  for (k in 1:3) {
+    for (j in 1:3) {
+      lattice[k+6,j+6]=-1
+    }
+  }
+  
+
+  #   lattice[dimension-k-3,dimension-j-3]=-2
 
 
   for (i in 1:dimension) {
@@ -146,7 +154,7 @@ lattice_save<-lattice
     p<-sample(1:10,1)/10
     delta<-abs(energy_new-energy)
     #print(delta)
-    q<-exp(-delta/16)
+    q<-exp(-delta/0.000001)
     #print(c(p,q))
     if(p > q){
     
@@ -244,7 +252,39 @@ ggplot(data= order_parameter,mapping = aes(x = Distance, y = CF))+geom_line(line
 
 
 
-save(Ising_lattice_FINAL,file="J-1_60_2500_T=8_lattice.rda")
-save(energy_history,file="J-1_60_2500_T=8_energy.rda")
+save(Ising_lattice_FINAL,file="J-1_60_2500_T=16_lattice.rda")
+save(energy_history,file="J-1_60_2500_T=16_energy.rda")
+
+
+
+
+
+lattice <- data.frame(replicate(dimension,replicate(dimension,0)))
+lattice_save <- data.frame(replicate(dimension,replicate(dimension,0)))
+#lattice[1:dimension,1:dimension] <- data.frame(replicate(dimension,sample(c(-1,1),dimension,rep=TRUE)))
+lattice[1:dimension,1:dimension] <- data.frame(matrix(2*rbinom(dimension*dimension,1,1/2)-1,ncol = dimension,nrow = dimension))
+
+
+
+
+
+for (k in 1:3) {
+  for (j in 1:3) {
+    lattice[k+1,j+1]=+2
+  }
+}
+
+for (k in 1:3) {
+  for (j in 1:3) {
+    lattice[k+6,j+6]=-2
+  }
+}
+
+
+
+Ising_lattice<-data.matrix(lattice)
+
+plot(Ising_lattice,breaks=c(-2,2),xaxt = "n",ylab='',xlab='',tick = FALSE)
+
 
   
