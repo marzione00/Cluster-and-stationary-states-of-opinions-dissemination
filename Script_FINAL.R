@@ -11,7 +11,7 @@ ffn<-as.double(0)
 ffn<-as.double(0)
 sfn<-as.double(0)
 tfn<-as.double(0)
-J <- as.double(-1)
+J <- as.double(1)
 m <- as.double(0)
 
 energy <- as.double(0)
@@ -146,7 +146,7 @@ lattice_save<-lattice
     p<-sample(1:10,1)/10
     delta<-abs(energy_new-energy)
     #print(delta)
-    q<-exp(-delta/30)
+    q<-exp(-delta/4)
     #print(c(p,q))
     if(p > q){
     

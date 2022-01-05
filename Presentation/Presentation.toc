@@ -13,6 +13,6 @@
 \defcounter {refsection}{0}\relax 
 \beamer@subsectionintoc {5}{1}{Antiferromagnetic}{24}{0}{5}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {7}{Supporting Info}{35}{0}{6}
+\beamer@sectionintoc {7}{Supporting Info}{39}{0}{6}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {7}{1}{ROC and $\phi $ factor}{35}{0}{6}
+\beamer@subsectionintoc {7}{1}{ROC and $\phi $ factor}{39}{0}{6}
