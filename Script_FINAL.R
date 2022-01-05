@@ -267,7 +267,6 @@ lattice[1:dimension,1:dimension] <- data.frame(matrix(2*rbinom(dimension*dimensi
 
 
 
-
 for (k in 1:3) {
   for (j in 1:3) {
     lattice[k+1,j+1]=+2
@@ -276,7 +275,7 @@ for (k in 1:3) {
 
 for (k in 1:3) {
   for (j in 1:3) {
-    lattice[k+6,j+6]=-2
+    lattice[k+dimension-4,j+dimension-4]=-2
   }
 }
 
