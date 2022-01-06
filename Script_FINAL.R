@@ -99,17 +99,18 @@ lattice_save<-lattice
 #  print(x)
 #  print(y)
 
-for (k in 1:3) {
-  for (j in 1:3) {
-    lattice[k+1,j+1]=+1
+  for (k in 1:3) {
+    for (j in 1:3) {
+      lattice[k+1,j+1]=+1
+    }
   }
-}
   
   for (k in 1:3) {
     for (j in 1:3) {
-      lattice[k+6,j+6]=-1
+      lattice[k+dimension-4,j+dimension-4]=-1
     }
   }
+  
   
 
   #   lattice[dimension-k-3,dimension-j-3]=-2
@@ -154,7 +155,7 @@ for (k in 1:3) {
     p<-sample(1:10,1)/10
     delta<-abs(energy_new-energy)
     #print(delta)
-    q<-exp(-delta/0.000001)
+    q<-exp(-delta/0.25)
     #print(c(p,q))
     if(p > q){
     

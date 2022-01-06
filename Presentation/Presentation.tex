@@ -129,7 +129,7 @@ a^{*}=\left\langle A(x) \right\rangle =\frac{1}{|\Gamma|}\int_{\Gamma}dx A(x)
 a^{*}=\frac{1}{|\Gamma|}\int_{\Gamma}dx_{s}dx_{R} A(x_{s})
 \end{equation}
 \begin{equation}
-\left\langle A(x) \right\rangle=\int dx_{s}dx_{r}A(x_{S})\delta(H^{(s)}
+\left\langle A(x) \right\rangle=\int dx_{s}dx_{r}A(x_{S})\delta(H^{(s)})
 \end{equation}
 \begin{equation}
 \left\langle A(x) \right\rangle=\frac{1}{|\Gamma|}\int dx_{s}dx_{r}A(x_{s})\delta(H^{S}(x_{s})+H^{R}(x_{R})-H^{S}(x_{S}))
@@ -175,7 +175,7 @@ Z=\int dx_{s}exp\left[  -\frac{H^{S}(x_{s})}{k_{b}T}  \right]
 \begin{frame}{Concepts of statistical mechanics: canonical ensemble\cite{peliti2011statistical} }
 
 \begin{equation}
-Z\simeq \exp\left[-\dfrac{E*-TS(E*)}{k_{b}T} \right]=\exp\left( - \frac{F}{k_{b}T}  \right)     
+Z\simeq \exp\left[-\dfrac{E^{*}-TS(E^{*})}{k_{b}T} \right]=\exp\left( - \frac{F}{k_{b}T}  \right)     
 \end{equation}
 
 \begin{equation}
@@ -236,23 +236,38 @@ In this way a statistical quantity the variance has been connected to a thermody
 \end{frame}
 
 
+\begin{frame} {Monte Carlo method \cite{peliti2011statistical}}
+
+ \begin{center}
+     \includegraphics[width=0.7\textwidth]{Pic/Pic_river.png}
+\end{center}
+
+\end{frame}
+
+
 \begin{frame}{Monte Carlo method \cite{peliti2011statistical}}
 
 
 \begin{itemize}
-\item We would calculate an integral of type $\left\langle  A\right\rangle = \int dxA(x)\rho(x)$ where $\rho$ is the probability distribution.
+\item We would calculate an integral of type $\left\langle  A\right\rangle = \int^{1}_{0} dxA(x)\rho(x)$ where $\rho$ is the probability distribution.
 
 
 
-\item Evaluate the integrand in N+1 points uniformly arranged between 0 and 1  $\left\langle  A\right\rangle = \frac{1}{N}\sum_{i=0}^{N}A(x_{i})\rho(x_{i})$
+\item Evaluate the integrand in N+1 points uniformly arranged between 0 and 1  $\left\langle  A\right\rangle \approx \frac{1}{N+1}\sum_{i=0}^{N}A(x_{i})\rho(x_{i})$
 
 
 
-\item A better convergence is reached if the $x_{i}$ density is proportional to $\rho(x)$
+\item A better convergence is reached if the $x_{i}$ density is proportional to $\rho(x)$.  In this case we have $\left\langle  A\right\rangle = 1/N\sum_{i=1}^{N}A(\textbf{x}_{i})$.  
 
 
 \end{itemize}
 \end{frame}
+
+
+
+
+
+
 
 \begin{frame}{Monte Carlo method \cite{peliti2011statistical}}
 
@@ -262,7 +277,7 @@ In this way a statistical quantity the variance has been connected to a thermody
 
 
 
-\item The independence conditions can be relaxed with the condition that the correlations between $x_{i} and x_{i+l}$ go to zero fairly rapidly as l grows 
+\item The independence conditions can be relaxed with the condition that the correlations between $x_{i}$ and $x_{i+l}$ go to zero fairly rapidly as l grows 
 
 
 \item The true dynamics is replaced with a fictitious stochastic dynamics.  The state at $t+1$ depends only from the state at $t$.  $\rightarrow$ Markov Chain 
@@ -662,6 +677,31 @@ In this way a statistical quantity the variance has been connected to a thermody
 \end{frame}
 
 
+\begin{frame}{Ferromagnetic with two centers T=0, 20$\times$20}
+    \begin{center}
+     \includegraphics[width=0.5\textwidth]{Pic/LATTICE20x20TWOCENTER.pdf}
+     \end{center}
+\end{frame}
+
+\begin{frame}{Ferromagnetic with two centers T=0,  20$\times$20}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+    \begin{center}
+     \includegraphics[width=\textwidth]{Pic/J+1_20_10000_T=0_FINAL.pdf}
+     \end{center}
+\end{column}
+\begin{column}{0.5\textwidth}
+    \begin{center}
+     \includegraphics[width=\textwidth]{Pic/J+1_20_10000_T=0_FINAL_2.pdf}
+     \end{center}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+
+
+
 
 
 \begin{frame}[t,allowframebreaks]
@@ -678,8 +718,6 @@ In this way a statistical quantity the variance has been connected to a thermody
 {\Huge ROC and $\phi$ factor}
 \end{center}
 \end{frame}
-
-
 
 
 
