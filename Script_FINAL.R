@@ -16,7 +16,7 @@ m <- as.double(0)
 
 energy <- as.double(0)
 energy_new <- as.double(0)
-dimension <-as.integer(20)
+dimension <-as.integer(60)
 energy_history<-data.frame(matrix(0, ncol = 6, nrow = 20000))
 colnames(energy_history)<-c("Step","Energy","Magnetization","Mag_sd","T-val","S_Entropy")
 
@@ -155,7 +155,7 @@ lattice_save<-lattice
     p<-sample(1:10,1)/10
     delta<-abs(energy_new-energy)
     #print(delta)
-    q<-exp(-delta/8)
+    q<-exp(-delta/0.000001)
     #print(c(p,q))
     if(p > q){
     
