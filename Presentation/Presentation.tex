@@ -66,6 +66,14 @@
 \end{center}
 \end{frame}
 
+
+\begin{frame}{Concepts of statistical mechanics: aim \cite{peliti2011statistical}}
+\begin{center}
+\textbf{Aim} To predict the macroscopic properties of systems on the basis of their microscopic structure. This connection between these two scales is performed with statistical methods
+\end{center}
+\end{frame}
+
+
 \begin{frame}{Concepts of statistical mechanics: entropy \cite{peliti2011statistical}}
 \textbf{Central problem of thermodynamics:} characterize the actual state of equilibrium among all virtual states  \\
 \textbf{Entropy postulate}: there exist a function S of the extensive variables $(X_{0},X_{1}...X_{r})$ called entropy,  that assumes the maximum value for a state of equilibrium among all vritual states and that possesses the following properties:
@@ -101,7 +109,7 @@ Image taken from \cite{PBC}
 \begin{frame}{Concepts of statistical mechanics: ensemble \cite{peliti2011statistical}}
 
 \begin{itemize}
-\item \textbf{Statistical ensemble}: a large number of virtual copies of a system ; each of them  is a possible state of the real system. It is the formalization of a repeated experiment proposed by Gibbs
+\item \textbf{Statistical ensemble}: a large number of virtual copies of a system ; each of them  is a possible state of the real system (epistemic probability) . It is the formalization of a repeated experiment proposed by Gibbs (empirical probability)
 \item\textbf{ Microcanical ensamble:} $p=1/W$ $W$ is the number of microstates
 \item \textbf{Canonical ensamble:} $p=\frac{1}{Z}\exp\left(-\frac{E}{kT}\right)$ where $Z=\sum_{i}\exp\left(\dfrac{-E_{i}}{k_{b}T}\right)$
 \end{itemize}
@@ -135,12 +143,16 @@ Z=\int dx_{s}exp\left[  -\frac{H^{S}(x_{s})}{k_{b}T}  \right]
 
 \begin{frame}{Ising model \cite{mackay2003information,slides}}
 \begin{itemize}
-\item An array of atoms that can take states $\pm 1$
-\item $E(\textbf{x},J,H)= - \left[\dfrac{1}{2}\sum_{m,n}J_{mn}x_{m}x_{n}+\sum_{n}Hx_{n} \right]$
-\item $P(x|\beta,J,H)=\frac{1}{Z(\beta,J,H)}\exp[-\beta E(x,J,H)]$
-\item $\beta=1/k_{b}T\quad Z(\beta,J,H)=\sum_{x}exp\left[-\beta E(x,J,H)\right]$
-\item $g(m)=\frac{\left\langle \sigma_{i}\sigma_{i+m}  \right\rangle - \left\langle \sigma_{i} \right\rangle \left\langle \sigma_{i+m} \right\rangle  }{1- \left\langle \sigma_{i} \right\rangle \left\langle \sigma_{i+m} \right\rangle }=\left\langle \sigma_{i}\sigma_{i+m}  \right\rangle $ if $H=0$
+\item An array of atoms that can take states $\pm 1$. The energy of the system is given by $E(\textbf{x},J,H)= - \left[\dfrac{1}{2}\sum_{m,n}J_{mn}x_{m}x_{n}+\sum_{n}Hx_{n} \right]$ where J is the coupling constant between two neighbour sites, and H is an external field. 
+\item The probability of the system to be in the state x is given by $p(x|\beta,J,H)=\frac{1}{Z(\beta,J,H)}\exp[-\beta E(x,J,H)]$ (canonical ensemble) where $\beta=1/k_{b}T\quad Z(\beta,J,H)=\sum_{x}exp\left[-\beta E(x,J,H)\right]$
+\item It is useful to characterize the order level of a lattice (macroscopic) with the (spatial) correlation functions (whose input are microscopic quantities). In particular, for the Ising model, these are given by the following expression (with $H=0$)
 \end{itemize}
+
+
+\begin{equation*}
+g(m)=\frac{\left\langle \sigma_{i}\sigma_{i+m}  \right\rangle - \left\langle \sigma_{i} \right\rangle \left\langle \sigma_{i+m} \right\rangle  }{1- \left\langle \sigma_{i} \right\rangle \left\langle \sigma_{i+m} \right\rangle }=\left\langle \sigma_{i}\sigma_{i+m}  \right\rangle $ 
+\end{equation*}
+
 \end{frame}
 
 \section{Numerical simulation}
@@ -157,11 +169,8 @@ Z=\int dx_{s}exp\left[  -\frac{H^{S}(x_{s})}{k_{b}T}  \right]
 
 \begin{frame}{Numerical simulation \cite{peliti2011statistical}}
 \begin{itemize}
-\item \textbf{Simulation} \textit{the evolution equations of a system are defined to such a detail that a computer can make its behaviour explicit, and one looks to see what takes place} 
-\item Numerical experiment 
-\item \textbf{Molecular dynamics:} the equation of motion are solved numerically PROS: information of both the dynamical and static properties of the system are explored 
+\item\textbf{Molecular dynamics:} the equation of motion are solved numerically PROS: information of both the dynamical and static properties of the system are explored 
 \item\textbf{Monte Carlo:} a fictitious evolution process of the system is solved in order to get the equilibrium distribution PROS  1) also the systems whose dynamics is not defined can be explored 2) a fictitious dynamics can be considered in order to reach the equilibrium faster 
-\item Molecular dynamics may provide a proof of statistical mechanics, Monte Carlo methods presuppose its validity
 \end{itemize}
 \end{frame}
 
@@ -171,7 +180,9 @@ Z=\int dx_{s}exp\left[  -\frac{H^{S}(x_{s})}{k_{b}T}  \right]
  \begin{center}
      \includegraphics[width=0.7\textwidth]{Pic/Pic_river.png}
 \end{center}
-
+ \begin{center}
+Image taken from \cite{frenkel2001understanding}
+\end{center}
 \end{frame}
 
 
@@ -194,12 +205,22 @@ Z=\int dx_{s}exp\left[  -\frac{H^{S}(x_{s})}{k_{b}T}  \right]
 \end{frame}
 
 
+\begin{frame}{Monte Carlo method \cite{frenkel2001understanding}}
+\begin{itemize}
+\item Lets consider the generic integral $I=\int^{b}_{a}dx\;f(x)$
+\item This can be recast in the following form  $I=\int^{1}_{0}dx\;w(x)\dfrac{f(x)}{w(x)}$
+\item If w(x) is the derivative of u(x) (non-decreasing,non negative) we have $I=\int^{1}_{0}du\;\dfrac{f[x(u)]}{w[x(u)]}$
+\item If one considers L random values of u uniformely distributed in the interval [0,1] we have $I\approx\dfrac{1}{L}\sum_{i=1}^{L}\dfrac{f[x(u)}{w[x(x)]}$
+ \item The choice of w is crucial since $\sigma=\dfrac{1}{L}\left[\left\langle\left(\dfrac{f}{w}\right)^{2}\right\rangle-  \left\langle\dfrac{f}{w}\right\rangle^{2}\right]$
+ \item Brute Force $f=10^{-260}$ and $\sigma=\dfrac{1}{Lf}$...is not a good idea
+ \item PROBLEM: we do not know the form of the denominator (if we know it we do not need the Monte Carlo method)
 
 
+\end{itemize}
+\end{frame}
 
 
-
-\begin{frame}{Monte Carlo method \cite{peliti2011statistical}}
+\begin{frame}{Monte Carlo method: Metropolis idea \cite{peliti2011statistical}}
 
 \begin{itemize}
 
@@ -216,7 +237,7 @@ Z=\int dx_{s}exp\left[  -\frac{H^{S}(x_{s})}{k_{b}T}  \right]
 
 \end{frame}
 
-\begin{frame}{Monte Carlo method \cite{peliti2011statistical}}
+\begin{frame}{Monte Carlo method: Metropolis idea \cite{peliti2011statistical}}
 
 \begin{itemize}
 
@@ -235,7 +256,7 @@ Z=\int dx_{s}exp\left[  -\frac{H^{S}(x_{s})}{k_{b}T}  \right]
 \end{frame}
 
 
-\begin{frame}{Monte Carlo method \cite{peliti2011statistical}}
+\begin{frame}{Monte Carlo method: Metropolis idea \cite{peliti2011statistical}}
 
 \begin{itemize}
 
@@ -652,7 +673,7 @@ Z=\int dx_{s}exp\left[  -\frac{H^{S}(x_{s})}{k_{b}T}  \right]
 \end{column}
 \begin{column}{0.5\textwidth}
     \begin{center}
-     \includegraphics[width=\textwidth]{Pic/J+1_20_10000_T=0.25_2.pdf}
+     \includegraphics[width=\textwidth]{Pic/J+1_60_10000_T=0_2_FINAL.pdf}
      \end{center}
 \end{column}
 \end{columns}

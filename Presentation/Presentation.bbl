@@ -21,6 +21,36 @@
     \field{howpublished}{\url{https://commons.wikimedia.org/wiki}}
   \endentry
 
+  \entry{frenkel2001understanding}{book}{}
+    \name{author}{2}{}{%
+      {{hash=FD}{%
+         family={Frenkel},
+         familyi={F\bibinitperiod},
+         given={Daan},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=SB}{%
+         family={Smit},
+         familyi={S\bibinitperiod},
+         given={Berend},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{FDSB1}
+    \strng{fullhash}{FDSB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{title}{Understanding molecular simulation: from algorithms to
+  applications}
+    \field{volume}{1}
+    \field{year}{2001}
+  \endentry
+
   \entry{slides}{misc}{}
     \field{labeltitlesource}{title}
     \field{sortinit}{J}

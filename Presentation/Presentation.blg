@@ -1,22 +1,25 @@
-This is BibTeX, Version 0.99d (TeX Live 2019)
+This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Presentation.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: biblatex.bst
-Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
-Reallocated global_strs (elt_size=200001) to 20 items from 10.
-Reallocated glb_str_end (elt_size=4) to 20 items from 10.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocating 'name_of_file' (item size: 1) to 17 items.
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: Presentation-blx.bib
 Database file #2: bibliography.bib
 I was expecting a `,' or a `}'---line 20 of file bibliography.bib
@@ -24,48 +27,48 @@ I was expecting a `,' or a `}'---line 20 of file bibliography.bib
  : @misc{PBC,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Biblatex version: 3.13
-Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 5 entries,
-            6365 wiz_defined-function locations,
-            1208 strings with 9375 characters,
-and the built_in function-call counts, 16908 in all, are:
-= -- 1075
-> -- 311
-< -- 138
-+ -- 285
-- -- 95
-* -- 957
-:= -- 1519
+Biblatex version: 3.16
+Reallocating 'wiz_functions' (item size: 4) to 9000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+You've used 6 entries,
+            6393 wiz_defined-function locations,
+            1221 strings with 9578 characters,
+and the built_in function-call counts, 22001 in all, are:
+= -- 1396
+> -- 429
+< -- 175
++ -- 410
+- -- 138
+* -- 1313
+:= -- 2021
 add.period$ -- 0
-call.type$ -- 5
-change.case$ -- 77
+call.type$ -- 6
+change.case$ -- 96
 chr.to.int$ -- 42
-cite$ -- 8
-duplicate$ -- 1583
-empty$ -- 1761
-format.name$ -- 116
-if$ -- 3798
+cite$ -- 10
+duplicate$ -- 2180
+empty$ -- 2223
+format.name$ -- 184
+if$ -- 4823
 int.to.chr$ -- 0
-int.to.str$ -- 8
+int.to.str$ -- 11
 missing$ -- 0
-newline$ -- 81
-num.names$ -- 140
-pop$ -- 1392
+newline$ -- 110
+num.names$ -- 192
+pop$ -- 1733
 preamble$ -- 1
-purify$ -- 82
+purify$ -- 106
 quote$ -- 0
-skip$ -- 697
+skip$ -- 903
 stack$ -- 0
-substring$ -- 1797
-swap$ -- 410
-text.length$ -- 104
-text.prefix$ -- 4
+substring$ -- 2248
+swap$ -- 555
+text.length$ -- 134
+text.prefix$ -- 5
 top$ -- 1
-type$ -- 158
+type$ -- 192
 warning$ -- 0
-while$ -- 186
+while$ -- 259
 width$ -- 0
-write$ -- 77
+write$ -- 105
 (There was 1 error message)

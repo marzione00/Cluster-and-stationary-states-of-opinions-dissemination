@@ -155,7 +155,7 @@ lattice_save<-lattice
     p<-sample(1:10,1)/10
     delta<-abs(energy_new-energy)
     #print(delta)
-    q<-exp(-delta/0.000001)
+    q<-exp(-delta/4)
     #print(c(p,q))
     if(p > q){
     

@@ -3,16 +3,16 @@
 \defcounter {refsection}{0}\relax 
 \beamer@sectionintoc {1}{Statistical Mechanics}{3}{0}{1}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {2}{Ising model}{7}{0}{2}
+\beamer@sectionintoc {2}{Ising model}{8}{0}{2}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {3}{Numerical simulation}{9}{0}{3}
+\beamer@sectionintoc {3}{Numerical simulation}{10}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {4}{Goals and methods}{18}{0}{4}
+\beamer@sectionintoc {4}{Goals and methods}{20}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {5}{Results}{20}{0}{5}
+\beamer@sectionintoc {5}{Results}{22}{0}{5}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {5}{1}{Antiferromagnetic}{22}{0}{5}
+\beamer@subsectionintoc {5}{1}{Antiferromagnetic}{24}{0}{5}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {5}{2}{Ferromagnetic}{30}{0}{5}
+\beamer@subsectionintoc {5}{2}{Ferromagnetic}{32}{0}{5}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {7}{Supporting Info}{46}{0}{6}
+\beamer@sectionintoc {7}{Supporting Info}{48}{0}{6}
