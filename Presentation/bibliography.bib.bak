@@ -1,123 +1,25 @@
-@book{murray1999solar,
-  title={Solar system dynamics},
-  author={Murray, Carl D and Dermott, Stanley F},
-  year={1999},
+@book{peliti2011statistical,
+  title={Statistical mechanics in a nutshell},
+  author={Peliti, Luca},
+  year={2011},
+  publisher={Princeton University Press}
+}
+
+@book{mackay2003information,
+  title={Information theory, inference and learning algorithms},
+  author={MacKay, David JC and Mac Kay, David JC},
+  year={2003},
   publisher={Cambridge university press}
 }
 
-@misc{nasa_classification,
-howpublished = {\url{https://cneos.jpl.nasa.gov/about/neo_groups.html}}
+@misc{slides,
+  title = {{Jeffrey C. Grossman and Elif Ertekin, NSE C242 & Phys C203, Spring 2008, U.C. Berkeley},
+howpublished = {\url{https://nanohub.org/resources/4579/download/05-01-08-forweb.pdf}},
 }
 
-@misc{kaggle_dataset,
-howpublished = {\url{https://www.kaggle.com/shrutimehta/nasa-asteroids-classification}}
+@misc{PBC,
+howpublished = {\url{https://commons.wikimedia.org/wiki}},
 }
 
-@misc{cneos+nasa,
-howpublished = {\url{https://cneos.jpl.nasa.gov/}}
-}
 
-@misc{ROC_fig,
-howpublished = {\url{https://towardsdatascience.com/understanding-auc-roc-curve-68b2303cc9c5}}
-}
 
-@article{le2008factominer,
-  title={FactoMineR: an R package for multivariate analysis},
-  author={L{\^e}, S{\'e}bastien and Josse, Julie and Husson, Fran{\c{c}}ois},
-  journal={Journal of statistical software},
-  volume={25},
-  number={1},
-  pages={1--18},
-  year={2008}
-}
-
-@article{kratzer2018varrank,
-  title={varrank: an R package for variable ranking based on mutual information with applications to observed systemic datasets},
-  author={Kratzer, Gilles and Furrer, Reinhard},
-  journal={arXiv preprint arXiv:1804.07134},
-  year={2018}
-}
-
-@misc{glasso,
-howpublished = {\url{https://cran.r-project.org/web/packages/glasso/glasso.pdf}}
-}
-
-@article{haslbeck2015mgm,
-  title={mgm: Estimating time-varying mixed graphical models in high-dimensional data},
-  author={Haslbeck, Jonas and Waldorp, Lourens J},
-  journal={arXiv preprint arXiv:1510.06871},
-  year={2015}
-}
-  
-@article{de2009high,
-  title={High-dimensional graphical model search with graphd R package},
-  author={de Abreu, Gabriel CG and Labouriau, Rodrigo and Edwards, David},
-  journal={arXiv preprint arXiv:0909.1234},
-  year={2009}
-}
-
- @Book{grim,
-    title = {Graphical Models with {R}},
-    author = {S{\o}ren H{\o}jsgaard and David Edwards and Steffen
-      Lauritzen},
-    publisher = {Springer},
-    address = {New York},
-    year = {2012},
-    note = {ISBN 978-1-4614-2298-3},
-    doi = {10.1007/978-1-4614-2299-0},
-  }
-  
-  @Article{rfor,
-    title = {Classification and Regression by randomForest},
-    author = {Andy Liaw and Matthew Wiener},
-    journal = {R News},
-    year = {2002},
-    volume = {2},
-    number = {3},
-    pages = {18-22},
-    url = {https://CRAN.R-project.org/doc/Rnews/},
-  }
-  
-  @article{dimitriadou2008misc,
-  title={Misc functions of the Department of Statistics (e1071), TU Wien},
-  author={Dimitriadou, Evgenia and Hornik, Kurt and Leisch, Friedrich and Meyer, David and Weingessel, Andreas},
-  journal={R package},
-  volume={1},
-  pages={5--24},
-  year={2008}
-}
-
-    @Book{MASS,
-    title = {Modern Applied Statistics with S},
-    author = {W. N. Venables and B. D. Ripley},
-    publisher = {Springer},
-    edition = {Fourth},
-    address = {New York},
-    year = {2002},
-    note = {ISBN 0-387-95457-0},
-    url = {https://www.stats.ox.ac.uk/pub/MASS4/},
-  }
-  
-  
-    @Manual{stats,
-    title = {R: A Language and Environment for Statistical Computing},
-    author = {{R Core Team}},
-    organization = {R Foundation for Statistical Computing},
-    address = {Vienna, Austria},
-    year = {2013},
-    note = {{ISBN} 3-900051-07-0},
-    url = {http://www.R-project.org/},
-  }
-  
-  
-  @book{tarski1953undecidable,
-  title={Undecidable theories},
-  author={Tarski, Alfred and Mostowski, Andrzej and Robinson, Raphael Mitchel},
-  volume={13},
-  year={1953},
-  publisher={Elsevier}
-}
-
-@misc{physics-reality,
-howpublished = {\url{https://www.amacad.org/publication/physics-reality}}
-}
