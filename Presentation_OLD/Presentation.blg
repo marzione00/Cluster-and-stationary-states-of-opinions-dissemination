@@ -1,0 +1,74 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Presentation.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: biblatex.bst
+Reallocating 'name_of_file' (item size: 1) to 17 items.
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Database file #1: Presentation-blx.bib
+Database file #2: bibliography.bib
+I was expecting a `,' or a `}'---line 20 of file bibliography.bib
+ : 
+ : @misc{PBC,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Biblatex version: 3.16
+Reallocating 'wiz_functions' (item size: 4) to 9000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+You've used 6 entries,
+            6393 wiz_defined-function locations,
+            1221 strings with 9578 characters,
+and the built_in function-call counts, 22001 in all, are:
+= -- 1396
+> -- 429
+< -- 175
++ -- 410
+- -- 138
+* -- 1313
+:= -- 2021
+add.period$ -- 0
+call.type$ -- 6
+change.case$ -- 96
+chr.to.int$ -- 42
+cite$ -- 10
+duplicate$ -- 2180
+empty$ -- 2223
+format.name$ -- 184
+if$ -- 4823
+int.to.chr$ -- 0
+int.to.str$ -- 11
+missing$ -- 0
+newline$ -- 110
+num.names$ -- 192
+pop$ -- 1733
+preamble$ -- 1
+purify$ -- 106
+quote$ -- 0
+skip$ -- 903
+stack$ -- 0
+substring$ -- 2248
+swap$ -- 555
+text.length$ -- 134
+text.prefix$ -- 5
+top$ -- 1
+type$ -- 192
+warning$ -- 0
+while$ -- 259
+width$ -- 0
+write$ -- 105
+(There was 1 error message)

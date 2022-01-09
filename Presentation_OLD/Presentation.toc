@@ -14,3 +14,5 @@
 \beamer@subsectionintoc {5}{1}{Antiferromagnetic}{22}{0}{5}
 \defcounter {refsection}{0}\relax 
 \beamer@subsectionintoc {5}{2}{Ferromagnetic}{30}{0}{5}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {7}{Supporting Info}{47}{0}{6}
