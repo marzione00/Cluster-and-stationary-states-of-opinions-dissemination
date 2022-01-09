@@ -72,7 +72,7 @@
 \end{center}
 \end{frame}
 
-\begin{frame}{Concepts of statistical mechanics: aim \cite{peliti2011statistical}}
+\begin{frame}{Concepts of statistical mechanics: entropy and temperature \cite{frenkel2001understanding}}
 \begin{itemize}
 \item Consider a system with total energy E that is composed by two subsystems (with energy $E_{1}$ and $E_{2}$ that can exchange only energy - canonical ensemble) 
 \item There are many way in which the energy can distribute in the two systems with the constrain $E=E_{1}+E_{2}$
@@ -91,7 +91,7 @@
 \end{frame}
 
 
-\begin{frame}{Concepts of statistical mechanics: aim \cite{peliti2011statistical}}
+\begin{frame}{Concepts of statistical mechanics: entropy and temperature \cite{frenkel2001understanding}}
 \begin{itemize}
 \item The previous statement is equal to the following one
 \end{itemize}
@@ -110,26 +110,39 @@
 \begin{equation*}
 S(N,V,E)\equiv k_{b}ln\Omega(N,V,E)
 \end{equation*}
-We have the definition of termodynamic temperature 
+We have the definition of thermodynamic temperature 
 \begin{equation*}
 \frac{1}{T}=\left( \dfrac{\partial S}{\partial E} \right)_{V,N}
 \end{equation*}
 \begin{equation*}
 \equiv\dfrac{1}{k_{b}T}
 \end{equation*}
-So 
+\end{frame}
+
+\begin{frame}{Concepts of statistical mechanics: entropy and temperature \cite{frenkel2001understanding}}
+\begin{itemize}
+\item So we have proof the at the equilibrium, the configuration with maximum entropy, the temperature of the two sub-systems is equal 
+\end{itemize}
 \begin{equation*}
 T_{1}=T_{2}
 \end{equation*}
-
 \end{frame}
 
 
 
-\begin{frame}{Concepts of statistical mechanics: aim \cite{peliti2011statistical}}
+\begin{frame}{Concepts of statistical mechanics: entropy and temperature \cite{frenkel2001understanding}}
+\begin{itemize}
+\item Given that the system 1 is in the state $E_{1}$ the second system have energy $E-E_{i}$. Therefore the degeneracy of the second system is equal to $\Omega(E-E_{i})$
+\item Thus the probability of 1 to be in the state i will be 
+\end{itemize}
+
 \begin{equation*}
-P_{i}=\dfrac{\Omega(E-E_{i}}{\sum_{j}\Omega(E-E_{j})}
+P_{i}=\dfrac{\Omega(E-E_{i})}{\sum_{j}\Omega(E-E_{j})}
 \end{equation*}
+\begin{itemize}
+
+\item Expanding around $E_{i}=0$
+\end{itemize}
 \begin{equation*}
 \ln\Omega_{B}(E-E_{i})=\ln\Omega_{B}(E)-E_{i}\frac{\partial\log\Omega_{B}(E)}{\partial E}+O(1/E)
 \end{equation*}
@@ -144,7 +157,7 @@ P_{i}=\dfrac{\exp(-E_{i}/k_{b}T)}{\sum_{j}\exp(-E_{j}/k_{b}T)}
 \end{frame}
 
 
-\begin{frame}{Concepts of statistical mechanics: aim \cite{peliti2011statistical}}
+\begin{frame}{Concepts of statistical mechanics: phase portrait \cite{peliti2011statistical}}
  \begin{center}
      \includegraphics[width=0.7\textwidth]{Pic/Pendulum_phase_portrait_illustration.png}
 \end{center}
