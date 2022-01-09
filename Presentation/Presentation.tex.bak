@@ -66,33 +66,85 @@
 \end{center}
 \end{frame}
 
-
 \begin{frame}{Concepts of statistical mechanics: aim \cite{peliti2011statistical}}
 \begin{center}
 \textbf{Aim} To predict the macroscopic properties of systems on the basis of their microscopic structure. This connection between these two scales is performed with statistical methods
 \end{center}
 \end{frame}
 
-
-\begin{frame}{Concepts of statistical mechanics: entropy \cite{peliti2011statistical}}
-\textbf{Central problem of thermodynamics:} characterize the actual state of equilibrium among all virtual states  \\
-\textbf{Entropy postulate}: there exist a function S of the extensive variables $(X_{0},X_{1}...X_{r})$ called entropy,  that assumes the maximum value for a state of equilibrium among all vritual states and that possesses the following properties:
+\begin{frame}{Concepts of statistical mechanics: aim \cite{peliti2011statistical}}
 \begin{itemize}
-\item Extensivity $S^{(1\cup2)}=S^{1}+S^{2}$
-\item Convexity $S((1-\alpha)X^{1}+\alpha X^{2}) \geq (1-\alpha)S(x^{1})+\alpha S(X^{2})$
-\item Monotonicity $\dfrac{\partial S}{\partial E}|_{X_{1}...X_{r}}=\frac{1}{T}>0$
+\item Consider a system with total energy E that is composed by two subsystems (with energy $E_{1}$ and $E_{2}$ that can exchange only energy - canonical ensemble) 
+\item There are many way in which the energy can distribute in the two systems with the constrain $E=E_{1}+E_{2}$
+\item In particular given the energy $E_{1}$ the total number of degenerate states is $\Omega_{1}(E_{1})\times\Omega_{1}(E_{2}) $
+\item We would have a measure of the degeneracy of the system that is additive, therefore 
 \end{itemize}
-\textbf The equilibrium state corresponds to the maximum entropy compatible with the constrains
+\begin{equation*}
+\ln\Omega(E_{1},E-E_{1})=\ln\Omega_{1}(E_{1})+\ln\Omega_{2}(E-E_{1})
+\end{equation*}
+\begin{itemize}
+\item Every energy state of the total system is equal likely. Therefore the most probable state is the one that maximizes $\ln \Omega(E_{1},E-E_{1})$
+\end{itemize}
+\begin{equation*}
+\left( \frac{\partial \ln \Omega(E_{1},E-E_{1})}{\partial E_{1}} \right)_{N,V,E}=0
+\end{equation*}
+\end{frame}
+
+
+\begin{frame}{Concepts of statistical mechanics: aim \cite{peliti2011statistical}}
+\begin{itemize}
+\item The previous statement is equal to the following one
+\end{itemize}
+\begin{equation*}
+\left( \frac{\partial \ln \Omega(E_{1})}{\partial E_{1}} \right)_{N1,V1}=\left( \frac{\partial \ln \Omega(E_{2})}{\partial E_{2}} \right)_{N2,V2}
+\end{equation*}
+\begin{itemize}
+\item Introducing the following notation
+\end{itemize}
+\begin{equation*}
+\beta\equiv\left( \frac{\partial \ln \Omega(E_{1})}{\partial E_{1}} \right)_{N1,V1}
+\end{equation*}
+\begin{itemize}
+\item And introducing the concept of entropy 
+\end{itemize}
+\begin{equation*}
+S(N,V,E)\equiv k_{b}ln\Omega(N,V,E)
+\end{equation*}
+We have the definition of termodynamic temperature 
+\begin{equation*}
+\frac{1}{T}=\left( \dfrac{\partial S}{\partial E} \right)_{V,N}
+\end{equation*}
+\begin{equation*}
+\equiv\dfrac{1}{k_{b}T}
+\end{equation*}
+So 
+\begin{equation*}
+T_{1}=T_{2}
+\end{equation*}
 
 \end{frame}
 
 
-\begin{frame}{Concepts of statistical mechanics: entropy \cite{peliti2011statistical}}
 
-\begin{itemize}
-\item \textbf{Fundamental postulate of statistical mechanics} $S=k_{b}\ln|\Gamma|$ Where S is the thermodynamic entropy,  $k_{b}$ is Boltzmann constant and $|\Gamma|$ the volume in the phase space
-\end{itemize}
+\begin{frame}{Concepts of statistical mechanics: aim \cite{peliti2011statistical}}
+\begin{equation*}
+P_{i}=\dfrac{\Omega(E-E_{i}}{\sum_{j}\Omega(E-E_{j})}
+\end{equation*}
+\begin{equation*}
+\ln\Omega_{B}(E-E_{i})=\ln\Omega_{B}(E)-E_{i}\frac{\partial\log\Omega_{B}(E)}{\partial E}+O(1/E)
+\end{equation*}
+\begin{equation*}
+\ln\Omega_{B}(E-E_{i})=\ln\Omega_{B}(E)-\dfrac{E_{i}}{k_{b}T}+O(1/E)
+\end{equation*}
+\begin{equation*}
+P_{i}=\dfrac{\exp(-E_{i}/k_{b}T)}{\sum_{j}\exp(-E_{j}/k_{b}T)}
+\end{equation*}
 
+
+\end{frame}
+
+
+\begin{frame}{Concepts of statistical mechanics: aim \cite{peliti2011statistical}}
  \begin{center}
      \includegraphics[width=0.7\textwidth]{Pic/Pendulum_phase_portrait_illustration.png}
 \end{center}
@@ -687,9 +739,27 @@ Therefore the overall transition probabilities are given by
 \end{frame}
 
 
+\begin{frame}{Ferromagnetic with four centers T=0,  60$\times$60}
+    \begin{center}
+     \includegraphics[width=0.6\textwidth]{Pic/J+1_60_10000_four_center_T=0_START.pdf}
+     \end{center}
+\end{frame}
 
 
-
+\begin{frame}{Ferromagnetic with two centers T=0,  60$\times$60}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+    \begin{center}
+     \includegraphics[width=\textwidth]{Pic/J+1_60_10000_four_center_T=0_FINAL.pdf}
+     \end{center}
+\end{column}
+\begin{column}{0.5\textwidth}
+    \begin{center}
+     \includegraphics[width=\textwidth]{Pic/J+1_60_10000_T=0_2_FINAL.pdf}
+     \end{center}
+\end{column}
+\end{columns}
+\end{frame}
 
 
 
@@ -703,5 +773,26 @@ Therefore the overall transition probabilities are given by
 \section{Supporting Info}
 
 
+
+
+\begin{frame}{Concepts of statistical mechanics: entropy \cite{peliti2011statistical}}
+\textbf{Central problem of thermodynamics:} characterize the actual state of equilibrium among all virtual states  \\
+\textbf{Entropy postulate}: there exist a function S of the extensive variables $(X_{0},X_{1}...X_{r})$ called entropy,  that assumes the maximum value for a state of equilibrium among all vritual states and that possesses the following properties:
+\begin{itemize}
+\item Extensivity $S^{(1\cup2)}=S^{1}+S^{2}$
+\item Convexity $S((1-\alpha)X^{1}+\alpha X^{2}) \geq (1-\alpha)S(x^{1})+\alpha S(X^{2})$
+\item Monotonicity $\dfrac{\partial S}{\partial E}|_{X_{1}...X_{r}}=\frac{1}{T}>0$
+\end{itemize}
+\textbf The equilibrium state corresponds to the maximum entropy compatible with the constrains
+
+\end{frame}
+
+
+\begin{frame}{Concepts of statistical mechanics: entropy \cite{peliti2011statistical}}
+
+\begin{itemize}
+\item \textbf{Fundamental postulate of statistical mechanics} $S=k_{b}\ln|\Gamma|$ Where S is the thermodynamic entropy,  $k_{b}$ is Boltzmann constant and $|\Gamma|$ the volume in the phase space
+\end{itemize}
+\end{frame}
 
 \end{document}
