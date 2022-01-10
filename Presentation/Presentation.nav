@@ -111,21 +111,21 @@
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {22}{22}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@sectionpages {21}{22}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {21}{22}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\sectionentry {5}{Results}{23}{Results}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{0}{1}{23/23}{}{0}}
+\headcommand {\slideentry {4}{0}{3}{23/23}{}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {23}{23}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{0}{2}{24/24}{}{0}}
+\headcommand {\beamer@sectionpages {21}{23}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {21}{23}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\sectionentry {5}{Results}{24}{Results}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {5}{0}{1}{24/24}{}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {24}{24}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {23}{24}}
+\headcommand {\beamer@subsectionpages {24}{24}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@subsectionentry {0}{5}{1}{25}{Antiferromagnetic}}
 \defcounter {refsection}{0}\relax 
@@ -149,115 +149,81 @@
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {29}{29}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{1}{6}{30/30}{Antiferromagnetic}{0}}
+\headcommand {\beamer@subsectionpages {25}{29}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionentry {0}{5}{2}{30}{Ferromagnetic}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {5}{2}{1}{30/30}{Ferromagnetic}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {30}{30}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{1}{7}{31/31}{Antiferromagnetic}{0}}
+\headcommand {\slideentry {5}{2}{2}{31/31}{Ferromagnetic}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {31}{31}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{1}{8}{32/32}{Antiferromagnetic}{0}}
+\headcommand {\slideentry {5}{2}{3}{32/32}{Ferromagnetic}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {32}{32}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {25}{32}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{5}{2}{33}{Ferromagnetic}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{2}{1}{33/33}{Ferromagnetic}{0}}
+\headcommand {\slideentry {5}{2}{4}{33/33}{Ferromagnetic}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {33}{33}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{2}{2}{34/34}{Ferromagnetic}{0}}
+\headcommand {\slideentry {5}{2}{5}{34/34}{Ferromagnetic}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {34}{34}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{2}{3}{35/35}{Ferromagnetic}{0}}
+\headcommand {\slideentry {5}{2}{6}{35/35}{Ferromagnetic}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {35}{35}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{2}{4}{36/36}{Ferromagnetic}{0}}
+\headcommand {\slideentry {5}{2}{7}{36/36}{Ferromagnetic}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {36}{36}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{2}{5}{37/37}{Ferromagnetic}{0}}
+\headcommand {\slideentry {5}{2}{8}{37/37}{Ferromagnetic}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {37}{37}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{2}{6}{38/38}{Ferromagnetic}{0}}
+\headcommand {\slideentry {5}{2}{9}{38/38}{Ferromagnetic}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {38}{38}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{2}{7}{39/39}{Ferromagnetic}{0}}
+\headcommand {\slideentry {5}{2}{10}{39/39}{Ferromagnetic}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {39}{39}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{2}{8}{40/40}{Ferromagnetic}{0}}
+\headcommand {\slideentry {5}{2}{11}{40/40}{Ferromagnetic}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {40}{40}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{2}{9}{41/41}{Ferromagnetic}{0}}
+\headcommand {\slideentry {5}{2}{12}{41/41}{Ferromagnetic}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {41}{41}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{2}{10}{42/42}{Ferromagnetic}{0}}
+\headcommand {\slideentry {5}{2}{13}{42/42}{Ferromagnetic}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {42}{42}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{2}{11}{43/43}{Ferromagnetic}{0}}
+\headcommand {\slideentry {5}{2}{14}{43/43}{Ferromagnetic}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {43}{43}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{2}{12}{44/44}{Ferromagnetic}{0}}
+\headcommand {\slideentry {5}{2}{15}{44/44}{Ferromagnetic}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {44}{44}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{2}{13}{45/45}{Ferromagnetic}{0}}
+\headcommand {\beamer@sectionpages {24}{44}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {30}{44}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\sectionentry {6}{References}{45}{References}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{0}{0}{45/45}{Ferromagnetic}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {45}{45}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{2}{14}{46/46}{Ferromagnetic}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {46}{46}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{2}{15}{47/47}{Ferromagnetic}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {47}{47}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{2}{16}{48/48}{Ferromagnetic}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {48}{48}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{2}{17}{49/49}{Ferromagnetic}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {49}{49}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@sectionpages {23}{49}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {33}{49}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\sectionentry {6}{References}{50}{References}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {6}{0}{0}{50/50}{Ferromagnetic}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {50}{50}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@sectionpages {23}{50}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {33}{50}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\sectionentry {7}{Supporting Info}{51}{Supporting Info}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {7}{0}{1}{51/51}{}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {51}{51}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {7}{0}{2}{52/52}{}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {52}{52}}
-\headcommand {\beamer@partpages {1}{52}}
-\headcommand {\beamer@subsectionpages {51}{52}}
-\headcommand {\beamer@sectionpages {51}{52}}
-\headcommand {\beamer@documentpages {52}}
-\headcommand {\gdef \inserttotalframenumber {52}}
+\headcommand {\beamer@partpages {1}{45}}
+\headcommand {\beamer@subsectionpages {46}{45}}
+\headcommand {\beamer@sectionpages {46}{45}}
+\headcommand {\beamer@documentpages {45}}
+\headcommand {\gdef \inserttotalframenumber {45}}

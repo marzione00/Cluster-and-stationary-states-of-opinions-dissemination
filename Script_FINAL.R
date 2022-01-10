@@ -101,25 +101,25 @@ lattice_save<-lattice
 
   for (k in 1:3) {
     for (j in 1:3) {
-      lattice[k+1,j+1]=+2
+      lattice[k+1,j+1]=+1
     }
   }
   
   for (k in 1:3) {
     for (j in 1:3) {
-      lattice[k+dimension-4,j+1]=-2
+      lattice[k+dimension-4,j+1]=-1
     }
   }
   
   for (k in 1:3) {
     for (j in 1:3) {
-      lattice[k+1,j+dimension-4]=-2
+      lattice[k+1,j+dimension-4]=-1
     }
   }
   
   for (k in 1:3) {
     for (j in 1:3) {
-      lattice[k+dimension-4,j+dimension-4]=+2
+      lattice[k+dimension-4,j+dimension-4]=+1
     }
   }
   

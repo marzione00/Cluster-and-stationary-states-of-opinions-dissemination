@@ -361,14 +361,6 @@ Therefore the overall transition probabilities are given by
 \end{itemize}
 \end{frame}
 
-\section{Results}
-
-\begin{frame}
-\begin{center}
-{\Huge Results}
-\end{center}
-\end{frame}
-
 \begin{frame}{Simulation features}
 \begin{itemize}
 \item 10x10 lattice 
@@ -397,6 +389,16 @@ Therefore the overall transition probabilities are given by
 \end{columns}
 \end{frame}
 
+\section{Results}
+
+\begin{frame}
+\begin{center}
+{\Huge Results}
+\end{center}
+\end{frame}
+
+
+
 
 \subsection{Antiferromagnetic}
 
@@ -405,247 +407,183 @@ Therefore the overall transition probabilities are given by
 \begin{columns}
 \begin{column}{0.5\textwidth}
     \begin{center}
-     \includegraphics[width=\textwidth]{Pic/J-1_10_6000_T=0_ENERGY.pdf}
+     \includegraphics[width=0.5\textwidth]{Pic/J-1_10_6000_T=0_ENERGY.pdf}
+     \end{center}
+         \begin{center}
+     \includegraphics[width=0.5\textwidth]{Pic/J-1_10_6000_T=0_Magnetization.pdf}
      \end{center}
 \end{column}
 \begin{column}{0.5\textwidth}
     \begin{center}
-     \includegraphics[width=\textwidth]{Pic/J-1_10_6000_T=0_FINAL.pdf}
+     \includegraphics[width=0.5\textwidth]{Pic/J-1_10_6000_T=0_FINAL.pdf}
+     \end{center}
+         \begin{center}
+     \includegraphics[width=0.5\textwidth]{Pic/J-1_10_6000_T=0_CORRELATION.pdf}
      \end{center}
 \end{column}
 \end{columns}
 \end{frame}
 
-\begin{frame}{Antiferromagnetic J=-1, T=0}
-\begin{columns}
-\begin{column}{0.5\textwidth}
-    \begin{center}
-     \includegraphics[width=\textwidth]{Pic/J-1_10_6000_T=0_Magnetization.pdf}
-     \end{center}
-\end{column}
-\begin{column}{0.5\textwidth}
-    \begin{center}
-     \includegraphics[width=\textwidth]{Pic/J-1_10_6000_T=0_CORRELATION.pdf}
-     \end{center}
-\end{column}
-\end{columns}
-\end{frame}
 
 
 \begin{frame}{Antiferromagnetic J=-1, T=1.5}
 \begin{columns}
 \begin{column}{0.5\textwidth}
     \begin{center}
-     \includegraphics[width=\textwidth]{Pic/J-1_60_2500_T=1.5_ENERGY.pdf}
+     \includegraphics[width=0.5\textwidth]{Pic/J-1_60_2500_T=1.5_ENERGY.pdf}
+     \end{center}
+         \begin{center}
+     \includegraphics[width=0.5\textwidth]{Pic/J-1_60_2500_T=1.5_Magnetization.pdf}
      \end{center}
 \end{column}
 \begin{column}{0.5\textwidth}
     \begin{center}
-     \includegraphics[width=\textwidth]{Pic/J-1_60_2500_T=1.5_FINAL.pdf}
+     \includegraphics[width=0.5\textwidth]{Pic/J-1_60_2500_T=1.5_FINAL.pdf}
+     \end{center}
+         \begin{center}
+     \includegraphics[width=0.5\textwidth]{Pic/J-1_60_2500_T=1.5_CORRELATION.pdf}
      \end{center}
 \end{column}
 \end{columns}
 \end{frame}
 
-\begin{frame}{Antiferromagnetic J=-1, T=1.5}
-\begin{columns}
-\begin{column}{0.5\textwidth}
-    \begin{center}
-     \includegraphics[width=\textwidth]{Pic/J-1_60_2500_T=1.5_Magnetization.pdf}
-     \end{center}
-\end{column}
-\begin{column}{0.5\textwidth}
-    \begin{center}
-     \includegraphics[width=\textwidth]{Pic/J-1_60_2500_T=1.5_CORRELATION.pdf}
-     \end{center}
-\end{column}
-\end{columns}
-\end{frame}
 
 \begin{frame}{Antiferromagnetic J=-1, T=4}
 \begin{columns}
 \begin{column}{0.5\textwidth}
     \begin{center}
-     \includegraphics[width=\textwidth]{Pic/J-1_60_2500_T=4_ENERGY.pdf}
+     \includegraphics[width=0.5\textwidth]{Pic/J-1_60_2500_T=4_ENERGY.pdf}
+     \end{center}
+         \begin{center}
+     \includegraphics[width=0.5\textwidth]{Pic/J-1_60_2500_T=4_Magnetization.pdf}
      \end{center}
 \end{column}
 \begin{column}{0.5\textwidth}
     \begin{center}
-     \includegraphics[width=\textwidth]{Pic/J-1_60_2500_T=4_FINAL.pdf}
+     \includegraphics[width=0.5\textwidth]{Pic/J-1_60_2500_T=4_FINAL.pdf}
+     \end{center}
+         \begin{center}
+     \includegraphics[width=0.5\textwidth]{Pic/J-1_60_2500_T=4_CORRELATION.pdf}
      \end{center}
 \end{column}
 \end{columns}
 \end{frame}
 
-\begin{frame}{Antiferromagnetic J=-1, T=4}
-\begin{columns}
-\begin{column}{0.5\textwidth}
-    \begin{center}
-     \includegraphics[width=\textwidth]{Pic/J-1_60_2500_T=4_Magnetization.pdf}
-     \end{center}
-\end{column}
-\begin{column}{0.5\textwidth}
-    \begin{center}
-     \includegraphics[width=\textwidth]{Pic/J-1_60_2500_T=4_CORRELATION.pdf}
-     \end{center}
-\end{column}
-\end{columns}
-\end{frame}
 
 
 \begin{frame}{Antiferromagnetic J=-1, T=8}
 \begin{columns}
 \begin{column}{0.5\textwidth}
     \begin{center}
-     \includegraphics[width=\textwidth]{Pic/J-1_60_2500_T=8_ENERGY.pdf}
+     \includegraphics[width=0.5\textwidth]{Pic/J-1_60_2500_T=8_ENERGY.pdf}
+     \end{center}
+     \begin{center}
+     \includegraphics[width=0.5\textwidth]{Pic/J-1_60_2500_T=8_Magnetization.pdf}
      \end{center}
 \end{column}
 \begin{column}{0.5\textwidth}
     \begin{center}
-     \includegraphics[width=\textwidth]{Pic/J-1_60_2500_T=8_FINAL.pdf}
+     \includegraphics[width=0.5\textwidth]{Pic/J-1_60_2500_T=8_FINAL.pdf}
+     \end{center}
+     \begin{center}
+     \includegraphics[width=0.5\textwidth]{Pic/J-1_60_2500_T=8_CORRELATION.pdf}
      \end{center}
 \end{column}
 \end{columns}
 \end{frame}
 
-\begin{frame}{Antiferromagnetic J=-1, T=8}
-\begin{columns}
-\begin{column}{0.5\textwidth}
-    \begin{center}
-     \includegraphics[width=\textwidth]{Pic/J-1_60_2500_T=8_Magnetization.pdf}
-     \end{center}
-\end{column}
-\begin{column}{0.5\textwidth}
-    \begin{center}
-     \includegraphics[width=\textwidth]{Pic/J-1_60_2500_T=8_CORRELATION.pdf}
-     \end{center}
-\end{column}
-\end{columns}
+\begin{frame}{Antiferromagnetic - conclusions}
+\begin{itemize}
+\item As long as the temperature is increased the Monte-Carlo algorithm finds difficult to retrieve a stationary state. This is correct since with a higher temperature more state becomes accessible and the algorithm can escape from the trap states
+\item The correlation function has its absolute value diminished as the temperature is increased; moreover the correlation function tends to be much more similar to a flat curve (near 0). This is correct since the temperature increase makes accessible states in which the values are not alternated (as for T=0), therefore the coherence of the overall systems is destroyed as the temperature increase. \item This is similar to what happens to a block of a crystal when it melts: the ordered structure by which is formed is replaced by a less ordered one (liquid))
+\end{itemize}
 \end{frame}
 
 \subsection{Ferromagnetic}
 
-\begin{frame}{Ferromagnetic J=-1, T=30}
-\begin{columns}
-\begin{column}{0.5\textwidth}
-    \begin{center}
-     \includegraphics[width=\textwidth]{Pic/J-1_10_6000_T=30_ENERGY.pdf}
-     \end{center}
-\end{column}
-\begin{column}{0.5\textwidth}
-    \begin{center}
-     \includegraphics[width=\textwidth]{Pic/J-1_10_6000_T=30_FINAL.pdf}
-     \end{center}
-\end{column}
-\end{columns}
-\end{frame}
+\begin{frame}{Ferromagnetic - introduction}
+\begin{itemize}
+\item Lets consider a lattice which models an array of people with a binary opinion $(+1 or -1)$
+\item This situation is identical to a ferromagnetic case of the Ising model
+\item For a sociological context the ferromagnetic behaviour can model the fact that people tends to follow the opinion of majority (mirror neurons)  (but not always, see later ...)
 
-\begin{frame}{Ferromagnetic J=-1, T=30}
-\begin{columns}
-\begin{column}{0.5\textwidth}
-    \begin{center}
-     \includegraphics[width=\textwidth]{Pic/J-1_10_6000_T=30_Magnetization.pdf}
-     \end{center}
-\end{column}
-\begin{column}{0.5\textwidth}
-    \begin{center}
-     \includegraphics[width=\textwidth]{Pic/J-1_10_6000_T=30_CORRELATION.pdf}
-     \end{center}
-\end{column}
-\end{columns}
+\end{itemize}
 \end{frame}
 
 \begin{frame}{Ferromagnetic J=+1, T=0}
 \begin{columns}
 \begin{column}{0.5\textwidth}
     \begin{center}
-     \includegraphics[width=\textwidth]{Pic/J+1_10_6000_T=0_ENERGY.pdf}
+     \includegraphics[width=0.5\textwidth]{Pic/J+1_10_6000_T=0_ENERGY.pdf}
+     \end{center}
+         \begin{center}
+     \includegraphics[width=0.5\textwidth]{Pic/J+1_10_6000_T=0_Magnetization.pdf}
      \end{center}
 \end{column}
 \begin{column}{0.5\textwidth}
     \begin{center}
-     \includegraphics[width=\textwidth]{Pic/J+1_10_6000_T=0_FINAL.pdf}
+     \includegraphics[width=0.5\textwidth]{Pic/J+1_10_6000_T=0_FINAL.pdf}
+     \end{center}
+         \begin{center}
+     \includegraphics[width=0.5\textwidth]{Pic/J+1_10_6000_T=0_Coherence.pdf}
      \end{center}
 \end{column}
 \end{columns}
 \end{frame}
 
-\begin{frame}{Ferromagnetic J=+1, T=0}
-\begin{columns}
-\begin{column}{0.5\textwidth}
-    \begin{center}
-     \includegraphics[width=\textwidth]{Pic/J+1_10_6000_T=0_Magnetization.pdf}
-     \end{center}
-\end{column}
-\begin{column}{0.5\textwidth}
-    \begin{center}
-     \includegraphics[width=\textwidth]{Pic/J+1_10_6000_T=0_Coherence.pdf}
-     \end{center}
-\end{column}
-\end{columns}
-\end{frame}
 
 \begin{frame}{Ferromagnetic J=+1, T=8}
 \begin{columns}
 \begin{column}{0.5\textwidth}
     \begin{center}
-     \includegraphics[width=\textwidth]{Pic/J+1_10_6000_T=8_ENERGY.pdf}
+     \includegraphics[width=0.5\textwidth]{Pic/J+1_10_6000_T=8_ENERGY.pdf}
+     \end{center}
+         \begin{center}
+     \includegraphics[width=0.5\textwidth]{Pic/J+1_10_6000_T=8_Magnetization.pdf}
      \end{center}
 \end{column}
 \begin{column}{0.5\textwidth}
     \begin{center}
-     \includegraphics[width=\textwidth]{Pic/J+1_10_6000_T=8_FINAL.pdf}
+     \includegraphics[width=0.5\textwidth]{Pic/J+1_10_6000_T=8_FINAL.pdf}
+     \end{center}
+         \begin{center}
+     \includegraphics[width=0.5\textwidth]{Pic/J+1_10_6000_T=8_Coherence.pdf}
      \end{center}
 \end{column}
 \end{columns}
 \end{frame}
 
-\begin{frame}{Ferromagnetic J=+1, T=8}
-\begin{columns}
-\begin{column}{0.5\textwidth}
-    \begin{center}
-     \includegraphics[width=\textwidth]{Pic/J+1_10_6000_T=8_Magnetization.pdf}
-     \end{center}
-\end{column}
-\begin{column}{0.5\textwidth}
-    \begin{center}
-     \includegraphics[width=\textwidth]{Pic/J+1_10_6000_T=8_Coherence.pdf}
-     \end{center}
-\end{column}
-\end{columns}
-\end{frame}
 
 \begin{frame}{Ferromagnetic J=+1, T=16}
 \begin{columns}
 \begin{column}{0.5\textwidth}
     \begin{center}
-     \includegraphics[width=\textwidth]{Pic/J+1_10_2500_T=16_ENERGY.pdf}
+     \includegraphics[width=0.5\textwidth]{Pic/J+1_10_2500_T=16_ENERGY.pdf}
+     \end{center}
+         \begin{center}
+     \includegraphics[width=0.5\textwidth]{Pic/J+1_10_2500_T=16_Magnetization.pdf}
      \end{center}
 \end{column}
 \begin{column}{0.5\textwidth}
     \begin{center}
-     \includegraphics[width=\textwidth]{Pic/J+1_10_2500_T=16_FINAL.pdf}
+     \includegraphics[width=0.5\textwidth]{Pic/J+1_10_2500_T=16_FINAL.pdf}
      \end{center}
-\end{column}
-\end{columns}
-\end{frame}
-
-\begin{frame}{Ferromagnetic J=+1, T=16}
-\begin{columns}
-\begin{column}{0.5\textwidth}
-    \begin{center}
-     \includegraphics[width=\textwidth]{Pic/J+1_10_2500_T=16_Magnetization.pdf}
-     \end{center}
-\end{column}
-\begin{column}{0.5\textwidth}
-    \begin{center}
-     \includegraphics[width=\textwidth]{Pic/J+1_10_2500_T=16_Coherence.pdf}
+         \begin{center}
+     \includegraphics[width=0.5\textwidth]{Pic/J+1_10_2500_T=16_Coherence.pdf}
      \end{center}
 \end{column}
 \end{columns}
 \end{frame}
 
 
+\begin{frame}{Ferromagnetic - remarks}
+\begin{itemize}
+\item In this case at temperature T=0 the whole lattice goes in one of the two states: all people at last will have the same opinion. 
+\item As expected the temperature breaks also in this case the overall coherence: this may model the fact that some individuals are not always forced to follow the mass opinion
+\item In practice we know that opinions diffuses from some people that act as diffuser; furthermore these subject are very rare to change their ideas
+\item We modelled this behaviour by considering some clusters that has a fixed status
+\end{itemize}
+\end{frame}
 
 \begin{frame}{Ferromagnetic with two centers T=0}
     \begin{center}
@@ -759,7 +697,7 @@ Therefore the overall transition probabilities are given by
 \end{frame}
 
 
-\begin{frame}{Ferromagnetic with two centers T=0,  60$\times$60}
+\begin{frame}{Ferromagnetic with four centers T=0,  60$\times$60}
 \begin{columns}
 \begin{column}{0.5\textwidth}
     \begin{center}
@@ -774,6 +712,12 @@ Therefore the overall transition probabilities are given by
 \end{columns}
 \end{frame}
 
+\begin{frame}{Ferromagnetic - conclusion}
+\begin{itemize}
+\item Mettere conclusioni finali
+\end{itemize}
+\end{frame}
+
 
 
 \begin{frame}[t,allowframebreaks]
@@ -784,28 +728,5 @@ Therefore the overall transition probabilities are given by
 
 
 \section{Supporting Info}
-
-
-
-
-\begin{frame}{Concepts of statistical mechanics: entropy \cite{peliti2011statistical}}
-\textbf{Central problem of thermodynamics:} characterize the actual state of equilibrium among all virtual states  \\
-\textbf{Entropy postulate}: there exist a function S of the extensive variables $(X_{0},X_{1}...X_{r})$ called entropy,  that assumes the maximum value for a state of equilibrium among all vritual states and that possesses the following properties:
-\begin{itemize}
-\item Extensivity $S^{(1\cup2)}=S^{1}+S^{2}$
-\item Convexity $S((1-\alpha)X^{1}+\alpha X^{2}) \geq (1-\alpha)S(x^{1})+\alpha S(X^{2})$
-\item Monotonicity $\dfrac{\partial S}{\partial E}|_{X_{1}...X_{r}}=\frac{1}{T}>0$
-\end{itemize}
-\textbf The equilibrium state corresponds to the maximum entropy compatible with the constrains
-
-\end{frame}
-
-
-\begin{frame}{Concepts of statistical mechanics: entropy \cite{peliti2011statistical}}
-
-\begin{itemize}
-\item \textbf{Fundamental postulate of statistical mechanics} $S=k_{b}\ln|\Gamma|$ Where S is the thermodynamic entropy,  $k_{b}$ is Boltzmann constant and $|\Gamma|$ the volume in the phase space
-\end{itemize}
-\end{frame}
 
 \end{document}
