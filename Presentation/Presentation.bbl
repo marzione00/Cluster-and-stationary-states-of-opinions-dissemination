@@ -88,6 +88,28 @@
     \field{year}{2003}
   \endentry
 
+  \entry{murphy2012machine}{book}{}
+    \name{author}{1}{}{%
+      {{hash=MKP}{%
+         family={Murphy},
+         familyi={M\bibinitperiod},
+         given={Kevin\bibnamedelima P},
+         giveni={K\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {MIT press}%
+    }
+    \strng{namehash}{MKP1}
+    \strng{fullhash}{MKP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{title}{Machine learning: a probabilistic perspective}
+    \field{year}{2012}
+  \endentry
+
   \entry{peliti2011statistical}{book}{}
     \name{author}{1}{}{%
       {{hash=PL}{%

@@ -18,6 +18,7 @@
 \usepackage[bookmarks]{hyperref}
 \usepackage[backend=bibtex]{biblatex}
 \usepackage{braket}
+\usepackage{amsmath,amsfonts,amsthm,bm}
 \addbibresource{bibliography.bib}
 \newtheorem*{remark}{Remark}
 \usepackage[english]{babel}
@@ -219,6 +220,44 @@ g(m)=\frac{\left\langle \sigma_{i}\sigma_{i+m}  \right\rangle - \left\langle \si
 \end{equation*}
 
 \end{frame}
+
+
+\begin{frame}{Connections with log-linear models and multivariate Gaussian   \cite{murphy2012machine}}
+\begin{itemize}
+\item The joint probability function $p(\textbf{y})$ can be represented with an undirected graph (Markov Random Field) on the basis of the Hammersley-Clifford Theorem (unlike the Bayesian network for the MRF no topological ordering is possible) 
+\item \textbf{HK theorem }A positive distribution $p(y)$ satisfies the CI properties of an undirected graph G iif p can be represeted as a product of factors, one per maximal clique $p(y|\theta)=(1/Z)\prod_{c\in C} \phi_{c}(y_{c}|\theta_{c})$ where $Z=\sum_{\textbf{y}}\prod\phi_{c\in C}(\textbf{y}_{c}|\theta_{c})$
+\item \textbf{Gibbs distribution} $p(y|\theta)=(1/Z(\theta))\exp\left(-\sum_{c}E(y_{c}|\theta_{c})\right)$; therefore $\phi_{c}(y_{c}|\theta_{c})=\exp(-E(y_{c}|\theta_{c}))$
+\item For discrete variables one can use the maximum entropy or a log-linear model $\log p(y|\theta)=\sum\phi_{c}(y_{c})^{T}\theta_{c}-\log Z(\theta)$
+
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Connections with log-linear models and multivariate Gaussian   \cite{murphy2012machine}}
+\begin{itemize}
+\item In this context the Ising model can be obtained with the following clique potential 
+\end{itemize}
+\begin{equation}
+\psi_{st}\left(y_{s},y_{t}\right) =
+\begin{pmatrix}
+e^{w_{st}} & e^{-w_{st}} \\
+e^{-w_{st}} & e^{w_{st}} \\
+\end{pmatrix}
+\end{equation}
+
+\begin{itemize}
+\item The analogy between the Ising and Gaussian graphical model can be captured by considering 
+\end{itemize}
+\begin{equation*}
+\log p(\textbf{y})=-\sum_{s\sim t}y_{s}w_{st}y_{t}=(-1/2)\textbf{y}^{T}\textbf{W}\textbf{t}+\sum_{s}b_{s}y_{s}=(-1/2)\textbf{y}^{T}\textbf{W}\textbf{y}+\textbf{b}^{T}\textbf{y}
+\end{equation*}
+\begin{itemize}
+\item Setting $\bm{\Sigma}^{-1}=\textbf{W}$, $\bm{\mu}=\bm{\Sigma} \textbf{b}$,and $c=(1/2)\bm{\mu^{T}}\bm{\Sigma}^{-1}\bm{\mu}$ we can get the form of a multivariate gaussian (unnormalized)
+\end{itemize}
+\begin{equation*}
+p(y)\sim \exp \left((-1/2)(\textbf{y}-\bm{\mu})^{T}\bm{\Sigma}^{-1}(\textbf{y}-\bm{\mu})+c\right)
+\end{equation*}
+\end{frame}
+
 
 \section{Numerical simulation}
 

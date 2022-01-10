@@ -30,3 +30,10 @@ howpublished = {\url{https://commons.wikimedia.org/wiki}},
   year={2001},
   publisher={Elsevier}
 }
+
+@book{murphy2012machine,
+  title={Machine learning: a probabilistic perspective},
+  author={Murphy, Kevin P},
+  year={2012},
+  publisher={MIT press}
+}

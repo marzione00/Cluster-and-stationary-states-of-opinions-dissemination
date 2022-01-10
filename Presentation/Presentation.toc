@@ -5,12 +5,12 @@
 \defcounter {refsection}{0}\relax 
 \beamer@sectionintoc {2}{Ising model}{11}{0}{2}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {3}{Numerical simulation}{13}{0}{3}
+\beamer@sectionintoc {3}{Numerical simulation}{15}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {4}{Goals and methods}{21}{0}{4}
+\beamer@sectionintoc {4}{Goals and methods}{23}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {5}{Results}{24}{0}{5}
+\beamer@sectionintoc {5}{Results}{26}{0}{5}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {5}{1}{Antiferromagnetic}{25}{0}{5}
+\beamer@subsectionintoc {5}{1}{Antiferromagnetic}{27}{0}{5}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {5}{2}{Ferromagnetic}{30}{0}{5}
+\beamer@subsectionintoc {5}{2}{Ferromagnetic}{32}{0}{5}
