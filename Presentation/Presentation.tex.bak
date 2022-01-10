@@ -260,7 +260,7 @@ Image taken from \cite{PBC}
 \item If one considers L random values of u uniformely distributed in the interval [0,1] we have $I\approx\dfrac{1}{L}\sum_{i=1}^{L}\dfrac{f[x(u)}{w[x(x)]}$
  \item The choice of w is crucial since $\sigma=\dfrac{1}{L}\left[\left\langle\left(\dfrac{f}{w}\right)^{2}\right\rangle-  \left\langle\dfrac{f}{w}\right\rangle^{2}\right]$
  \item Brute Force $f=10^{-260}$ and $\sigma=\dfrac{1}{Lf}$...is not a good idea
- \item PROBLEM: we do not know the form of the denominator (if we know it we do not need the Monte Carlo method)
+
 
 
 \end{itemize}
@@ -287,6 +287,7 @@ Image taken from \cite{frenkel2001understanding}
 
 \begin{itemize}
 \item We have a ratio between two integrals, therefore what we need to sample is the ratio and not the integrals alone
+ \item PROBLEM: we do not know the form of the denominator (if we know it we do not need the Monte Carlo method)
 \item The probability density is $N(r^{N})=\exp\left[-\beta E(\textbf{r}^{N}) \right]/Z$
 \item Metropolis idea: randomly generate points with this last probability distribution. In this case we have $\left\langle A \right\rangle \approx 1/L\sum_{i=1}^{L}n_{i}A(\textbf{r}_{i}^{N})$
 
