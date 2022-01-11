@@ -261,18 +261,47 @@ p(y)\sim \exp \left((-1/2)(\textbf{y}-\bm{\mu})^{T}\bm{\Sigma}^{-1}(\textbf{y}-\
 \begin{frame}{Numerical simulation \cite{peliti2011statistical}}
 \begin{itemize}
 \item\textbf{Molecular dynamics:} the equation of motion are solved numerically PROS: information of both the dynamical and static properties of the system are explored 
-\item\textbf{Monte Carlo:} a fictitious evolution process of the system is solved in order to get the equilibrium distribution PROS  1) also the systems whose dynamics is not defined can be explored 2) a fictitious dynamics can be considered in order to reach the equilibrium faster 
+\item\textbf{Monte Carlo:} a fictitious evolution process of the system is solved in order to get the equilibrium distribution
+  \begin{itemize}
+  \item Also the systems whose dynamics is not defined can be explored
+  \item A fictitious dynamics can be considered in order to reach the equilibrium faster 
+  \end{itemize} 
 \end{itemize}
 \end{frame}
 
 
-\begin{frame} {Monte Carlo method \cite{frenkel2001understanding}}
+\begin{frame} {Monte Carlo method \cite{frenkel2001understanding,mackay2003information,murphy2012machine}}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+Basic Monte Carlo
+\begin{itemize}
+\item $\mathbb{E}[f(X)]=\int f(x)p(x)dx \approx (1/S) \sum^{S}_{s=1} f(x_{S})$
+\item Generate S samples from the distribution that we would evaluate 
+\item Approximate the distribution using the empirical one 
+\item Basic example the value of $\pi$ 
+\end{itemize}
+\begin{equation}
+\begin{split}
+I& =\int^{r}_{-r}\int^{r}_{-r} \mathbb{I}(x^{2}+y^{2}\leq r^{2})dx\;dy  \\
+& \approx 4r^{2}\dfrac{1}{S}\sum^{S}_{s=1}f(x_{s},y_{s})
+\end{split}
+\end{equation}
+\end{column}
+\begin{column}{0.5\textwidth}
  \begin{center}
      \includegraphics[width=0.5\textwidth]{Pic/MonteCarloIntegrationCircle.png}
 \end{center}
  \begin{center}
-Image taken from \cite{PBC}
+But in this case ?
 \end{center}
+ \begin{center}
+     \includegraphics[width=0.5\textwidth]{Pic/Metropolis.png}
+\end{center}
+ \begin{center}
+Images taken from \cite{PBC,mackay2003information}
+\end{center}
+\end{column}
+\end{columns}
 \end{frame}
 
 
@@ -281,11 +310,11 @@ Image taken from \cite{PBC}
 \begin{frame}{Monte Carlo method \cite{frenkel2001understanding}}
 \begin{itemize}
 \item Lets consider the generic integral $I=\int^{b}_{a}dx\;f(x)$
-\item This can be recast in the following form  $I=\int^{1}_{0}dx\;w(x)\dfrac{f(x)}{w(x)}$
+\item This can be recast in the following form  $I=\int^{1}_{0}dx\;w(x)\dfrac{f(x)}{w(x)}$ where $w(x)$ is the probability distribution of the sampling points
 \item If w(x) is the derivative of u(x) (non-decreasing,non negative) we have $I=\int^{1}_{0}du\;\dfrac{f[x(u)]}{w[x(u)]}$
-\item If one considers L random values of u uniformely distributed in the interval [0,1] we have $I\approx\dfrac{1}{L}\sum_{i=1}^{L}\dfrac{f[x(u)}{w[x(x)]}$
+\item If one considers L random values of u uniformely distributed in the interval [0,1] we have $I\approx\dfrac{1}{L}\sum_{i=1}^{L}\dfrac{f[x(u)]}{w[x(x)]}$
  \item The choice of w is crucial since $\sigma=\dfrac{1}{L}\left[\left\langle\left(\dfrac{f}{w}\right)^{2}\right\rangle-  \left\langle\dfrac{f}{w}\right\rangle^{2}\right]$
- \item Brute Force $f=10^{-260}$ and $\sigma=\dfrac{1}{Lf}$...is not a good idea
+ \item Brute Force: w constant...not a good idea
 
 
 
@@ -741,8 +770,12 @@ Therefore the overall transition probabilities are given by
 
 \begin{frame}{Ferromagnetic - conclusion}
 \begin{itemize}
-\item Mettere conclusioni finali
+\item The diffusion centrers avoid that the lattice flip in to an homogeneous state (all +1 or -1) 
+\item With the diffusion center, al long as large lattice are considered ($>10$) complex border/patterns comes out. 
+\item In large lattices, the complexity of these patterns (which can be quantified with the correlation functions) vanishes as the temperature is increased 
+\item \textbf{OUTLOOK}: perform different simulations for large lattices with 0 or low temperature in order to better exploits the ground/trap states. However for this purpose is better to use or C++ or Fortran since they have better performances in terms of computational cost 
 \end{itemize}
+
 \end{frame}
 
 
