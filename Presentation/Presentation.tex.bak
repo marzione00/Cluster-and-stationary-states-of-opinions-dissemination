@@ -67,95 +67,7 @@
 \end{center}
 \end{frame}
 
-\begin{frame}{Concepts of statistical mechanics: aim \cite{peliti2011statistical}}
-\begin{center}
-\textbf{Aim} To predict the macroscopic properties of systems on the basis of their microscopic structure. This connection between these two scales is performed with statistical methods
-\end{center}
-\end{frame}
 
-\begin{frame}{Concepts of statistical mechanics: entropy and temperature \cite{frenkel2001understanding}}
-\begin{itemize}
-\item Consider a system with total energy E that is composed by two subsystems (with energy $E_{1}$ and $E_{2}$ that can exchange only energy - canonical ensemble) 
-\item There are many way in which the energy can distribute in the two systems with the constrain $E=E_{1}+E_{2}$
-\item In particular given the energy $E_{1}$ the total number of degenerate states is $\Omega_{1}(E_{1})\times\Omega_{1}(E_{2}) $
-\item We would have a measure of the degeneracy of the system that is additive, therefore 
-\end{itemize}
-\begin{equation*}
-\ln\Omega(E_{1},E-E_{1})=\ln\Omega_{1}(E_{1})+\ln\Omega_{2}(E-E_{1})
-\end{equation*}
-\begin{itemize}
-\item Every energy state of the total system is equal likely. Therefore the most probable state is the one that maximizes $\ln \Omega(E_{1},E-E_{1})$
-\end{itemize}
-\begin{equation*}
-\left( \frac{\partial \ln \Omega(E_{1},E-E_{1})}{\partial E_{1}} \right)_{N,V,E}=0
-\end{equation*}
-\end{frame}
-
-
-\begin{frame}{Concepts of statistical mechanics: entropy and temperature \cite{frenkel2001understanding}}
-\begin{itemize}
-\item The previous statement is equal to the following one
-\end{itemize}
-\begin{equation*}
-\left( \frac{\partial \ln \Omega(E_{1})}{\partial E_{1}} \right)_{N1,V1}=\left( \frac{\partial \ln \Omega(E_{2})}{\partial E_{2}} \right)_{N2,V2}
-\end{equation*}
-\begin{itemize}
-\item Introducing the following notation
-\end{itemize}
-\begin{equation*}
-\beta\equiv\left( \frac{\partial \ln \Omega(E_{1})}{\partial E_{1}} \right)_{N1,V1}
-\end{equation*}
-\begin{itemize}
-\item And introducing the concept of entropy 
-\end{itemize}
-\begin{equation*}
-S(N,V,E)\equiv k_{b}ln\Omega(N,V,E)
-\end{equation*}
-We have the definition of thermodynamic temperature 
-\begin{equation*}
-\frac{1}{T}=\left( \dfrac{\partial S}{\partial E} \right)_{V,N}
-\end{equation*}
-\begin{equation*}
-\equiv\dfrac{1}{k_{b}T}
-\end{equation*}
-\end{frame}
-
-\begin{frame}{Concepts of statistical mechanics: entropy and temperature \cite{frenkel2001understanding}}
-\begin{itemize}
-\item So we have proof the at the equilibrium, the configuration with maximum entropy, the temperature of the two sub-systems is equal 
-\end{itemize}
-\begin{equation*}
-T_{1}=T_{2}
-\end{equation*}
-\end{frame}
-
-
-
-\begin{frame}{Concepts of statistical mechanics: entropy and temperature \cite{frenkel2001understanding}}
-\begin{itemize}
-\item Given that the system 1 is in the state $E_{1}$ the second system have energy $E-E_{i}$. Therefore the degeneracy of the second system is equal to $\Omega(E-E_{i})$
-\item Thus the probability of 1 to be in the state i will be 
-\end{itemize}
-
-\begin{equation*}
-P_{i}=\dfrac{\Omega(E-E_{i})}{\sum_{j}\Omega(E-E_{j})}
-\end{equation*}
-\begin{itemize}
-
-\item Expanding around $E_{i}=0$
-\end{itemize}
-\begin{equation*}
-\ln\Omega_{B}(E-E_{i})=\ln\Omega_{B}(E)-E_{i}\frac{\partial\log\Omega_{B}(E)}{\partial E}+O(1/E)
-\end{equation*}
-\begin{equation*}
-\ln\Omega_{B}(E-E_{i})=\ln\Omega_{B}(E)-\dfrac{E_{i}}{k_{b}T}+O(1/E)
-\end{equation*}
-\begin{equation*}
-P_{i}=\dfrac{\exp(-E_{i}/k_{b}T)}{\sum_{j}\exp(-E_{j}/k_{b}T)}
-\end{equation*}
-
-
-\end{frame}
 
 
 
@@ -219,31 +131,7 @@ g(m)=\frac{\left\langle \sigma_{i}\sigma_{i+m}  \right\rangle - \left\langle \si
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Connections with log-linear models and multivariate Gaussian   \cite{murphy2012machine}}
-\begin{itemize}
-\item In this context the Ising model can be obtained with the following clique potential 
-\end{itemize}
-\begin{equation}
-\psi_{st}\left(y_{s},y_{t}\right) =
-\begin{pmatrix}
-e^{w_{st}} & e^{-w_{st}} \\
-e^{-w_{st}} & e^{w_{st}} \\
-\end{pmatrix}
-\end{equation}
 
-\begin{itemize}
-\item The analogy between the Ising and Gaussian graphical model can be captured by considering 
-\end{itemize}
-\begin{equation*}
-\log p(\textbf{y})=-\sum_{s\sim t}y_{s}w_{st}y_{t}=(-1/2)\textbf{y}^{T}\textbf{W}\textbf{t}+\sum_{s}b_{s}y_{s}=(-1/2)\textbf{y}^{T}\textbf{W}\textbf{y}+\textbf{b}^{T}\textbf{y}
-\end{equation*}
-\begin{itemize}
-\item Setting $\bm{\Sigma}^{-1}=\textbf{W}$, $\bm{\mu}=\bm{\Sigma} \textbf{b}$,and $c=(1/2)\bm{\mu^{T}}\bm{\Sigma}^{-1}\bm{\mu}$ we can get the form of a multivariate gaussian (unnormalized)
-\end{itemize}
-\begin{equation*}
-p(y)\sim \exp \left((-1/2)(\textbf{y}-\bm{\mu})^{T}\bm{\Sigma}^{-1}(\textbf{y}-\bm{\mu})+c\right)
-\end{equation*}
-\end{frame}
 
 
 \section{Numerical simulation}
@@ -263,21 +151,22 @@ p(y)\sim \exp \left((-1/2)(\textbf{y}-\bm{\mu})^{T}\bm{\Sigma}^{-1}(\textbf{y}-\
 \item\textbf{Molecular dynamics:} the equation of motion are solved numerically PROS: information of both the dynamical and static properties of the system are explored 
 \item\textbf{Monte Carlo:} a fictitious evolution process of the system is solved in order to get the equilibrium distribution
   \begin{itemize}
-  \item also the systems whose dynamics is not defined can be explored
-  \item a fictitious dynamics can be considered in order to reach the equilibrium faster 
+  \item Also the systems whose dynamics is not defined can be explored
+  \item A fictitious dynamics can be considered in order to reach the equilibrium faster 
   \end{itemize} 
 \end{itemize}
 \end{frame}
 
 
-\begin{frame} {Monte Carlo method \cite{frenkel2001understanding}}
+\begin{frame} {Monte Carlo method \cite{frenkel2001understanding,mackay2003information,murphy2012machine}}
 \begin{columns}
 \begin{column}{0.5\textwidth}
 Basic Monte Carlo
 \begin{itemize}
 \item $\mathbb{E}[f(X)]=\int f(x)p(x)dx \approx (1/S) \sum^{S}_{s=1} f(x_{S})$
 \item Generate S samples from the distribution that we would evaluate 
-\item Approximate the distribution using the empirical one  
+\item Approximate the distribution using the empirical one 
+\item Basic example the value of $\pi$ 
 \end{itemize}
 \begin{equation}
 \begin{split}
@@ -291,7 +180,13 @@ I& =\int^{r}_{-r}\int^{r}_{-r} \mathbb{I}(x^{2}+y^{2}\leq r^{2})dx\;dy  \\
      \includegraphics[width=0.5\textwidth]{Pic/MonteCarloIntegrationCircle.png}
 \end{center}
  \begin{center}
-Image taken from \cite{PBC}
+But in this case ?
+\end{center}
+ \begin{center}
+     \includegraphics[width=0.5\textwidth]{Pic/Metropolis.png}
+\end{center}
+ \begin{center}
+Images taken from \cite{PBC,mackay2003information}
 \end{center}
 \end{column}
 \end{columns}
@@ -350,44 +245,17 @@ Image taken from \cite{frenkel2001understanding}
 \item How the points are generated ? With a Boltzmann weighted Markov chain
 \item $\pi(old \rightarrow new) = \alpha (old \rightarrow new) \times acc(old \rightarrow new) $ where $\pi$ is the transition probability element from the old state to the new state,$\alpha$ is the matrix element of Markov Chain and acc is the acceptance ratio. 
 \item Detailed balance condition at the equilibrium $N(old)\pi(old \rightarrow new)= N(new)\pi(new \rightarrow old) $ 
-\item With a symmetric Markov transition matrix we have $N(old)\times acc(old\rightarrow new) = N(new) \times acc(new\rightarrow old)$
-\item Therefore we have 
-\end{itemize}
-
-\begin{equation}
-\frac{acc(old \rightarrow new)}{acc(new \rightarrow old)}=\dfrac{N(n)}{N(o)}=\exp\left[ -\beta \left( E(new)-E(old) \right) \right]
-\end{equation}
-\begin{itemize}
-\item THE Z TERM IS NO MORE PRESENT ! We have only the difference between the two energies !!!
-\end{itemize}
-
-
-\end{frame}
-
-
-\begin{frame}{Monte Carlo method: Metropolis idea \cite{frenkel2001understanding}}
-
-\begin{equation*}
-acc(old \rightarrow new) = \begin{cases} N(new)/N(old)\quad N(new) < N(old) \\
-1 \quad N(new) \geq N(old)  \end{cases}
-\end{equation*}
-\begin{itemize}
-Therefore the overall transition probabilities are given by 
-\end{itemize}
-\begin{equation*}
-\begin{split}
-\pi(old \rightarrow new) &= \begin{cases} \alpha(old \rightarrow new)\quad N(new) \geq N(old) \\
-\alpha(old \rightarrow new)  \left[  N(new)/N(old) \right] \quad N(new) < N(old) \end{cases} \\
-\pi(old \rightarrow new) & = 1-\sum_{new\neq old} \pi(old\rightarrow new)
-\end{split}
-\end{equation*}
-\begin{itemize}
-\item In practice for each move a random number is generated from the uniform distribution between the interval $[0,1]$, since $acc(old \rightarrow new) = \exp\left[ -\beta \left( E(new)-E(old) \right)\right] < 1 $. The move is accepted if the random number is lower than $acc(old \rightarrow new)$
+\item For each move a random number is generated from the uniform distribution between the interval $[0,1]$, since $acc(old \rightarrow new) = \exp\left[ -\beta \left( E(new)-E(old) \right)\right] < 1 $. The move is accepted if the random number is lower than $acc(old \rightarrow new)$
 \item $\pi(old \rightarrow new)$ should be ergodic
 \end{itemize}
 
 
 \end{frame}
+
+
+
+
+
 
 
 
@@ -781,5 +649,126 @@ Therefore the overall transition probabilities are given by
 
 
 \section{Supporting Info}
+
+\begin{frame}{Connections with log-linear models and multivariate Gaussian   \cite{murphy2012machine}}
+\begin{itemize}
+\item In this context the Ising model can be obtained with the following clique potential 
+\end{itemize}
+\begin{equation}
+\psi_{st}\left(y_{s},y_{t}\right) =
+\begin{pmatrix}
+e^{w_{st}} & e^{-w_{st}} \\
+e^{-w_{st}} & e^{w_{st}} \\
+\end{pmatrix}
+\end{equation}
+
+\begin{itemize}
+\item The analogy between the Ising and Gaussian graphical model can be captured by considering 
+\end{itemize}
+\begin{equation*}
+\log p(\textbf{y})=-\sum_{s\sim t}y_{s}w_{st}y_{t}=(-1/2)\textbf{y}^{T}\textbf{W}\textbf{t}+\sum_{s}b_{s}y_{s}=(-1/2)\textbf{y}^{T}\textbf{W}\textbf{y}+\textbf{b}^{T}\textbf{y}
+\end{equation*}
+\begin{itemize}
+\item Setting $\bm{\Sigma}^{-1}=\textbf{W}$, $\bm{\mu}=\bm{\Sigma} \textbf{b}$,and $c=(1/2)\bm{\mu^{T}}\bm{\Sigma}^{-1}\bm{\mu}$ we can get the form of a multivariate gaussian (unnormalized)
+\end{itemize}
+\begin{equation*}
+p(y)\sim \exp \left((-1/2)(\textbf{y}-\bm{\mu})^{T}\bm{\Sigma}^{-1}(\textbf{y}-\bm{\mu})+c\right)
+\end{equation*}
+\end{frame}
+
+\begin{frame}{Concepts of statistical mechanics: aim \cite{peliti2011statistical}}
+\begin{center}
+\textbf{Aim} To predict the macroscopic properties of systems on the basis of their microscopic structure. This connection between these two scales is performed with statistical methods
+\end{center}
+\end{frame}
+
+
+\begin{frame}{Concepts of statistical mechanics: entropy and temperature \cite{frenkel2001understanding}}
+\begin{itemize}
+\item Consider a system with total energy E that is composed by two subsystems (with energy $E_{1}$ and $E_{2}$ that can exchange only energy - canonical ensemble) 
+\item There are many way in which the energy can distribute in the two systems with the constrain $E=E_{1}+E_{2}$
+\item In particular given the energy $E_{1}$ the total number of degenerate states is $\Omega_{1}(E_{1})\times\Omega_{1}(E_{2}) $
+\item We would have a measure of the degeneracy of the system that is additive, therefore 
+\end{itemize}
+\begin{equation*}
+\ln\Omega(E_{1},E-E_{1})=\ln\Omega_{1}(E_{1})+\ln\Omega_{2}(E-E_{1})
+\end{equation*}
+\begin{itemize}
+\item Every energy state of the total system is equal likely. Therefore the most probable state is the one that maximizes $\ln \Omega(E_{1},E-E_{1})$
+\end{itemize}
+\begin{equation*}
+\left( \frac{\partial \ln \Omega(E_{1},E-E_{1})}{\partial E_{1}} \right)_{N,V,E}=0
+\end{equation*}
+\end{frame}
+
+
+\begin{frame}{Concepts of statistical mechanics: entropy and temperature \cite{frenkel2001understanding}}
+\begin{itemize}
+\item Given that the system 1 is in the state $E_{1}$ the second system have energy $E-E_{i}$. Therefore the degeneracy of the second system is equal to $\Omega(E-E_{i})$
+\item Thus the probability of 1 to be in the state i will be 
+\end{itemize}
+
+\begin{equation*}
+P_{i}=\dfrac{\Omega(E-E_{i})}{\sum_{j}\Omega(E-E_{j})}
+\end{equation*}
+\begin{itemize}
+
+\item Expanding around $E_{i}=0$
+\end{itemize}
+\begin{equation*}
+\ln\Omega_{B}(E-E_{i})=\ln\Omega_{B}(E)-E_{i}\frac{\partial\log\Omega_{B}(E)}{\partial E}+O(1/E)
+\end{equation*}
+\begin{equation*}
+\ln\Omega_{B}(E-E_{i})=\ln\Omega_{B}(E)-\dfrac{E_{i}}{k_{b}T}+O(1/E)
+\end{equation*}
+\begin{equation*}
+P_{i}=\dfrac{\exp(-E_{i}/k_{b}T)}{\sum_{j}\exp(-E_{j}/k_{b}T)}
+\end{equation*}
+
+
+\begin{frame}{Monte Carlo method: Metropolis idea \cite{frenkel2001understanding}}
+
+\begin{itemize}
+
+\item How the points are generated ? With a Boltzmann weighted Markov chain
+\item $\pi(old \rightarrow new) = \alpha (old \rightarrow new) \times acc(old \rightarrow new) $ where $\pi$ is the transition probability element from the old state to the new state,$\alpha$ is the matrix element of Markov Chain and acc is the acceptance ratio. 
+\item Detailed balance condition at the equilibrium $N(old)\pi(old \rightarrow new)= N(new)\pi(new \rightarrow old) $ 
+\item With a symmetric Markov transition matrix we have $N(old)\times acc(old\rightarrow new) = N(new) \times acc(new\rightarrow old)$
+\item Therefore we have 
+\end{itemize}
+
+\begin{equation}
+\frac{acc(old \rightarrow new)}{acc(new \rightarrow old)}=\dfrac{N(n)}{N(o)}=\exp\left[ -\beta \left( E(new)-E(old) \right) \right]
+\end{equation}
+\begin{itemize}
+\item THE Z TERM IS NO MORE PRESENT ! We have only the difference between the two energies !!!
+\end{itemize}
+
+
+\end{frame}
+
+
+\begin{frame}{Monte Carlo method: Metropolis idea \cite{frenkel2001understanding}}
+
+\begin{equation*}
+acc(old \rightarrow new) = \begin{cases} N(new)/N(old)\quad N(new) < N(old) \\
+1 \quad N(new) \geq N(old)  \end{cases}
+\end{equation*}
+\begin{itemize}
+Therefore the overall transition probabilities are given by 
+\end{itemize}
+\begin{equation*}
+\begin{split}
+\pi(old \rightarrow new) &= \begin{cases} \alpha(old \rightarrow new)\quad N(new) \geq N(old) \\
+\alpha(old \rightarrow new)  \left[  N(new)/N(old) \right] \quad N(new) < N(old) \end{cases} \\
+\pi(old \rightarrow new) & = 1-\sum_{new\neq old} \pi(old\rightarrow new)
+\end{split}
+\end{equation*}
+\begin{itemize}
+\item In practice for each move a random number is generated from the uniform distribution between the interval $[0,1]$, since $acc(old \rightarrow new) = \exp\left[ -\beta \left( E(new)-E(old) \right)\right] < 1 $. The move is accepted if the random number is lower than $acc(old \rightarrow new)$
+\item $\pi(old \rightarrow new)$ should be ergodic
+\end{itemize}
+
+\end{frame}
 
 \end{document}
