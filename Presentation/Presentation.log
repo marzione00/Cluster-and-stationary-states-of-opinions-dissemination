@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.12.5)  11 JAN 2022 20:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.12.5)  11 JAN 2022 20:15
 entering extended mode
 **./Presentation.tex
 (Presentation.tex
@@ -1316,411 +1316,409 @@ So I shall assume that you typed `$$' both times.
 
 ] [7
 
-] [8
-
 ]
-<Pic/MonteCarloIntegrationCircle.png, id=138, 770.88pt x 748.29562pt>
+<Pic/MonteCarloIntegrationCircle.png, id=129, 770.88pt x 748.29562pt>
 File: Pic/MonteCarloIntegrationCircle.png Graphic file (type png)
 <use Pic/MonteCarloIntegrationCircle.png>
 Package pdftex.def Info: Pic/MonteCarloIntegrationCircle.png  used on input lin
-e 185.
+e 176.
 (pdftex.def)             Requested size: 85.57382pt x 83.06636pt.
-<Pic/Metropolis.png, id=139, 395.22656pt x 273.27094pt>
+<Pic/Metropolis.png, id=130, 395.22656pt x 273.27094pt>
 File: Pic/Metropolis.png Graphic file (type png)
 <use Pic/Metropolis.png>
-Package pdftex.def Info: Pic/Metropolis.png  used on input line 185.
+Package pdftex.def Info: Pic/Metropolis.png  used on input line 176.
 (pdftex.def)             Requested size: 85.57382pt x 59.16907pt.
- [9
+ [8
 
  <./Pic/MonteCarloIntegrationCircle.png> <./Pic/Metropolis.png>]
-[10
+[9
 
 ]
-<Pic/Pic_river.png, id=165, 739.76375pt x 409.53pt>
+<Pic/Pic_river.png, id=156, 739.76375pt x 409.53pt>
 File: Pic/Pic_river.png Graphic file (type png)
 <use Pic/Pic_river.png>
-Package pdftex.def Info: Pic/Pic_river.png  used on input line 213.
+Package pdftex.def Info: Pic/Pic_river.png  used on input line 204.
 (pdftex.def)             Requested size: 239.60567pt x 132.64574pt.
- [11
+ [10
 
- <./Pic/Pic_river.png>] [12
+ <./Pic/Pic_river.png>] [11
+
+] [12
 
 ] [13
 
 ] [14
 
-] [15
-
 ]
-<Pic/PBC.png, id=202, 315.579pt x 290.2845pt>
+<Pic/PBC.png, id=193, 315.579pt x 290.2845pt>
 File: Pic/PBC.png Graphic file (type png)
 <use Pic/PBC.png>
-Package pdftex.def Info: Pic/PBC.png  used on input line 295.
+Package pdftex.def Info: Pic/PBC.png  used on input line 286.
 (pdftex.def)             Requested size: 119.80283pt x 110.19852pt.
-<Pic/Torus.png, id=204, 936.49875pt x 697.60625pt>
+<Pic/Torus.png, id=195, 936.49875pt x 697.60625pt>
 File: Pic/Torus.png Graphic file (type png)
 <use Pic/Torus.png>
-Package pdftex.def Info: Pic/Torus.png  used on input line 295.
+Package pdftex.def Info: Pic/Torus.png  used on input line 286.
 (pdftex.def)             Requested size: 119.80283pt x 89.23367pt.
- [16
+ [15
 
- <./Pic/PBC.png> <./Pic/Torus.png>] [17
+ <./Pic/PBC.png> <./Pic/Torus.png>] [16
 
 ]
-<Pic/J-1_10_6000_T=0_ENERGY.pdf, id=220, 326.21875pt x 358.33875pt>
+<Pic/J-1_10_6000_T=0_ENERGY.pdf, id=211, 326.21875pt x 358.33875pt>
 File: Pic/J-1_10_6000_T=0_ENERGY.pdf Graphic file (type pdf)
 <use Pic/J-1_10_6000_T=0_ENERGY.pdf>
-Package pdftex.def Info: Pic/J-1_10_6000_T=0_ENERGY.pdf  used on input line 330
+Package pdftex.def Info: Pic/J-1_10_6000_T=0_ENERGY.pdf  used on input line 321
 .
 (pdftex.def)             Requested size: 85.57382pt x 93.99698pt.
-<Pic/J-1_10_6000_T=0_Magnetization.pdf, id=221, 326.21875pt x 358.33875pt>
+<Pic/J-1_10_6000_T=0_Magnetization.pdf, id=212, 326.21875pt x 358.33875pt>
 File: Pic/J-1_10_6000_T=0_Magnetization.pdf Graphic file (type pdf)
 <use Pic/J-1_10_6000_T=0_Magnetization.pdf>
 Package pdftex.def Info: Pic/J-1_10_6000_T=0_Magnetization.pdf  used on input l
-ine 330.
+ine 321.
 (pdftex.def)             Requested size: 85.57382pt x 93.99698pt.
-<Pic/J-1_10_6000_T=0_FINAL.pdf, id=222, 326.21875pt x 358.33875pt>
+<Pic/J-1_10_6000_T=0_FINAL.pdf, id=213, 326.21875pt x 358.33875pt>
 File: Pic/J-1_10_6000_T=0_FINAL.pdf Graphic file (type pdf)
 <use Pic/J-1_10_6000_T=0_FINAL.pdf>
-Package pdftex.def Info: Pic/J-1_10_6000_T=0_FINAL.pdf  used on input line 330.
+Package pdftex.def Info: Pic/J-1_10_6000_T=0_FINAL.pdf  used on input line 321.
 
 (pdftex.def)             Requested size: 85.57382pt x 93.99698pt.
-<Pic/J-1_10_6000_T=0_CORRELATION.pdf, id=223, 326.21875pt x 358.33875pt>
+<Pic/J-1_10_6000_T=0_CORRELATION.pdf, id=214, 326.21875pt x 358.33875pt>
 File: Pic/J-1_10_6000_T=0_CORRELATION.pdf Graphic file (type pdf)
 <use Pic/J-1_10_6000_T=0_CORRELATION.pdf>
 Package pdftex.def Info: Pic/J-1_10_6000_T=0_CORRELATION.pdf  used on input lin
-e 330.
+e 321.
 (pdftex.def)             Requested size: 85.57382pt x 93.99698pt.
- [18
+ [17
 
  <./Pic/J-1_10_6000_T=0_ENERGY.pdf> <./Pic/J-1_10_6000_T=0_Magnetization.pdf> <
 ./Pic/J-1_10_6000_T=0_FINAL.pdf> <./Pic/J-1_10_6000_T=0_CORRELATION.pdf>]
-<Pic/J-1_60_2500_T=1.5_ENERGY.pdf, id=251, 326.21875pt x 358.33875pt>
+<Pic/J-1_60_2500_T=1.5_ENERGY.pdf, id=243, 326.21875pt x 358.33875pt>
 File: Pic/J-1_60_2500_T=1.5_ENERGY.pdf Graphic file (type pdf)
 <use Pic/J-1_60_2500_T=1.5_ENERGY.pdf>
 Package pdftex.def Info: Pic/J-1_60_2500_T=1.5_ENERGY.pdf  used on input line 3
-53.
+44.
 (pdftex.def)             Requested size: 85.57382pt x 93.99698pt.
-<Pic/J-1_60_2500_T=1.5_Magnetization.pdf, id=252, 326.21875pt x 358.33875pt>
+<Pic/J-1_60_2500_T=1.5_Magnetization.pdf, id=244, 326.21875pt x 358.33875pt>
 File: Pic/J-1_60_2500_T=1.5_Magnetization.pdf Graphic file (type pdf)
 <use Pic/J-1_60_2500_T=1.5_Magnetization.pdf>
 Package pdftex.def Info: Pic/J-1_60_2500_T=1.5_Magnetization.pdf  used on input
- line 353.
+ line 344.
 (pdftex.def)             Requested size: 85.57382pt x 93.99698pt.
-<Pic/J-1_60_2500_T=1.5_FINAL.pdf, id=253, 326.21875pt x 358.33875pt>
+<Pic/J-1_60_2500_T=1.5_FINAL.pdf, id=245, 326.21875pt x 358.33875pt>
 File: Pic/J-1_60_2500_T=1.5_FINAL.pdf Graphic file (type pdf)
 <use Pic/J-1_60_2500_T=1.5_FINAL.pdf>
-Package pdftex.def Info: Pic/J-1_60_2500_T=1.5_FINAL.pdf  used on input line 35
-3.
+Package pdftex.def Info: Pic/J-1_60_2500_T=1.5_FINAL.pdf  used on input line 34
+4.
 (pdftex.def)             Requested size: 85.57382pt x 93.99698pt.
-<Pic/J-1_60_2500_T=1.5_CORRELATION.pdf, id=254, 326.21875pt x 358.33875pt>
+<Pic/J-1_60_2500_T=1.5_CORRELATION.pdf, id=246, 326.21875pt x 358.33875pt>
 File: Pic/J-1_60_2500_T=1.5_CORRELATION.pdf Graphic file (type pdf)
 <use Pic/J-1_60_2500_T=1.5_CORRELATION.pdf>
 Package pdftex.def Info: Pic/J-1_60_2500_T=1.5_CORRELATION.pdf  used on input l
-ine 353.
+ine 344.
 (pdftex.def)             Requested size: 85.57382pt x 93.99698pt.
- [19
+ [18
 
  <./Pic/J-1_60_2500_T=1.5_ENERGY.pdf> <./Pic/J-1_60_2500_T=1.5_Magnetization.pd
 f> <./Pic/J-1_60_2500_T=1.5_FINAL.pdf> <./Pic/J-1_60_2500_T=1.5_CORRELATION.pdf
 >]
-<Pic/J-1_60_2500_T=4_ENERGY.pdf, id=283, 326.21875pt x 358.33875pt>
+<Pic/J-1_60_2500_T=4_ENERGY.pdf, id=274, 326.21875pt x 358.33875pt>
 File: Pic/J-1_60_2500_T=4_ENERGY.pdf Graphic file (type pdf)
 <use Pic/J-1_60_2500_T=4_ENERGY.pdf>
-Package pdftex.def Info: Pic/J-1_60_2500_T=4_ENERGY.pdf  used on input line 375
+Package pdftex.def Info: Pic/J-1_60_2500_T=4_ENERGY.pdf  used on input line 366
 .
 (pdftex.def)             Requested size: 85.57382pt x 93.99698pt.
-<Pic/J-1_60_2500_T=4_Magnetization.pdf, id=284, 326.21875pt x 358.33875pt>
+<Pic/J-1_60_2500_T=4_Magnetization.pdf, id=275, 326.21875pt x 358.33875pt>
 File: Pic/J-1_60_2500_T=4_Magnetization.pdf Graphic file (type pdf)
 <use Pic/J-1_60_2500_T=4_Magnetization.pdf>
 Package pdftex.def Info: Pic/J-1_60_2500_T=4_Magnetization.pdf  used on input l
-ine 375.
+ine 366.
 (pdftex.def)             Requested size: 85.57382pt x 93.99698pt.
-<Pic/J-1_60_2500_T=4_FINAL.pdf, id=285, 326.21875pt x 358.33875pt>
+<Pic/J-1_60_2500_T=4_FINAL.pdf, id=276, 326.21875pt x 358.33875pt>
 File: Pic/J-1_60_2500_T=4_FINAL.pdf Graphic file (type pdf)
 <use Pic/J-1_60_2500_T=4_FINAL.pdf>
-Package pdftex.def Info: Pic/J-1_60_2500_T=4_FINAL.pdf  used on input line 375.
+Package pdftex.def Info: Pic/J-1_60_2500_T=4_FINAL.pdf  used on input line 366.
 
 (pdftex.def)             Requested size: 85.57382pt x 93.99698pt.
-<Pic/J-1_60_2500_T=4_CORRELATION.pdf, id=286, 326.21875pt x 358.33875pt>
+<Pic/J-1_60_2500_T=4_CORRELATION.pdf, id=277, 326.21875pt x 358.33875pt>
 File: Pic/J-1_60_2500_T=4_CORRELATION.pdf Graphic file (type pdf)
 <use Pic/J-1_60_2500_T=4_CORRELATION.pdf>
 Package pdftex.def Info: Pic/J-1_60_2500_T=4_CORRELATION.pdf  used on input lin
-e 375.
+e 366.
 (pdftex.def)             Requested size: 85.57382pt x 93.99698pt.
- [20
+ [19
 
  <./Pic/J-1_60_2500_T=4_ENERGY.pdf> <./Pic/J-1_60_2500_T=4_Magnetization.pdf> <
 ./Pic/J-1_60_2500_T=4_FINAL.pdf> <./Pic/J-1_60_2500_T=4_CORRELATION.pdf>]
-<Pic/J-1_60_2500_T=8_ENERGY.pdf, id=314, 326.21875pt x 358.33875pt>
+<Pic/J-1_60_2500_T=8_ENERGY.pdf, id=306, 326.21875pt x 358.33875pt>
 File: Pic/J-1_60_2500_T=8_ENERGY.pdf Graphic file (type pdf)
 <use Pic/J-1_60_2500_T=8_ENERGY.pdf>
-Package pdftex.def Info: Pic/J-1_60_2500_T=8_ENERGY.pdf  used on input line 398
+Package pdftex.def Info: Pic/J-1_60_2500_T=8_ENERGY.pdf  used on input line 389
 .
 (pdftex.def)             Requested size: 85.57382pt x 93.99698pt.
-<Pic/J-1_60_2500_T=8_Magnetization.pdf, id=315, 326.21875pt x 358.33875pt>
+<Pic/J-1_60_2500_T=8_Magnetization.pdf, id=307, 326.21875pt x 358.33875pt>
 File: Pic/J-1_60_2500_T=8_Magnetization.pdf Graphic file (type pdf)
 <use Pic/J-1_60_2500_T=8_Magnetization.pdf>
 Package pdftex.def Info: Pic/J-1_60_2500_T=8_Magnetization.pdf  used on input l
-ine 398.
+ine 389.
 (pdftex.def)             Requested size: 85.57382pt x 93.99698pt.
-<Pic/J-1_60_2500_T=8_FINAL.pdf, id=316, 326.21875pt x 358.33875pt>
+<Pic/J-1_60_2500_T=8_FINAL.pdf, id=308, 326.21875pt x 358.33875pt>
 File: Pic/J-1_60_2500_T=8_FINAL.pdf Graphic file (type pdf)
 <use Pic/J-1_60_2500_T=8_FINAL.pdf>
-Package pdftex.def Info: Pic/J-1_60_2500_T=8_FINAL.pdf  used on input line 398.
+Package pdftex.def Info: Pic/J-1_60_2500_T=8_FINAL.pdf  used on input line 389.
 
 (pdftex.def)             Requested size: 85.57382pt x 93.99698pt.
-<Pic/J-1_60_2500_T=8_CORRELATION.pdf, id=317, 326.21875pt x 358.33875pt>
+<Pic/J-1_60_2500_T=8_CORRELATION.pdf, id=309, 326.21875pt x 358.33875pt>
 File: Pic/J-1_60_2500_T=8_CORRELATION.pdf Graphic file (type pdf)
 <use Pic/J-1_60_2500_T=8_CORRELATION.pdf>
 Package pdftex.def Info: Pic/J-1_60_2500_T=8_CORRELATION.pdf  used on input lin
-e 398.
+e 389.
 (pdftex.def)             Requested size: 85.57382pt x 93.99698pt.
- [21
+ [20
 
  <./Pic/J-1_60_2500_T=8_ENERGY.pdf> <./Pic/J-1_60_2500_T=8_Magnetization.pdf> <
-./Pic/J-1_60_2500_T=8_FINAL.pdf> <./Pic/J-1_60_2500_T=8_CORRELATION.pdf>] [22
+./Pic/J-1_60_2500_T=8_FINAL.pdf> <./Pic/J-1_60_2500_T=8_CORRELATION.pdf>] [21
 
-] [23
+] [22
 
 ]
-<Pic/J+1_10_6000_T=0_ENERGY.pdf, id=357, 326.21875pt x 358.33875pt>
+<Pic/J+1_10_6000_T=0_ENERGY.pdf, id=350, 326.21875pt x 358.33875pt>
 File: Pic/J+1_10_6000_T=0_ENERGY.pdf Graphic file (type pdf)
 <use Pic/J+1_10_6000_T=0_ENERGY.pdf>
-Package pdftex.def Info: Pic/J+1_10_6000_T=0_ENERGY.pdf  used on input line 437
+Package pdftex.def Info: Pic/J+1_10_6000_T=0_ENERGY.pdf  used on input line 428
 .
 (pdftex.def)             Requested size: 85.57382pt x 93.99698pt.
-<Pic/J+1_10_6000_T=0_Magnetization.pdf, id=358, 326.21875pt x 358.33875pt>
+<Pic/J+1_10_6000_T=0_Magnetization.pdf, id=351, 326.21875pt x 358.33875pt>
 File: Pic/J+1_10_6000_T=0_Magnetization.pdf Graphic file (type pdf)
 <use Pic/J+1_10_6000_T=0_Magnetization.pdf>
 Package pdftex.def Info: Pic/J+1_10_6000_T=0_Magnetization.pdf  used on input l
-ine 437.
+ine 428.
 (pdftex.def)             Requested size: 85.57382pt x 93.99698pt.
-<Pic/J+1_10_6000_T=0_FINAL.pdf, id=359, 326.21875pt x 358.33875pt>
+<Pic/J+1_10_6000_T=0_FINAL.pdf, id=352, 326.21875pt x 358.33875pt>
 File: Pic/J+1_10_6000_T=0_FINAL.pdf Graphic file (type pdf)
 <use Pic/J+1_10_6000_T=0_FINAL.pdf>
-Package pdftex.def Info: Pic/J+1_10_6000_T=0_FINAL.pdf  used on input line 437.
+Package pdftex.def Info: Pic/J+1_10_6000_T=0_FINAL.pdf  used on input line 428.
 
 (pdftex.def)             Requested size: 85.57382pt x 93.99698pt.
-<Pic/J+1_10_6000_T=0_Coherence.pdf, id=360, 326.21875pt x 358.33875pt>
+<Pic/J+1_10_6000_T=0_Coherence.pdf, id=353, 326.21875pt x 358.33875pt>
 File: Pic/J+1_10_6000_T=0_Coherence.pdf Graphic file (type pdf)
 <use Pic/J+1_10_6000_T=0_Coherence.pdf>
 Package pdftex.def Info: Pic/J+1_10_6000_T=0_Coherence.pdf  used on input line 
-437.
+428.
 (pdftex.def)             Requested size: 85.57382pt x 93.99698pt.
- [24
+ [23
 
  <./Pic/J+1_10_6000_T=0_ENERGY.pdf> <./Pic/J+1_10_6000_T=0_Magnetization.pdf> <
 ./Pic/J+1_10_6000_T=0_FINAL.pdf> <./Pic/J+1_10_6000_T=0_Coherence.pdf>]
-<Pic/J+1_10_6000_T=8_ENERGY.pdf, id=388, 326.21875pt x 358.33875pt>
+<Pic/J+1_10_6000_T=8_ENERGY.pdf, id=381, 326.21875pt x 358.33875pt>
 File: Pic/J+1_10_6000_T=8_ENERGY.pdf Graphic file (type pdf)
 <use Pic/J+1_10_6000_T=8_ENERGY.pdf>
-Package pdftex.def Info: Pic/J+1_10_6000_T=8_ENERGY.pdf  used on input line 459
+Package pdftex.def Info: Pic/J+1_10_6000_T=8_ENERGY.pdf  used on input line 450
 .
 (pdftex.def)             Requested size: 85.57382pt x 93.99698pt.
-<Pic/J+1_10_6000_T=8_Magnetization.pdf, id=389, 326.21875pt x 358.33875pt>
+<Pic/J+1_10_6000_T=8_Magnetization.pdf, id=382, 326.21875pt x 358.33875pt>
 File: Pic/J+1_10_6000_T=8_Magnetization.pdf Graphic file (type pdf)
 <use Pic/J+1_10_6000_T=8_Magnetization.pdf>
 Package pdftex.def Info: Pic/J+1_10_6000_T=8_Magnetization.pdf  used on input l
-ine 459.
+ine 450.
 (pdftex.def)             Requested size: 85.57382pt x 93.99698pt.
-<Pic/J+1_10_6000_T=8_FINAL.pdf, id=390, 326.21875pt x 358.33875pt>
+<Pic/J+1_10_6000_T=8_FINAL.pdf, id=383, 326.21875pt x 358.33875pt>
 File: Pic/J+1_10_6000_T=8_FINAL.pdf Graphic file (type pdf)
 <use Pic/J+1_10_6000_T=8_FINAL.pdf>
-Package pdftex.def Info: Pic/J+1_10_6000_T=8_FINAL.pdf  used on input line 459.
+Package pdftex.def Info: Pic/J+1_10_6000_T=8_FINAL.pdf  used on input line 450.
 
 (pdftex.def)             Requested size: 85.57382pt x 93.99698pt.
-<Pic/J+1_10_6000_T=8_Coherence.pdf, id=391, 326.21875pt x 358.33875pt>
+<Pic/J+1_10_6000_T=8_Coherence.pdf, id=384, 326.21875pt x 358.33875pt>
 File: Pic/J+1_10_6000_T=8_Coherence.pdf Graphic file (type pdf)
 <use Pic/J+1_10_6000_T=8_Coherence.pdf>
 Package pdftex.def Info: Pic/J+1_10_6000_T=8_Coherence.pdf  used on input line 
-459.
+450.
 (pdftex.def)             Requested size: 85.57382pt x 93.99698pt.
- [25
+ [24
 
  <./Pic/J+1_10_6000_T=8_ENERGY.pdf> <./Pic/J+1_10_6000_T=8_Magnetization.pdf> <
 ./Pic/J+1_10_6000_T=8_FINAL.pdf> <./Pic/J+1_10_6000_T=8_Coherence.pdf>]
-<Pic/J+1_10_2500_T=16_ENERGY.pdf, id=420, 326.21875pt x 358.33875pt>
+<Pic/J+1_10_2500_T=16_ENERGY.pdf, id=412, 326.21875pt x 358.33875pt>
 File: Pic/J+1_10_2500_T=16_ENERGY.pdf Graphic file (type pdf)
 <use Pic/J+1_10_2500_T=16_ENERGY.pdf>
-Package pdftex.def Info: Pic/J+1_10_2500_T=16_ENERGY.pdf  used on input line 48
-1.
+Package pdftex.def Info: Pic/J+1_10_2500_T=16_ENERGY.pdf  used on input line 47
+2.
 (pdftex.def)             Requested size: 85.57382pt x 93.99698pt.
-<Pic/J+1_10_2500_T=16_Magnetization.pdf, id=421, 326.21875pt x 358.33875pt>
+<Pic/J+1_10_2500_T=16_Magnetization.pdf, id=413, 326.21875pt x 358.33875pt>
 File: Pic/J+1_10_2500_T=16_Magnetization.pdf Graphic file (type pdf)
 <use Pic/J+1_10_2500_T=16_Magnetization.pdf>
 Package pdftex.def Info: Pic/J+1_10_2500_T=16_Magnetization.pdf  used on input 
-line 481.
+line 472.
 (pdftex.def)             Requested size: 85.57382pt x 93.99698pt.
-<Pic/J+1_10_2500_T=16_FINAL.pdf, id=422, 326.21875pt x 358.33875pt>
+<Pic/J+1_10_2500_T=16_FINAL.pdf, id=414, 326.21875pt x 358.33875pt>
 File: Pic/J+1_10_2500_T=16_FINAL.pdf Graphic file (type pdf)
 <use Pic/J+1_10_2500_T=16_FINAL.pdf>
-Package pdftex.def Info: Pic/J+1_10_2500_T=16_FINAL.pdf  used on input line 481
+Package pdftex.def Info: Pic/J+1_10_2500_T=16_FINAL.pdf  used on input line 472
 .
 (pdftex.def)             Requested size: 85.57382pt x 93.99698pt.
-<Pic/J+1_10_2500_T=16_Coherence.pdf, id=423, 326.21875pt x 358.33875pt>
+<Pic/J+1_10_2500_T=16_Coherence.pdf, id=415, 326.21875pt x 358.33875pt>
 File: Pic/J+1_10_2500_T=16_Coherence.pdf Graphic file (type pdf)
 <use Pic/J+1_10_2500_T=16_Coherence.pdf>
 Package pdftex.def Info: Pic/J+1_10_2500_T=16_Coherence.pdf  used on input line
- 481.
+ 472.
 (pdftex.def)             Requested size: 85.57382pt x 93.99698pt.
- [26
+ [25
 
  <./Pic/J+1_10_2500_T=16_ENERGY.pdf> <./Pic/J+1_10_2500_T=16_Magnetization.pdf>
- <./Pic/J+1_10_2500_T=16_FINAL.pdf> <./Pic/J+1_10_2500_T=16_Coherence.pdf>] [27
+ <./Pic/J+1_10_2500_T=16_FINAL.pdf> <./Pic/J+1_10_2500_T=16_Coherence.pdf>] [26
 
 ]
-<Pic/2CENTER.pdf, id=457, 326.21875pt x 358.33875pt>
+<Pic/2CENTER.pdf, id=450, 326.21875pt x 358.33875pt>
 File: Pic/2CENTER.pdf Graphic file (type pdf)
 <use Pic/2CENTER.pdf>
-Package pdftex.def Info: Pic/2CENTER.pdf  used on input line 497.
+Package pdftex.def Info: Pic/2CENTER.pdf  used on input line 488.
 (pdftex.def)             Requested size: 171.14764pt x 188.0049pt.
- [28
+ [27
 
  <./Pic/2CENTER.pdf>]
-<Pic/J+1_10_6000_two_center_T=0_FINAL.pdf, id=470, 326.21875pt x 358.33875pt>
+<Pic/J+1_10_6000_two_center_T=0_FINAL.pdf, id=463, 326.21875pt x 358.33875pt>
 File: Pic/J+1_10_6000_two_center_T=0_FINAL.pdf Graphic file (type pdf)
 <use Pic/J+1_10_6000_two_center_T=0_FINAL.pdf>
 Package pdftex.def Info: Pic/J+1_10_6000_two_center_T=0_FINAL.pdf  used on inpu
-t line 513.
+t line 504.
 (pdftex.def)             Requested size: 171.14764pt x 188.0049pt.
-<Pic/J+1_10_6000_two_center_T=0_2_FINAL.pdf, id=471, 326.21875pt x 358.33875pt>
+<Pic/J+1_10_6000_two_center_T=0_2_FINAL.pdf, id=464, 326.21875pt x 358.33875pt>
 
 File: Pic/J+1_10_6000_two_center_T=0_2_FINAL.pdf Graphic file (type pdf)
 <use Pic/J+1_10_6000_two_center_T=0_2_FINAL.pdf>
 Package pdftex.def Info: Pic/J+1_10_6000_two_center_T=0_2_FINAL.pdf  used on in
-put line 513.
+put line 504.
 (pdftex.def)             Requested size: 171.14764pt x 188.0049pt.
- [29
+ [28
 
  <./Pic/J+1_10_6000_two_center_T=0_FINAL.pdf> <./Pic/J+1_10_6000_two_center_T=0
 _2_FINAL.pdf>]
-<Pic/LATTICE20x20TWOCENTER.pdf, id=490, 326.21875pt x 358.33875pt>
+<Pic/LATTICE20x20TWOCENTER.pdf, id=483, 326.21875pt x 358.33875pt>
 File: Pic/LATTICE20x20TWOCENTER.pdf Graphic file (type pdf)
 <use Pic/LATTICE20x20TWOCENTER.pdf>
-Package pdftex.def Info: Pic/LATTICE20x20TWOCENTER.pdf  used on input line 520.
+Package pdftex.def Info: Pic/LATTICE20x20TWOCENTER.pdf  used on input line 511.
 
 (pdftex.def)             Requested size: 171.14764pt x 188.0049pt.
- [30
+ [29
 
  <./Pic/LATTICE20x20TWOCENTER.pdf>]
-<Pic/J+1_20_10000_T=0_FINAL.pdf, id=503, 326.21875pt x 358.33875pt>
+<Pic/J+1_20_10000_T=0_FINAL.pdf, id=496, 326.21875pt x 358.33875pt>
 File: Pic/J+1_20_10000_T=0_FINAL.pdf Graphic file (type pdf)
 <use Pic/J+1_20_10000_T=0_FINAL.pdf>
-Package pdftex.def Info: Pic/J+1_20_10000_T=0_FINAL.pdf  used on input line 535
+Package pdftex.def Info: Pic/J+1_20_10000_T=0_FINAL.pdf  used on input line 526
 .
 (pdftex.def)             Requested size: 171.14764pt x 188.0049pt.
-<Pic/J+1_20_10000_T=0_FINAL_2.pdf, id=504, 326.21875pt x 358.33875pt>
+<Pic/J+1_20_10000_T=0_FINAL_2.pdf, id=497, 326.21875pt x 358.33875pt>
 File: Pic/J+1_20_10000_T=0_FINAL_2.pdf Graphic file (type pdf)
 <use Pic/J+1_20_10000_T=0_FINAL_2.pdf>
 Package pdftex.def Info: Pic/J+1_20_10000_T=0_FINAL_2.pdf  used on input line 5
-35.
+26.
+(pdftex.def)             Requested size: 171.14764pt x 188.0049pt.
+ [30
+
+ <./Pic/J+1_20_10000_T=0_FINAL.pdf> <./Pic/J+1_20_10000_T=0_FINAL_2.pdf>]
+<Pic/J+1_20_10000_T=0.25.pdf, id=516, 326.21875pt x 358.33875pt>
+File: Pic/J+1_20_10000_T=0.25.pdf Graphic file (type pdf)
+<use Pic/J+1_20_10000_T=0.25.pdf>
+Package pdftex.def Info: Pic/J+1_20_10000_T=0.25.pdf  used on input line 541.
+(pdftex.def)             Requested size: 171.14764pt x 188.0049pt.
+<Pic/J+1_20_10000_T=0.25_2.pdf, id=517, 326.21875pt x 358.33875pt>
+File: Pic/J+1_20_10000_T=0.25_2.pdf Graphic file (type pdf)
+<use Pic/J+1_20_10000_T=0.25_2.pdf>
+Package pdftex.def Info: Pic/J+1_20_10000_T=0.25_2.pdf  used on input line 541.
+
 (pdftex.def)             Requested size: 171.14764pt x 188.0049pt.
  [31
 
- <./Pic/J+1_20_10000_T=0_FINAL.pdf> <./Pic/J+1_20_10000_T=0_FINAL_2.pdf>]
-<Pic/J+1_20_10000_T=0.25.pdf, id=524, 326.21875pt x 358.33875pt>
-File: Pic/J+1_20_10000_T=0.25.pdf Graphic file (type pdf)
-<use Pic/J+1_20_10000_T=0.25.pdf>
-Package pdftex.def Info: Pic/J+1_20_10000_T=0.25.pdf  used on input line 550.
-(pdftex.def)             Requested size: 171.14764pt x 188.0049pt.
-<Pic/J+1_20_10000_T=0.25_2.pdf, id=525, 326.21875pt x 358.33875pt>
-File: Pic/J+1_20_10000_T=0.25_2.pdf Graphic file (type pdf)
-<use Pic/J+1_20_10000_T=0.25_2.pdf>
-Package pdftex.def Info: Pic/J+1_20_10000_T=0.25_2.pdf  used on input line 550.
-
-(pdftex.def)             Requested size: 171.14764pt x 188.0049pt.
- [32
-
  <./Pic/J+1_20_10000_T=0.25.pdf> <./Pic/J+1_20_10000_T=0.25_2.pdf>]
-<Pic/J+1_60_10000_T=0_FINAL.pdf, id=544, 413.545pt x 410.53375pt>
+<Pic/J+1_60_10000_T=0_FINAL.pdf, id=537, 413.545pt x 410.53375pt>
 File: Pic/J+1_60_10000_T=0_FINAL.pdf Graphic file (type pdf)
 <use Pic/J+1_60_10000_T=0_FINAL.pdf>
-Package pdftex.def Info: Pic/J+1_60_10000_T=0_FINAL.pdf  used on input line 565
+Package pdftex.def Info: Pic/J+1_60_10000_T=0_FINAL.pdf  used on input line 556
 .
 (pdftex.def)             Requested size: 171.14764pt x 169.90477pt.
-<Pic/J+1_60_10000_T=0_2_FINAL.pdf, id=545, 413.545pt x 410.53375pt>
+<Pic/J+1_60_10000_T=0_2_FINAL.pdf, id=538, 413.545pt x 410.53375pt>
 File: Pic/J+1_60_10000_T=0_2_FINAL.pdf Graphic file (type pdf)
 <use Pic/J+1_60_10000_T=0_2_FINAL.pdf>
 Package pdftex.def Info: Pic/J+1_60_10000_T=0_2_FINAL.pdf  used on input line 5
-65.
+56.
 (pdftex.def)             Requested size: 171.14764pt x 169.90477pt.
- [33
+ [32
 
  <./Pic/J+1_60_10000_T=0_FINAL.pdf> <./Pic/J+1_60_10000_T=0_2_FINAL.pdf>]
-<Pic/J+1_60_10000_T=1_FINAL.pdf, id=564, 413.545pt x 410.53375pt>
+<Pic/J+1_60_10000_T=1_FINAL.pdf, id=557, 413.545pt x 410.53375pt>
 File: Pic/J+1_60_10000_T=1_FINAL.pdf Graphic file (type pdf)
 <use Pic/J+1_60_10000_T=1_FINAL.pdf>
-Package pdftex.def Info: Pic/J+1_60_10000_T=1_FINAL.pdf  used on input line 595
+Package pdftex.def Info: Pic/J+1_60_10000_T=1_FINAL.pdf  used on input line 586
 .
 (pdftex.def)             Requested size: 102.68962pt x 101.93785pt.
-<Pic/J+1_60_10000_T=1_FINAL_COHERENCE.pdf, id=565, 413.545pt x 410.53375pt>
+<Pic/J+1_60_10000_T=1_FINAL_COHERENCE.pdf, id=558, 413.545pt x 410.53375pt>
 File: Pic/J+1_60_10000_T=1_FINAL_COHERENCE.pdf Graphic file (type pdf)
 <use Pic/J+1_60_10000_T=1_FINAL_COHERENCE.pdf>
 Package pdftex.def Info: Pic/J+1_60_10000_T=1_FINAL_COHERENCE.pdf  used on inpu
-t line 595.
+t line 586.
 (pdftex.def)             Requested size: 102.68962pt x 101.93785pt.
-<Pic/J+1_60_10000_T=4_FINAL.pdf, id=566, 413.545pt x 410.53375pt>
+<Pic/J+1_60_10000_T=4_FINAL.pdf, id=559, 413.545pt x 410.53375pt>
 File: Pic/J+1_60_10000_T=4_FINAL.pdf Graphic file (type pdf)
 <use Pic/J+1_60_10000_T=4_FINAL.pdf>
-Package pdftex.def Info: Pic/J+1_60_10000_T=4_FINAL.pdf  used on input line 595
+Package pdftex.def Info: Pic/J+1_60_10000_T=4_FINAL.pdf  used on input line 586
 .
 (pdftex.def)             Requested size: 102.68962pt x 101.93785pt.
-<Pic/J+1_60_10000_T=4_FINAL_COHERENCE.pdf, id=567, 413.545pt x 410.53375pt>
+<Pic/J+1_60_10000_T=4_FINAL_COHERENCE.pdf, id=560, 413.545pt x 410.53375pt>
 File: Pic/J+1_60_10000_T=4_FINAL_COHERENCE.pdf Graphic file (type pdf)
 <use Pic/J+1_60_10000_T=4_FINAL_COHERENCE.pdf>
 Package pdftex.def Info: Pic/J+1_60_10000_T=4_FINAL_COHERENCE.pdf  used on inpu
-t line 595.
+t line 586.
 (pdftex.def)             Requested size: 102.68962pt x 101.93785pt.
-<Pic/J+1_60_10000_T=8_FINAL.pdf, id=568, 413.545pt x 410.53375pt>
+<Pic/J+1_60_10000_T=8_FINAL.pdf, id=561, 413.545pt x 410.53375pt>
 File: Pic/J+1_60_10000_T=8_FINAL.pdf Graphic file (type pdf)
 <use Pic/J+1_60_10000_T=8_FINAL.pdf>
-Package pdftex.def Info: Pic/J+1_60_10000_T=8_FINAL.pdf  used on input line 595
+Package pdftex.def Info: Pic/J+1_60_10000_T=8_FINAL.pdf  used on input line 586
 .
 (pdftex.def)             Requested size: 102.68962pt x 101.93785pt.
-<Pic/J+1_60_10000_T=8_COHERENCE.pdf, id=569, 413.545pt x 410.53375pt>
+<Pic/J+1_60_10000_T=8_COHERENCE.pdf, id=562, 413.545pt x 410.53375pt>
 File: Pic/J+1_60_10000_T=8_COHERENCE.pdf Graphic file (type pdf)
 <use Pic/J+1_60_10000_T=8_COHERENCE.pdf>
 Package pdftex.def Info: Pic/J+1_60_10000_T=8_COHERENCE.pdf  used on input line
- 595.
+ 586.
 (pdftex.def)             Requested size: 102.68962pt x 101.93785pt.
- [34
+ [33
 
  <./Pic/J+1_60_10000_T=1_FINAL.pdf> <./Pic/J+1_60_10000_T=1_FINAL_COHERENCE.pdf
 > <./Pic/J+1_60_10000_T=4_FINAL.pdf> <./Pic/J+1_60_10000_T=4_FINAL_COHERENCE.pd
 f> <./Pic/J+1_60_10000_T=8_FINAL.pdf> <./Pic/J+1_60_10000_T=8_COHERENCE.pdf>]
-<Pic/J+1_60_10000_four_center_T=0_START.pdf, id=611, 413.545pt x 410.53375pt>
+<Pic/J+1_60_10000_four_center_T=0_START.pdf, id=604, 413.545pt x 410.53375pt>
 File: Pic/J+1_60_10000_four_center_T=0_START.pdf Graphic file (type pdf)
 <use Pic/J+1_60_10000_four_center_T=0_START.pdf>
 Package pdftex.def Info: Pic/J+1_60_10000_four_center_T=0_START.pdf  used on in
-put line 602.
+put line 593.
 (pdftex.def)             Requested size: 205.37926pt x 203.88823pt.
- [35
+ [34
 
  <./Pic/J+1_60_10000_four_center_T=0_START.pdf>]
-<Pic/J+1_60_10000_four_center_T=0_FINAL.pdf, id=624, 413.545pt x 410.53375pt>
+<Pic/J+1_60_10000_four_center_T=0_FINAL.pdf, id=617, 413.545pt x 410.53375pt>
 File: Pic/J+1_60_10000_four_center_T=0_FINAL.pdf Graphic file (type pdf)
 <use Pic/J+1_60_10000_four_center_T=0_FINAL.pdf>
 Package pdftex.def Info: Pic/J+1_60_10000_four_center_T=0_FINAL.pdf  used on in
-put line 618.
+put line 609.
 (pdftex.def)             Requested size: 171.14764pt x 169.90477pt.
-<Pic/J+1_60_10000_four_center_T=0_2_FINAL.pdf, id=625, 413.545pt x 410.53375pt>
+<Pic/J+1_60_10000_four_center_T=0_2_FINAL.pdf, id=618, 413.545pt x 410.53375pt>
 
 File: Pic/J+1_60_10000_four_center_T=0_2_FINAL.pdf Graphic file (type pdf)
 <use Pic/J+1_60_10000_four_center_T=0_2_FINAL.pdf>
 Package pdftex.def Info: Pic/J+1_60_10000_four_center_T=0_2_FINAL.pdf  used on 
-input line 618.
+input line 609.
 (pdftex.def)             Requested size: 171.14764pt x 169.90477pt.
- [36
+ [35
 
  <./Pic/J+1_60_10000_four_center_T=0_FINAL.pdf> <./Pic/J+1_60_10000_four_center
-_T=0_2_FINAL.pdf>] [37
+_T=0_2_FINAL.pdf>] [36
 
 ]
 ! Misplaced alignment tab character &.
 <argument> ...rossman and Elif Ertekin, NSE C242 &
                                                    Phys C203, Spring 2008, U...
-l.635 \end{frame}
+l.626 \end{frame}
                  
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1729,24 +1727,26 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[38
+[37
 
-] [39
+] [38
 
 ]
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <10.95> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 678.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 669.
 
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <8> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 678.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 669.
 
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <6> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 678.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 669.
 
- [40
+ [39
+
+] [40
 
 ]
-Overfull \vbox (5.8028pt too high) detected at line 697
+Overfull \vbox (5.8028pt too high) detected at line 699
  []
 
 [41
@@ -1763,13 +1763,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.772 \end{frame}
+l.774 \end{frame}
                  
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (3.61356pt too wide) detected at line 772
+Overfull \hbox (3.61356pt too wide) detected at line 774
 []
  []
 
@@ -1786,42 +1786,54 @@ Overfull \hbox (3.61356pt too wide) detected at line 772
 \openout9 = `Presentation.snm'.
 
  (Presentation.aux)
-Package rerunfilecheck Info: File `Presentation.out' has not changed.
-(rerunfilecheck)             Checksum: A19D6356065C75063B7FD338883A0C19;1090.
+
+Package rerunfilecheck Warning: File `Presentation.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Presentation.out':
+(rerunfilecheck)             Before: A19D6356065C75063B7FD338883A0C19;1090
+(rerunfilecheck)             After:  7F5EA6699D2CFFDCE446A4E534590EEF;1090.
 Package logreq Info: Writing requests to 'Presentation.run.xml'.
 \openout1 = `Presentation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31123 strings out of 478681
- 617250 string characters out of 2854493
+ 31125 strings out of 478681
+ 617280 string characters out of 2854493
  1069146 words of memory out of 3000000
  48480 multiletter control sequences out of 15000+600000
  427539 words of font info for 100 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,22n,122p,1847b,1644s stack positions out of 5000i,500n,10000p,200000b,80000s
- <C:\Users\Marzio\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600
-\ecso0800.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmitt10.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmmib10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmss10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmss12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmss17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi10.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi12.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi8.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
-msfonts/symbols/msbm10.pfb>
-Output written on Presentation.pdf (44 pages, 2439669 bytes).
+pdfTeX warning (dest): name{Outline0.5.2.23} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Outline0.5.1.18} has been referenced but does not e
+xist, replaced by a fixed one
+
+ <C:\Users\Marzio\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\e
+cso0800.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmitt10.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmmib10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmss10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmss12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmss17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi10.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi12.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi8.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/symbols/msbm10.pfb>
+Output written on Presentation.pdf (44 pages, 2439854 bytes).
 PDF statistics:
- 817 PDF objects out of 1000 (max. 8388607)
- 104 named destinations out of 1000 (max. 500000)
+ 819 PDF objects out of 1000 (max. 8388607)
+ 106 named destinations out of 1000 (max. 500000)
  428 words of extra memory for PDF output out of 10000 (max. 10000000)
 
