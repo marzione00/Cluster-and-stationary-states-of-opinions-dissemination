@@ -654,7 +654,7 @@ e^{-w_{st}} & e^{w_{st}} \\
 \item The analogy between the Ising and Gaussian graphical model can be captured by considering 
 \end{itemize}
 \begin{equation*}
-\log p(\textbf{y})=-\sum_{s\sim t}y_{s}w_{st}y_{t}=(-1/2)\textbf{y}^{T}\textbf{W}\textbf{t}+\sum_{s}b_{s}y_{s}=(-1/2)\textbf{y}^{T}\textbf{W}\textbf{y}+\textbf{b}^{T}\textbf{y}
+\log p(\textbf{y})\sim -\sum_{s\sim t}y_{s}w_{st}y_{t}=(-1/2)\textbf{y}^{T}\textbf{W}\textbf{t}+\sum_{s}b_{s}y_{s}=(-1/2)\textbf{y}^{T}\textbf{W}\textbf{y}+\textbf{b}^{T}\textbf{y}
 \end{equation*}
 \begin{itemize}
 \item Setting $\bm{\Sigma}^{-1}=\textbf{W}$, $\bm{\mu}=\bm{\Sigma} \textbf{b}$,and $c=(1/2)\bm{\mu^{T}}\bm{\Sigma}^{-1}\bm{\mu}$ we can get the form of a multivariate gaussian (unnormalized)
