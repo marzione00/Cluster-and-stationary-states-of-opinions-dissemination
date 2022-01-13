@@ -1,6 +1,6 @@
 ---
 title: "ISING - MCMC - Script"
-author: "Paola Serra and Marzio De Corato"
+author: "Marzio De Corato"
 output:
   html_document:
     df_print: paged

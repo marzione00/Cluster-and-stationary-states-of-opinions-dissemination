@@ -1,6 +1,6 @@
 # Cluster-and-stationary-states-of-opinions-dissemination
 ## Project for Advanced Multivariate Statistics (DSE)
-## Paola Serra and Marzio De Corato
+## Marzio De Corato
 
 
 Among the different contexts in which the Ising model [1] can be adapted, one
