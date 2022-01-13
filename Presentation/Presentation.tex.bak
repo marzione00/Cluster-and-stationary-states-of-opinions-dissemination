@@ -26,7 +26,7 @@
 \usebackgroundtemplate{\includegraphics[width=\paperwidth]{Pic/Intro_pict.png}}
 \title[AMS project]{ Stationary states of opinion diffusion}
 \subtitle{Project for the exam: AMS (DSE)}
-\author{Paola Serra and Marzio De Corato }
+\author{Marzio De Corato }
 \date{\today}
 
 \begin{document}
@@ -79,15 +79,11 @@
 \item \textbf{Canonical ensamble:} $p=\frac{1}{Z}\exp\left(-\frac{E}{kT}\right)$ where $Z=\sum_{i}\exp\left(\dfrac{-E_{i}}{k_{b}T}\right)$
 \end{itemize}
 \begin{equation}
-\left\langle A(x) \right\rangle=\dfrac{1}{Z}\int dx_{s}A(x_{s})exp\left[ -\frac{H^{(S)}(x_{s})}{k_{b}T} \right]
+\left\langle A(x) \right\rangle=\dfrac{1}{Z}\int dx\;A(x)exp\left[ -\frac{E(x)}{k_{b}T} \right]
 \end{equation}
 
 \begin{equation}
-Z=\int dx_{s}exp\left[  -\frac{H^{S}(x_{s})}{k_{b}T}  \right]
-\end{equation}
-
-\begin{equation}
-\left\langle H(x)^{2} \right\rangle-\left\langle H(x) \right\rangle^{2}=k_{b}T^{2}C
+Z=\int dx_{s}exp\left[  -\frac{E(x)}{k_{b}T}  \right]
 \end{equation}
 
 
@@ -108,28 +104,20 @@ Z=\int dx_{s}exp\left[  -\frac{H^{S}(x_{s})}{k_{b}T}  \right]
 
 \begin{frame}{Ising model \cite{mackay2003information,slides}}
 \begin{itemize}
-\item An array of atoms that can take states $\pm 1$. The energy of the system is given by $E(\textbf{x},J,H)= - \left[\dfrac{1}{2}\sum_{m,n}J_{mn}x_{m}x_{n}+\sum_{n}Hx_{n} \right]$ where J is the coupling constant between two neighbour sites, and H is an external field. 
+\item An array of atoms that can take states $\pm 1$. The energy of the system is given by $E(\textbf{x},J,H)= - \left[\dfrac{1}{2}\sum_{m,n}J_{mn}x_{m}x_{n}\right]$ where J is the coupling constant between two neighbour sites.
 \item The probability of the system to be in the state x is given by $p(x|\beta,J,H)=\frac{1}{Z(\beta,J,H)}\exp[-\beta E(x,J,H)]$ (canonical ensemble) where $\beta=1/k_{b}T\quad Z(\beta,J,H)=\sum_{x}exp\left[-\beta E(x,J,H)\right]$
 \item It is useful to characterize the order level of a lattice (macroscopic) with the (spatial) correlation functions (whose input are microscopic quantities). In particular, for the Ising model, these are given by the following expression (with $H=0$)
 \end{itemize}
 
 
 \begin{equation*}
-g(m)=\frac{\left\langle \sigma_{i}\sigma_{i+m}  \right\rangle - \left\langle \sigma_{i} \right\rangle \left\langle \sigma_{i+m} \right\rangle  }{1- \left\langle \sigma_{i} \right\rangle \left\langle \sigma_{i+m} \right\rangle }=\left\langle \sigma_{i}\sigma_{i+m}  \right\rangle $ 
+g(m)=\left\langle \sigma_{i}\sigma_{i+m}  \right\rangle $ 
 \end{equation*}
 
 \end{frame}
 
 
-\begin{frame}{Connections with log-linear models and multivariate Gaussian   \cite{murphy2012machine}}
-\begin{itemize}
-\item The joint probability function $p(\textbf{y})$ can be represented with an undirected graph (Markov Random Field) on the basis of the Hammersley-Clifford Theorem (unlike the Bayesian network for the MRF no topological ordering is possible) 
-\item \textbf{HK theorem }A positive distribution $p(y)$ satisfies the CI properties of an undirected graph G iif p can be represeted as a product of factors, one per maximal clique $p(y|\theta)=(1/Z)\prod_{c\in C} \phi_{c}(y_{c}|\theta_{c})$ where $Z=\sum_{\textbf{y}}\prod\phi_{c\in C}(\textbf{y}_{c}|\theta_{c})$
-\item \textbf{Gibbs distribution} $p(y|\theta)=(1/Z(\theta))\exp\left(-\sum_{c}E(y_{c}|\theta_{c})\right)$; therefore $\phi_{c}(y_{c}|\theta_{c})=\exp(-E(y_{c}|\theta_{c}))$
-\item For discrete variables one can use the maximum entropy or a log-linear model $\log p(y|\theta)=\sum\phi_{c}(y_{c})^{T}\theta_{c}-\log Z(\theta)$
 
-\end{itemize}
-\end{frame}
 
 
 
@@ -146,16 +134,7 @@ g(m)=\frac{\left\langle \sigma_{i}\sigma_{i+m}  \right\rangle - \left\langle \si
 \end{frame}
 
 
-\begin{frame}{Numerical simulation \cite{peliti2011statistical}}
-\begin{itemize}
-\item\textbf{Molecular dynamics:} the equation of motion are solved numerically PROS: information of both the dynamical and static properties of the system are explored 
-\item\textbf{Monte Carlo:} a fictitious evolution process of the system is solved in order to get the equilibrium distribution
-  \begin{itemize}
-  \item Also the systems whose dynamics is not defined can be explored
-  \item A fictitious dynamics can be considered in order to reach the equilibrium faster 
-  \end{itemize} 
-\end{itemize}
-\end{frame}
+
 
 
 \begin{frame} {Monte Carlo method \cite{frenkel2001understanding,mackay2003information,murphy2012machine}}
@@ -238,25 +217,21 @@ Image taken from \cite{frenkel2001understanding}
 \end{frame}
 
 
+
 \begin{frame}{Monte Carlo method: Metropolis idea \cite{frenkel2001understanding}}
 
 \begin{itemize}
 
 \item How the points are generated ? With a Boltzmann weighted Markov chain
 \item $\pi(old \rightarrow new) = \alpha (old \rightarrow new) \times acc(old \rightarrow new) $ where $\pi$ is the transition probability element from the old state to the new state,$\alpha$ is the matrix element of Markov Chain and acc is the acceptance ratio. 
-\item Detailed balance condition at the equilibrium $N(old)\pi(old \rightarrow new)= N(new)\pi(new \rightarrow old) $ 
-\item For each move a random number is generated from the uniform distribution between the interval $[0,1]$, since $acc(old \rightarrow new) = \exp\left[ -\beta \left( E(new)-E(old) \right)\right] < 1 $. The move is accepted if the random number is lower than $acc(old \rightarrow new)$
+\item Detailed balance condition at the equilibrium 
+\item If the energy of the new state is lower with respect to the old one the move is always accepted. Otherwise a random number is generated from the uniform distribution between the interval $[0,1]$, since $acc(old \rightarrow new) = \exp\left[ -\beta \left( E(new)-E(old) \right)\right] < 1 $. The move is accepted if the random number is lower than $acc(old \rightarrow new)$
+\item Note that since a ratio is involved the Z function is no more necessary
 \item $\pi(old \rightarrow new)$ should be ergodic
 \end{itemize}
 
 
 \end{frame}
-
-
-
-
-
-
 
 
 
@@ -650,6 +625,20 @@ Image taken from \cite{frenkel2001understanding}
 
 \section{Supporting Info}
 
+
+
+
+
+\begin{frame}{Connections with log-linear models and multivariate Gaussian   \cite{murphy2012machine}}
+\begin{itemize}
+\item The joint probability function $p(\textbf{y})$ can be represented with an undirected graph (Markov Random Field) on the basis of the Hammersley-Clifford Theorem (unlike the Bayesian network for the MRF no topological ordering is possible) 
+\item \textbf{HC theorem} A positive distribution $p(y)$ satisfies the CI properties of an undirected graph G iif p can be represeted as a product of factors, one per maximal clique $p(y|\theta)=(1/Z)\prod_{c\in C} \phi_{c}(y_{c}|\theta_{c})$ where $Z=\sum_{\textbf{y}}\prod\phi_{c\in C}(\textbf{y}_{c}|\theta_{c})$
+\item \textbf{Gibbs distribution} $p(y|\theta)=(1/Z(\theta))\exp\left(-\sum_{c}E(y_{c}|\theta_{c})\right)$; therefore $\phi_{c}(y_{c}|\theta_{c})=\exp(-E(y_{c}|\theta_{c}))$
+\item For discrete variables one can use the maximum entropy or a log-linear model $\log p(y|\theta)=\sum\phi_{c}(y_{c})^{T}\theta_{c}-\log Z(\theta)$
+
+\end{itemize}
+\end{frame}
+
 \begin{frame}{Connections with log-linear models and multivariate Gaussian   \cite{murphy2012machine}}
 \begin{itemize}
 \item In this context the Ising model can be obtained with the following clique potential 
@@ -661,7 +650,6 @@ e^{w_{st}} & e^{-w_{st}} \\
 e^{-w_{st}} & e^{w_{st}} \\
 \end{pmatrix}
 \end{equation}
-
 \begin{itemize}
 \item The analogy between the Ising and Gaussian graphical model can be captured by considering 
 \end{itemize}
@@ -676,98 +664,9 @@ p(y)\sim \exp \left((-1/2)(\textbf{y}-\bm{\mu})^{T}\bm{\Sigma}^{-1}(\textbf{y}-\
 \end{equation*}
 \end{frame}
 
-\begin{frame}{Concepts of statistical mechanics: aim \cite{peliti2011statistical}}
-\begin{center}
-\textbf{Aim} To predict the macroscopic properties of systems on the basis of their microscopic structure. This connection between these two scales is performed with statistical methods
-\end{center}
-\end{frame}
 
 
-\begin{frame}{Concepts of statistical mechanics: entropy and temperature \cite{frenkel2001understanding}}
-\begin{itemize}
-\item Consider a system with total energy E that is composed by two subsystems (with energy $E_{1}$ and $E_{2}$ that can exchange only energy - canonical ensemble) 
-\item There are many way in which the energy can distribute in the two systems with the constrain $E=E_{1}+E_{2}$
-\item In particular given the energy $E_{1}$ the total number of degenerate states is $\Omega_{1}(E_{1})\times\Omega_{1}(E_{2}) $
-\item We would have a measure of the degeneracy of the system that is additive, therefore 
-\end{itemize}
-\begin{equation*}
-\ln\Omega(E_{1},E-E_{1})=\ln\Omega_{1}(E_{1})+\ln\Omega_{2}(E-E_{1})
-\end{equation*}
-\begin{itemize}
-\item Every energy state of the total system is equal likely. Therefore the most probable state is the one that maximizes $\ln \Omega(E_{1},E-E_{1})$
-\end{itemize}
-\begin{equation*}
-\left( \frac{\partial \ln \Omega(E_{1},E-E_{1})}{\partial E_{1}} \right)_{N,V,E}=0
-\end{equation*}
-\end{frame}
 
-
-\begin{frame}{Concepts of statistical mechanics: entropy and temperature \cite{frenkel2001understanding}}
-\begin{itemize}
-\item Given that the system 1 is in the state $E_{1}$ the second system have energy $E-E_{i}$. Therefore the degeneracy of the second system is equal to $\Omega(E-E_{i})$
-\item Thus the probability of 1 to be in the state i will be 
-\end{itemize}
-
-\begin{equation*}
-P_{i}=\dfrac{\Omega(E-E_{i})}{\sum_{j}\Omega(E-E_{j})}
-\end{equation*}
-\begin{itemize}
-
-\item Expanding around $E_{i}=0$
-\end{itemize}
-\begin{equation*}
-\ln\Omega_{B}(E-E_{i})=\ln\Omega_{B}(E)-E_{i}\frac{\partial\log\Omega_{B}(E)}{\partial E}+O(1/E)
-\end{equation*}
-\begin{equation*}
-\ln\Omega_{B}(E-E_{i})=\ln\Omega_{B}(E)-\dfrac{E_{i}}{k_{b}T}+O(1/E)
-\end{equation*}
-\begin{equation*}
-P_{i}=\dfrac{\exp(-E_{i}/k_{b}T)}{\sum_{j}\exp(-E_{j}/k_{b}T)}
-\end{equation*}
-
-
-\begin{frame}{Monte Carlo method: Metropolis idea \cite{frenkel2001understanding}}
-
-\begin{itemize}
-
-\item How the points are generated ? With a Boltzmann weighted Markov chain
-\item $\pi(old \rightarrow new) = \alpha (old \rightarrow new) \times acc(old \rightarrow new) $ where $\pi$ is the transition probability element from the old state to the new state,$\alpha$ is the matrix element of Markov Chain and acc is the acceptance ratio. 
-\item Detailed balance condition at the equilibrium $N(old)\pi(old \rightarrow new)= N(new)\pi(new \rightarrow old) $ 
-\item With a symmetric Markov transition matrix we have $N(old)\times acc(old\rightarrow new) = N(new) \times acc(new\rightarrow old)$
-\item Therefore we have 
-\end{itemize}
-
-\begin{equation}
-\frac{acc(old \rightarrow new)}{acc(new \rightarrow old)}=\dfrac{N(n)}{N(o)}=\exp\left[ -\beta \left( E(new)-E(old) \right) \right]
-\end{equation}
-\begin{itemize}
-\item THE Z TERM IS NO MORE PRESENT ! We have only the difference between the two energies !!!
-\end{itemize}
-
-
-\end{frame}
-
-
-\begin{frame}{Monte Carlo method: Metropolis idea \cite{frenkel2001understanding}}
-
-\begin{equation*}
-acc(old \rightarrow new) = \begin{cases} N(new)/N(old)\quad N(new) < N(old) \\
-1 \quad N(new) \geq N(old)  \end{cases}
-\end{equation*}
-\begin{itemize}
-Therefore the overall transition probabilities are given by 
-\end{itemize}
-\begin{equation*}
-\begin{split}
-\pi(old \rightarrow new) &= \begin{cases} \alpha(old \rightarrow new)\quad N(new) \geq N(old) \\
-\alpha(old \rightarrow new)  \left[  N(new)/N(old) \right] \quad N(new) < N(old) \end{cases} \\
-\pi(old \rightarrow new) & = 1-\sum_{new\neq old} \pi(old\rightarrow new)
-\end{split}
-\end{equation*}
-\begin{itemize}
-\item In practice for each move a random number is generated from the uniform distribution between the interval $[0,1]$, since $acc(old \rightarrow new) = \exp\left[ -\beta \left( E(new)-E(old) \right)\right] < 1 $. The move is accepted if the random number is lower than $acc(old \rightarrow new)$
-\item $\pi(old \rightarrow new)$ should be ergodic
-\end{itemize}
 
 \end{frame}
 

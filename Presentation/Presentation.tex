@@ -79,15 +79,11 @@
 \item \textbf{Canonical ensamble:} $p=\frac{1}{Z}\exp\left(-\frac{E}{kT}\right)$ where $Z=\sum_{i}\exp\left(\dfrac{-E_{i}}{k_{b}T}\right)$
 \end{itemize}
 \begin{equation}
-\left\langle A(x) \right\rangle=\dfrac{1}{Z}\int dx_{s}A(x_{s})exp\left[ -\frac{H^{(S)}(x_{s})}{k_{b}T} \right]
+\left\langle A(x) \right\rangle=\dfrac{1}{Z}\int dx\;A(x)exp\left[ -\frac{E(x)}{k_{b}T} \right]
 \end{equation}
 
 \begin{equation}
-Z=\int dx_{s}exp\left[  -\frac{H^{S}(x_{s})}{k_{b}T}  \right]
-\end{equation}
-
-\begin{equation}
-\left\langle H(x)^{2} \right\rangle-\left\langle H(x) \right\rangle^{2}=k_{b}T^{2}C
+Z=\int dx_{s}exp\left[  -\frac{E(x)}{k_{b}T}  \right]
 \end{equation}
 
 
@@ -108,14 +104,14 @@ Z=\int dx_{s}exp\left[  -\frac{H^{S}(x_{s})}{k_{b}T}  \right]
 
 \begin{frame}{Ising model \cite{mackay2003information,slides}}
 \begin{itemize}
-\item An array of atoms that can take states $\pm 1$. The energy of the system is given by $E(\textbf{x},J,H)= - \left[\dfrac{1}{2}\sum_{m,n}J_{mn}x_{m}x_{n}+\sum_{n}Hx_{n} \right]$ where J is the coupling constant between two neighbour sites, and H is an external field. 
+\item An array of atoms that can take states $\pm 1$. The energy of the system is given by $E(\textbf{x},J,H)= - \left[\dfrac{1}{2}\sum_{m,n}J_{mn}x_{m}x_{n}\right]$ where J is the coupling constant between two neighbour sites.
 \item The probability of the system to be in the state x is given by $p(x|\beta,J,H)=\frac{1}{Z(\beta,J,H)}\exp[-\beta E(x,J,H)]$ (canonical ensemble) where $\beta=1/k_{b}T\quad Z(\beta,J,H)=\sum_{x}exp\left[-\beta E(x,J,H)\right]$
 \item It is useful to characterize the order level of a lattice (macroscopic) with the (spatial) correlation functions (whose input are microscopic quantities). In particular, for the Ising model, these are given by the following expression (with $H=0$)
 \end{itemize}
 
 
 \begin{equation*}
-g(m)=\frac{\left\langle \sigma_{i}\sigma_{i+m}  \right\rangle - \left\langle \sigma_{i} \right\rangle \left\langle \sigma_{i+m} \right\rangle  }{1- \left\langle \sigma_{i} \right\rangle \left\langle \sigma_{i+m} \right\rangle }=\left\langle \sigma_{i}\sigma_{i+m}  \right\rangle $ 
+g(m)=\left\langle \sigma_{i}\sigma_{i+m}  \right\rangle $ 
 \end{equation*}
 
 \end{frame}
