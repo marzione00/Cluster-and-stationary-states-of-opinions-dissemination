@@ -61,16 +61,10 @@
   \endentry
 
   \entry{mackay2003information}{book}{}
-    \name{author}{2}{}{%
+    \name{author}{1}{}{%
       {{hash=MDJ}{%
          family={MacKay},
          familyi={M\bibinitperiod},
-         given={David\bibnamedelima JC},
-         giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
-      }}%
-      {{hash=MKDJ}{%
-         family={Mac\bibnamedelima Kay},
-         familyi={M\bibinitperiod\bibinitdelim K\bibinitperiod},
          given={David\bibnamedelima JC},
          giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
       }}%
@@ -78,8 +72,8 @@
     \list{publisher}{1}{%
       {Cambridge university press}%
     }
-    \strng{namehash}{MDJMKDJ1}
-    \strng{fullhash}{MDJMKDJ1}
+    \strng{namehash}{MDJ1}
+    \strng{fullhash}{MDJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{M}

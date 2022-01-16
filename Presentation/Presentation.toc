@@ -7,12 +7,14 @@
 \defcounter {refsection}{0}\relax 
 \beamer@sectionintoc {3}{Numerical simulation}{7}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {4}{Goals and methods}{13}{0}{4}
+\beamer@sectionintoc {4}{Goals and methods}{11}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {5}{Results}{16}{0}{5}
+\beamer@sectionintoc {5}{Results}{14}{0}{5}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {5}{1}{Antiferromagnetic}{17}{0}{5}
+\beamer@subsectionintoc {5}{1}{Antiferromagnetic}{15}{0}{5}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {5}{2}{Ferromagnetic}{22}{0}{5}
+\beamer@subsectionintoc {5}{2}{Ferromagnetic}{20}{0}{5}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {7}{Supporting Info}{38}{0}{6}
+\beamer@sectionintoc {7}{Supporting Info}{36}{0}{6}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {8}{Results}{36}{0}{7}

@@ -104,8 +104,8 @@ Z=\int dx_{s}exp\left[  -\frac{E(x)}{k_{b}T}  \right]
 
 \begin{frame}{Ising model \cite{mackay2003information,slides}}
 \begin{itemize}
-\item An array of atoms that can take states $\pm 1$. The energy of the system is given by $E(\textbf{x},J,H)= - \left[\dfrac{1}{2}\sum_{m,n}J_{mn}x_{m}x_{n}\right]$ where J is the coupling constant between two neighbour sites.
-\item The probability of the system to be in the state x is given by $p(x|\beta,J,H)=\frac{1}{Z(\beta,J,H)}\exp[-\beta E(x,J,H)]$ (canonical ensemble) where $\beta=1/k_{b}T\quad Z(\beta,J,H)=\sum_{x}exp\left[-\beta E(x,J,H)\right]$
+\item An array of atoms that can take states $\pm 1$. The energy of the system is given by $E(\textbf{x},J)= - \left[\dfrac{1}{2}\sum_{m,n}J_{mn}x_{m}x_{n}\right]$ where J is the coupling constant between two neighbour sites.
+\item The probability of the system to be in the state x is given by $p(x|\beta,J)=\frac{1}{Z(\beta,J)}\exp[-\beta E(x,J)]$ (canonical ensemble) where $\beta=1/k_{b}T\quad Z(\beta,J)=\sum_{x}exp\left[-\beta E(x,J)\right]$
 \item It is useful to characterize the order level of a lattice (macroscopic) with the (spatial) correlation functions (whose input are microscopic quantities). In particular, for the Ising model, these are given by the following expression (with $H=0$)
 \end{itemize}
 
@@ -174,19 +174,6 @@ Images taken from \cite{PBC,mackay2003information}
 
 
 
-\begin{frame}{Monte Carlo method \cite{frenkel2001understanding}}
-\begin{itemize}
-\item Lets consider the generic integral $I=\int^{b}_{a}dx\;f(x)$
-\item This can be recast in the following form  $I=\int^{1}_{0}dx\;w(x)\dfrac{f(x)}{w(x)}$ where $w(x)$ is the probability distribution of the sampling points
-\item If w(x) is the derivative of u(x) (non-decreasing,non negative) we have $I=\int^{1}_{0}du\;\dfrac{f[x(u)]}{w[x(u)]}$
-\item If one considers L random values of u uniformely distributed in the interval [0,1] we have $I\approx\dfrac{1}{L}\sum_{i=1}^{L}\dfrac{f[x(u)]}{w[x(x)]}$
- \item The choice of w is crucial since $\sigma=\dfrac{1}{L}\left[\left\langle\left(\dfrac{f}{w}\right)^{2}\right\rangle-  \left\langle\dfrac{f}{w}\right\rangle^{2}\right]$
- \item Brute Force: w constant...not a good idea
-
-
-
-\end{itemize}
-\end{frame}
 
 
 \begin{frame} {Monte Carlo method \cite{peliti2011statistical}}
@@ -200,21 +187,8 @@ Image taken from \cite{frenkel2001understanding}
 \end{frame}
 
 
-\begin{frame}{Monte Carlo method: Metropolis idea \cite{frenkel2001understanding}}
 
 
-\begin{equation}
-\left\langle A \right\rangle=\dfrac{\int d\textbf{r}^{N}\exp\left[ -\beta E(\textbf{r}^{N}) \right]A(r^{N})}{\int d\textbf{r}^{N}\exp\left[ -\beta E(\textbf{r}^{N}) \right]}
-\end{equation}
-
-\begin{itemize}
-\item We have a ratio between two integrals, therefore what we need to sample is the ratio and not the integrals alone
- \item PROBLEM: we do not know the form of the denominator (if we know it we do not need the Monte Carlo method)
-\item The probability density is $N(r^{N})=\exp\left[-\beta E(\textbf{r}^{N}) \right]/Z$
-\item Metropolis idea: randomly generate points with this last probability distribution. In this case we have $\left\langle A \right\rangle \approx 1/L\sum_{i=1}^{L}n_{i}A(\textbf{r}_{i}^{N})$
-
-\end{itemize}
-\end{frame}
 
 
 
@@ -250,6 +224,7 @@ Image taken from \cite{frenkel2001understanding}
 \item Reproduce the main result for a 2D anti ferromagnetic lattice $(J=-1)$ with no external magnetic field $(H=0)$ with the montecarlo-metropolis
 \item  Once checked that the script provide the correct results apply it to a lattice $(J=+1)$.  In this case the spins represent an opinion and the sites people.  The goal is to find the stationary states (at $T=0$ and $T\neq0$)
 \item Introduce in the lattice some blocks that never change their status.  These islands represent groups that never change mind and only diffuse their ideas.  (at $T=0$ and $T\neq0$)
+\item \textbf{REMARK}: T is given in Kelvin not in Celsius (therefore it can be only $\geq$ 0)
 \end{itemize}
 \end{frame}
 
@@ -625,7 +600,46 @@ Image taken from \cite{frenkel2001understanding}
 
 \section{Supporting Info}
 
+\section{Results}
 
+\begin{frame}
+\begin{center}
+{\Huge Supporting Slides}
+\end{center}
+\end{frame}
+
+
+
+\begin{frame}{Monte Carlo method \cite{frenkel2001understanding}}
+\begin{itemize}
+\item Lets consider the generic integral $I=\int^{b}_{a}dx\;f(x)$
+\item This can be recast in the following form  $I=\int^{1}_{0}dx\;w(x)\dfrac{f(x)}{w(x)}$ where $w(x)$ is the probability distribution of the sampling points
+\item If w(x) is the derivative of u(x) (non-decreasing,non negative) we have $I=\int^{1}_{0}du\;\dfrac{f[x(u)]}{w[x(u)]}$
+\item If one considers L random values of u uniformely distributed in the interval [0,1] we have $I\approx\dfrac{1}{L}\sum_{i=1}^{L}\dfrac{f[x(u)]}{w[x(x)]}$
+ \item The choice of w is crucial since $\sigma=\dfrac{1}{L}\left[\left\langle\left(\dfrac{f}{w}\right)^{2}\right\rangle-  \left\langle\dfrac{f}{w}\right\rangle^{2}\right]$
+ \item Brute Force: w constant...not a good idea
+
+
+
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Monte Carlo method: Metropolis idea \cite{frenkel2001understanding}}
+
+
+
+\begin{equation}
+\left\langle A \right\rangle=\dfrac{\int d\textbf{r}^{N}\exp\left[ -\beta E(\textbf{r}^{N}) \right]A(r^{N})}{\int d\textbf{r}^{N}\exp\left[ -\beta E(\textbf{r}^{N}) \right]}
+\end{equation}
+
+\begin{itemize}
+\item We have a ratio between two integrals, therefore what we need to sample is the ratio and not the integrals alone
+ \item PROBLEM: we do not know the form of the denominator (if we know it we do not need the Monte Carlo method)
+\item The probability density is $N(r^{N})=\exp\left[-\beta E(\textbf{r}^{N}) \right]/Z$
+\item Metropolis idea: randomly generate points with this last probability distribution. In this case we have $\left\langle A \right\rangle \approx 1/L\sum_{i=1}^{L}n_{i}A(\textbf{r}_{i}^{N})$
+
+\end{itemize}
+\end{frame}
 
 
 
@@ -654,7 +668,7 @@ e^{-w_{st}} & e^{w_{st}} \\
 \item The analogy between the Ising and Gaussian graphical model can be captured by considering 
 \end{itemize}
 \begin{equation*}
-\log p(\textbf{y})=-\sum_{s\sim t}y_{s}w_{st}y_{t}=(-1/2)\textbf{y}^{T}\textbf{W}\textbf{t}+\sum_{s}b_{s}y_{s}=(-1/2)\textbf{y}^{T}\textbf{W}\textbf{y}+\textbf{b}^{T}\textbf{y}
+\log p(\textbf{y})\sim -\sum_{s\sim t}y_{s}w_{st}y_{t}=(-1/2)\textbf{y}^{T}\textbf{W}\textbf{t}+\sum_{s}b_{s}y_{s}=(-1/2)\textbf{y}^{T}\textbf{W}\textbf{y}+\textbf{b}^{T}\textbf{y}
 \end{equation*}
 \begin{itemize}
 \item Setting $\bm{\Sigma}^{-1}=\textbf{W}$, $\bm{\mu}=\bm{\Sigma} \textbf{b}$,and $c=(1/2)\bm{\mu^{T}}\bm{\Sigma}^{-1}\bm{\mu}$ we can get the form of a multivariate gaussian (unnormalized)
