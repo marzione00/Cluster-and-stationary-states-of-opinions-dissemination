@@ -15,6 +15,6 @@
 \defcounter {refsection}{0}\relax 
 \beamer@subsectionintoc {5}{2}{Ferromagnetic}{20}{0}{5}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {7}{Supporting Info}{36}{0}{6}
+\beamer@sectionintoc {7}{Supporting Info}{35}{0}{6}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {8}{Results}{36}{0}{7}
+\beamer@sectionintoc {8}{Results}{35}{0}{7}

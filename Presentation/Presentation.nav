@@ -169,7 +169,13 @@
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {33}{33}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{2}{15}{34/34}{Ferromagnetic}{0}}
+\headcommand {\beamer@sectionpages {14}{33}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {20}{33}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\sectionentry {6}{References}{34}{References}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{0}{0}{34/34}{Ferromagnetic}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {34}{34}}
 \defcounter {refsection}{0}\relax 
@@ -177,45 +183,35 @@
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@subsectionpages {20}{34}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\sectionentry {6}{References}{35}{References}{0}}
+\headcommand {\sectionentry {7}{Supporting Info}{35}{Supporting Info}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {6}{0}{0}{35/35}{Ferromagnetic}{0}}
+\headcommand {\beamer@sectionpages {35}{34}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {35}{34}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\sectionentry {8}{Results}{35}{Results}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {8}{0}{1}{35/35}{}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {35}{35}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@sectionpages {14}{35}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {20}{35}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\sectionentry {7}{Supporting Info}{36}{Supporting Info}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@sectionpages {36}{35}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {36}{35}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\sectionentry {8}{Results}{36}{Results}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {8}{0}{1}{36/36}{}{0}}
+\headcommand {\slideentry {8}{0}{2}{36/36}{}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {36}{36}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {8}{0}{2}{37/37}{}{0}}
+\headcommand {\slideentry {8}{0}{3}{37/37}{}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {37}{37}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {8}{0}{3}{38/38}{}{0}}
+\headcommand {\slideentry {8}{0}{4}{38/38}{}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {38}{38}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {8}{0}{4}{39/39}{}{0}}
+\headcommand {\slideentry {8}{0}{5}{39/39}{}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {39}{39}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {8}{0}{5}{40/40}{}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {40}{40}}
-\headcommand {\beamer@partpages {1}{40}}
-\headcommand {\beamer@subsectionpages {36}{40}}
-\headcommand {\beamer@sectionpages {36}{40}}
-\headcommand {\beamer@documentpages {40}}
-\headcommand {\gdef \inserttotalframenumber {40}}
+\headcommand {\beamer@partpages {1}{39}}
+\headcommand {\beamer@subsectionpages {35}{39}}
+\headcommand {\beamer@sectionpages {35}{39}}
+\headcommand {\beamer@documentpages {39}}
+\headcommand {\gdef \inserttotalframenumber {39}}

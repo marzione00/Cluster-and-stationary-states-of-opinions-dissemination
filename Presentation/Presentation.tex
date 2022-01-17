@@ -496,20 +496,6 @@ Image taken from \cite{frenkel2001understanding}
 \end{columns}
 \end{frame}
 
-\begin{frame}{Ferromagnetic with two centers T=0.25,  20$\times$20}
-\begin{columns}
-\begin{column}{0.5\textwidth}
-    \begin{center}
-     \includegraphics[width=\textwidth]{Pic/J+1_20_10000_T=0.25.pdf}
-     \end{center}
-\end{column}
-\begin{column}{0.5\textwidth}
-    \begin{center}
-     \includegraphics[width=\textwidth]{Pic/J+1_20_10000_T=0.25_2.pdf}
-     \end{center}
-\end{column}
-\end{columns}
-\end{frame}
 
 \begin{frame}{Ferromagnetic with two centers T=0,  60$\times$60}
 \begin{columns}
@@ -584,7 +570,7 @@ Image taken from \cite{frenkel2001understanding}
 \item The diffusion centrers avoid that the lattice flip in to an homogeneous state (all +1 or -1) 
 \item With the diffusion center, al long as large lattice are considered ($>10$) complex border/patterns comes out. 
 \item In large lattices, the complexity of these patterns (which can be quantified with the correlation functions) vanishes as the temperature is increased 
-\item \textbf{OUTLOOK}: perform different simulations for large lattices with 0 or low temperature in order to better exploits the ground/trap states. However for this purpose is better to use or C++ or Fortran since they have better performances in terms of computational cost 
+\item \textbf{OUTLOOK}: perform different simulations (e.g. 1000) for large lattices with 0 or low temperature in order to better exploits, with a cluster analysis, the ground/trap states. However for this purpose is better to use or C++ or Fortran since they have better performances in terms of computational cost 
 \end{itemize}
 
 \end{frame}
@@ -643,7 +629,7 @@ Image taken from \cite{frenkel2001understanding}
 
 
 
-\begin{frame}{Connections with log-linear models and multivariate Gaussian   \cite{murphy2012machine}}
+\begin{frame}{Connections with graphical models and multivariate Gaussian   \cite{murphy2012machine}}
 \begin{itemize}
 \item The joint probability function $p(\textbf{y})$ can be represented with an undirected graph (Markov Random Field) on the basis of the Hammersley-Clifford Theorem (unlike the Bayesian network for the MRF no topological ordering is possible) 
 \item \textbf{HC theorem} A positive distribution $p(y)$ satisfies the CI properties of an undirected graph G iif p can be represeted as a product of factors, one per maximal clique $p(y|\theta)=(1/Z)\prod_{c\in C} \phi_{c}(y_{c}|\theta_{c})$ where $Z=\sum_{\textbf{y}}\prod\phi_{c\in C}(\textbf{y}_{c}|\theta_{c})$
@@ -653,7 +639,7 @@ Image taken from \cite{frenkel2001understanding}
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Connections with log-linear models and multivariate Gaussian   \cite{murphy2012machine}}
+\begin{frame}{Connections with graphical models and multivariate Gaussian   \cite{murphy2012machine}}
 \begin{itemize}
 \item In this context the Ising model can be obtained with the following clique potential 
 \end{itemize}
