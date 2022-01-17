@@ -2,13 +2,11 @@
 title: "ISING - MCMC - Script"
 author: "Marzio De Corato"
 output:
+  html_notebook: default
   html_document:
     df_print: paged
-  html_notebook: default
   pdf_document: default
 ---
-
-The Monte-Carlo method here implemented was adapted from the pseudo-code provided in the textbook Frenkel, D., & Smit, B. (2001). Understanding molecular simulation: from algorithms to applications. For a better performance the user should consider to implement in C++ or in Fortran (this was the Frenkel and Smit idea).
 
 
 Loading of the libraries
@@ -303,5 +301,4 @@ Save the results
 save(Ising_lattice_FINAL,file="J-1_60_2500_T=16_lattice.rda")
 save(energy_history,file="J-1_60_2500_T=16_energy.rda")
 ```
-
 
